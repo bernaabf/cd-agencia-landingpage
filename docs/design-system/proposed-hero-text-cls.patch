@@ -1,0 +1,21 @@
+--- a/src/app/globals.css
++++ b/src/app/globals.css
+@@ -401,0 +402,18 @@
++/* Proposta não aplicada: igualar apenas o texto/controles antes da hidratação. */
++@media (max-width: 767px) and (min-height: 561px) and (prefers-reduced-motion: no-preference) {
++  .js .hero-stage .hero-opening {
++    top: 24%;
++    inset-inline: 6%;
++  }
++  .js .hero-stage .hero-eyebrow {
++    max-width: 34ch;
++  }
++  .js .hero-stage .hero-stage-controls {
++    gap: 1rem;
++    inset-inline: 7%;
++    bottom: 1.25rem;
++    font-size: .66rem;
++    letter-spacing: .09em;
++  }
++}
++

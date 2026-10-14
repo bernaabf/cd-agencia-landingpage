@@ -17,6 +17,7 @@ Risco considera interferência em cores, hero/canvas e coordenação de scroll. 
 | Header que reagisse à direção do scroll | Navbar + Lenis atuais | `Navbar.tsx`, eventualmente `MotionRoot.tsx` | baixo / médio | Não aplicado; requer decisão antes de editar |
 | Menu full-screen com nova coreografia | Painel móvel e contrato de foco/stop/start atual | `Navbar.tsx` | baixo / médio | Não aplicado; requer decisão antes de editar |
 | Hero com nova tipografia/geometria | Palco imersivo, máscaras e controles | `Hero.tsx`, `HeroStage.tsx`, `globals.css` | baixo / alto | Não aplicado; zona protegida |
+| Estabilidade do estado inicial do texto (diagnóstico de CLS) | Igualar o CSS do texto antes/depois da hidratação | `globals.css` | baixo / médio-alto | Proposta em `.patch`, não aplicada; decisão necessária |
 | Tokens globais ou hovers compartilhados | `@theme` e Button usados pelo hero | `globals.css`, `Button.tsx`, `lib/motion.ts` | médio / alto | Não aplicado; usar tokens locais |
 | Pins adicionais / outro smooth scroll | Lenis 0.09 + ticker GSAP + ScrollTrigger | `MotionRoot.tsx`, `scroll.ts`, mundo | baixo / alto | Não aplicado; não instalar Locomotive Scroll |
 | Cursor / magnetic buttons / mídia que segue ponteiro | Não há equivalente necessário | Novos listeners e loop potencial | baixo / médio | Não aplicado por custo/complexidade |

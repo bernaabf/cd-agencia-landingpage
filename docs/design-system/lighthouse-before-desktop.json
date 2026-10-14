@@ -1,6 +1,14 @@
 {
   "lighthouseVersion": "13.5.0",
   "fetchTime": "2026-10-14T22:34:32.960Z",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "benchmarkIndex": 2893.5,
+    "credits": {
+      "axe-core": "4.14.0"
+    }
+  },
   "configSettings": {
     "output": [
       "json"
@@ -97,6 +105,33 @@
             "newEngineResultDiffered": false
           }
         ]
+      }
+    },
+    "layout-shifts": {
+      "score": null,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "extra"
+            },
+            "label": "Element"
+          },
+          {
+            "key": "score",
+            "valueType": "numeric",
+            "subItemsHeading": {
+              "key": "cause",
+              "valueType": "text"
+            },
+            "granularity": 0.001,
+            "label": "Layout shift score"
+          }
+        ],
+        "items": []
       }
     },
     "color-contrast": {

@@ -1,0 +1,87 @@
+{
+  "method": "Three sequential cold-context mobile samples per build; original source reconstructed from baseCommit; same Chromium and Lighthouse settings. Round order: original, after; original, after; after, original.",
+  "samples": {
+    "original": [
+      {
+        "fetchTime": "2026-10-14T22:53:57.794Z",
+        "performance": 92,
+        "accessibility": 100,
+        "seo": 100,
+        "cls": 0.03882586513398925,
+        "lcp": 1570.347,
+        "tbt": 320,
+        "shiftSelector": "section#inicio > div.hero-stage-viewport > div.hero-editorial > div.hero-act"
+      },
+      {
+        "fetchTime": "2026-10-14T22:55:34.983Z",
+        "performance": 85,
+        "accessibility": 100,
+        "seo": 100,
+        "cls": 0.03882586513398925,
+        "lcp": 3210.95875,
+        "tbt": 350,
+        "shiftSelector": "section#inicio > div.hero-stage-viewport > div.hero-editorial > div.hero-act"
+      },
+      {
+        "fetchTime": "2026-10-14T22:56:09.302Z",
+        "performance": 82,
+        "accessibility": 100,
+        "seo": 100,
+        "cls": 0.03882586513398925,
+        "lcp": 3234.0537000000004,
+        "tbt": 424.5,
+        "shiftSelector": "section#inicio > div.hero-stage-viewport > div.hero-editorial > div.hero-act"
+      }
+    ],
+    "after": [
+      {
+        "fetchTime": "2026-10-14T22:50:39.219Z",
+        "performance": 88,
+        "accessibility": 100,
+        "seo": 100,
+        "cls": 0.03882586513398925,
+        "lcp": 3285.58885,
+        "tbt": 231.5,
+        "shiftSelector": "section#inicio > div.hero-stage-viewport > div.hero-editorial > div.hero-act"
+      },
+      {
+        "fetchTime": "2026-10-14T22:55:46.450Z",
+        "performance": 90,
+        "accessibility": 100,
+        "seo": 100,
+        "cls": 0.03882586513398925,
+        "lcp": 3262.3137000000006,
+        "tbt": 176.5,
+        "shiftSelector": "section#inicio > div.hero-stage-viewport > div.hero-editorial > div.hero-act"
+      },
+      {
+        "fetchTime": "2026-10-14T22:55:57.822Z",
+        "performance": 90,
+        "accessibility": 100,
+        "seo": 100,
+        "cls": 0.03882586513398925,
+        "lcp": 3274.7271499999997,
+        "tbt": 188,
+        "shiftSelector": "section#inicio > div.hero-stage-viewport > div.hero-editorial > div.hero-act"
+      }
+    ]
+  },
+  "medians": {
+    "original": {
+      "performance": 85,
+      "accessibility": 100,
+      "seo": 100,
+      "cls": 0.03882586513398925,
+      "lcp": 3210.95875,
+      "tbt": 350
+    },
+    "after": {
+      "performance": 90,
+      "accessibility": 100,
+      "seo": 100,
+      "cls": 0.03882586513398925,
+      "lcp": 3274.7271499999997,
+      "tbt": 188
+    }
+  }
+}

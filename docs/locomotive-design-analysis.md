@@ -144,6 +144,8 @@ O menu tem atributos ARIA, e títulos de projetos estão disponíveis à leitura
 
 O suporte completo da referência a `prefers-reduced-motion` e a estabilidade de foco em todas as rotas não foram certificados. Não se transportam eventuais limitações. Não são adicionados efeitos de cursor, scrollers, listeners globais ou carregamentos de mídia ao projeto.
 
+Na emulação `reduce`, o header da referência continuou declarando transição de 0.2s nas duas larguras medidas. Isso descreve somente esse estilo calculado; não certifica a interrupção de todas as animações JavaScript. No projeto, a política de reduced motion é testada independentemente.
+
 ## 3. Tradução e escopo
 
 Ver [tabela de mapeamento e riscos](locomotive-pattern-mapping.md). Tokens novos serão CSS variables locais em um CSS Module, herdadas somente por Sobre, Serviços e Contato. Não serão colocados em `:root` nem no stylesheet protegido. Esta escolha evita modificar o hero ou os consumidores de cores do mundo.
@@ -165,3 +167,5 @@ A implementação mantém copy, contatos, CTAs, fotografias e ordem das seções
 ## 5. Evidências finais
 
 Ver [relatório de verificação](locomotive-verification.md), incluindo comandos, limites de medição, lista de commits e arquivos alterados.
+
+O critério de CLS global zero permanece pendente: a rodada mobile final e três controles com o código original reproduziram o mesmo deslocamento no texto do hero, em arquivo protegido. Nenhuma correção desse trecho foi aplicada. Uma proposta isolada está anexada ao relatório para decisão conforme a regra 5.

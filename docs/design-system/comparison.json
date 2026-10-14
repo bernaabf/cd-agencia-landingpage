@@ -1,0 +1,68 @@
+[
+  {
+    "width": 1440,
+    "benchmarkBefore": {
+      "fps": 59.05324316609963,
+      "renderMs": 0.5193548393585989,
+      "gpuMs": 3.323083,
+      "dpr": 1
+    },
+    "benchmarkAfter": {
+      "fps": 60.49786769828454,
+      "renderMs": 0.3098360654272017,
+      "gpuMs": 3.510624,
+      "dpr": 1
+    },
+    "heroUnchanged": true,
+    "canvasGeometryUnchanged": true,
+    "canvasAvailabilityBefore": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "canvasAvailabilityAfter": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "scrollPositionsUnchanged": true,
+    "progressMaxDifference": 0.0000020000000000575113,
+    "errorsBefore": [],
+    "errorsAfter": []
+  },
+  {
+    "width": 390,
+    "benchmarkBefore": {
+      "fps": 31.19820610305842,
+      "renderMs": 0.3218749996740371,
+      "gpuMs": 0.535624,
+      "dpr": 1
+    },
+    "benchmarkAfter": {
+      "fps": 31.21951219512195,
+      "renderMs": 0.27500000037252903,
+      "gpuMs": 0.533791,
+      "dpr": 1
+    },
+    "heroUnchanged": true,
+    "canvasGeometryUnchanged": true,
+    "canvasAvailabilityBefore": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "canvasAvailabilityAfter": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "scrollPositionsUnchanged": true,
+    "progressMaxDifference": 0.0000020000000000575113,
+    "errorsBefore": [],
+    "errorsAfter": []
+  }
+]

@@ -1,0 +1,247 @@
+{
+  "lighthouseVersion": "13.5.0",
+  "fetchTime": "2026-10-14T22:53:57.794Z",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "benchmarkIndex": 2988,
+    "credits": {
+      "axe-core": "4.14.0"
+    }
+  },
+  "configSettings": {
+    "output": [
+      "json"
+    ],
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 1000,
+    "pauseAfterLoadMs": 1000,
+    "networkQuietThresholdMs": 1000,
+    "cpuQuietThresholdMs": 1000,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "cli",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "performance",
+      "accessibility",
+      "seo"
+    ],
+    "skipAudits": null
+  },
+  "categories": {
+    "performance": {
+      "score": 0.92
+    },
+    "accessibility": {
+      "score": 1
+    },
+    "seo": {
+      "score": 1
+    }
+  },
+  "audits": {
+    "first-contentful-paint": {
+      "score": 1,
+      "numericValue": 820.347
+    },
+    "largest-contentful-paint": {
+      "score": 0.99,
+      "numericValue": 1570.347
+    },
+    "total-blocking-time": {
+      "score": 0.76,
+      "numericValue": 320
+    },
+    "cumulative-layout-shift": {
+      "score": 1,
+      "numericValue": 0.03882586513398925,
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "cumulativeLayoutShiftMainFrame": 0.03882586513398925,
+            "newEngineResultDiffered": false
+          }
+        ]
+      }
+    },
+    "layout-shifts": {
+      "score": 1,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "extra"
+            },
+            "label": "Element"
+          },
+          {
+            "key": "score",
+            "valueType": "numeric",
+            "subItemsHeading": {
+              "key": "cause",
+              "valueType": "text"
+            },
+            "granularity": 0.001,
+            "label": "Layout shift score"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "page-1-DIV",
+              "path": "1,HTML,1,BODY,2,DIV,1,MAIN,0,SECTION,0,DIV,2,DIV,0,DIV",
+              "selector": "section#inicio > div.hero-stage-viewport > div.hero-editorial > div.hero-act",
+              "boundingRect": {
+                "top": 198,
+                "bottom": 367,
+                "left": 25,
+                "right": 387,
+                "width": 363,
+                "height": 170
+              },
+              "snippet": "<div class=\"hero-act hero-opening\" data-stage-opening=\"true\" style=\"\">",
+              "nodeLabel": "TURISMÓLOGA | CURADORIA DE EXPERIÊNCIAS NA SUÍÇA\n\nA SUÍÇA ALÉM DO ROTEIRO."
+            },
+            "score": 0.03882586513398925,
+            "subItems": {
+              "type": "subitems",
+              "items": [
+                {
+                  "extra": {
+                    "type": "node",
+                    "lhId": "page-3-IMG",
+                    "path": "1,HTML,1,BODY,2,DIV,1,MAIN,4,SECTION,2,FOOTER,0,DIV,0,DIV,0,IMG",
+                    "selector": "footer.mx-auto > div.flex > div.flex > img.h-7",
+                    "boundingRect": {
+                      "top": 6709,
+                      "bottom": 6737,
+                      "left": 34,
+                      "right": 60,
+                      "width": 26,
+                      "height": 28
+                    },
+                    "snippet": "<img alt=\"\" loading=\"lazy\" width=\"26\" height=\"28\" decoding=\"async\" data-nimg=\"1\" class=\"h-7 w-auto\" style=\"color:transparent\" srcset=\"/_next/image?url=%2Fimages%2Flogo-mark.png&amp;w=32&amp;q=75 1x, /_next/image?url=…\" src=\"/_next/image?url=%2Fimages%2Flogo-mark.png&amp;w=64&amp;q=75\">",
+                    "nodeLabel": "footer.mx-auto > div.flex > div.flex > img.h-7"
+                  },
+                  "cause": "Media element lacking an explicit size"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "color-contrast": {
+      "score": 1,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": []
+      }
+    },
+    "label-content-name-mismatch": {
+      "score": 0,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "valueType": "node",
+            "subItemsHeading": {
+              "key": "relatedNode",
+              "valueType": "node"
+            },
+            "label": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "lhId": "1-0-BUTTON",
+              "path": "1,HTML,1,BODY,2,DIV,1,MAIN,0,SECTION,0,DIV,4,DIV,0,BUTTON",
+              "selector": "section#inicio > div.hero-stage-viewport > div.hero-stage-controls > button.hero-scroll-cue",
+              "boundingRect": {
+                "top": 759,
+                "bottom": 803,
+                "left": 29,
+                "right": 178,
+                "width": 150,
+                "height": 44
+              },
+              "snippet": "<button type=\"button\" class=\"hero-scroll-cue\" aria-label=\"Avançar pela experiência nos Alpes\">",
+              "nodeLabel": "Explore pela rolagem",
+              "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+            }
+          }
+        ],
+        "debugData": {
+          "type": "debugdata",
+          "impact": "serious",
+          "tags": [
+            "cat.semantics",
+            "wcag21a",
+            "wcag253",
+            "EN-301-549",
+            "EN-9.2.5.3",
+            "RGAAv4",
+            "RGAA-6.1.5"
+          ]
+        }
+      }
+    }
+  }
+}
