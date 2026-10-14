@@ -1,0 +1,14 @@
+/* Scoped to the sections after the immersive hero. No global or color tokens. */
+.scope {
+  --editorial-title: clamp(2.2rem, 5.5vw, 4.6rem);
+  --editorial-item-title: clamp(1.9rem, 3vw, 2.8rem);
+  --editorial-leading: 1.08;
+  --editorial-tracking: 0.025em;
+  --editorial-section: clamp(6rem, 8vw, 8rem);
+  --editorial-block: clamp(3.5rem, 6vw, 5rem);
+  --editorial-margin: clamp(1.25rem, 3vw, 2.5rem);
+  --editorial-gap: clamp(1.25rem, 2vw, 2rem);
+  --editorial-measure: 1280px;
+  --editorial-duration: 0.5s;
+  --editorial-ease: var(--ease-premium);
+}
