@@ -168,4 +168,4 @@ A implementação mantém copy, contatos, CTAs, fotografias e ordem das seções
 
 Ver [relatório de verificação](locomotive-verification.md), incluindo comandos, limites de medição, lista de commits e arquivos alterados.
 
-O critério de CLS global zero permanece pendente: a rodada mobile final e três controles com o código original reproduziram o mesmo deslocamento no texto do hero, em arquivo protegido. Nenhuma correção desse trecho foi aplicada. Uma proposta isolada está anexada ao relatório para decisão conforme a regra 5.
+O CLS mobile preexistente de 0.039 foi aceito pelo usuário em 14/10/2026, com a decisão de manter a zona protegida. A rodada final e três controles com o código original reproduziram o mesmo deslocamento no texto do hero. O critério de CLS global zero foi encerrado com essa limitação explicitamente aceita; nenhuma correção foi aplicada. A proposta anexada ao relatório permanece arquivada e não autorizada para implementação.

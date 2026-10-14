@@ -2,7 +2,7 @@
 
 Branch: `design/locomotive-editorial-inspiration`. Base: `aa764e1022c617b98fb2918ddc5087a4232f2e92`.
 
-**Aplicação dos padrões de baixo risco concluída. A verificação global de CLS zero permanece pendente de decisão:** o texto do hero apresenta CLS 0.039 também no código original. Nenhum arquivo protegido foi alterado para corrigir esse comportamento.
+**Trabalho concluído com limitação preexistente aceita pelo usuário em 14/10/2026:** o texto do hero apresenta CLS 0.039 também no código original. O usuário decidiu manter a zona protegida e aceitar esse CLS documentado. Nenhum arquivo protegido foi alterado para corrigir esse comportamento.
 
 ## Resultado por requisito
 
@@ -21,7 +21,7 @@ Branch: `design/locomotive-editorial-inspiration`. Base: `aa764e1022c617b98fb291
 | Lint / TypeScript | PASS — exit 0 | `npm run lint`, `npm run typecheck` |
 | Build de produção | PASS com Webpack — exit 0 | `npm run build -- --webpack` |
 | Lighthouse Performance/Acessibilidade/SEO | PASS nas comparações descritas abaixo | relatórios Lighthouse |
-| CLS global exatamente zero | PENDENTE — 0 no desktop, 0.038826 no mobile | mesmo valor reproduzido no código original |
+| CLS global exatamente zero | EXCEÇÃO ACEITA — 0 no desktop, 0.038826 no mobile | mesmo valor no código original; usuário optou por manter a zona protegida |
 
 ## Paleta e zona protegida
 
@@ -96,15 +96,21 @@ Rodadas mobile de controle: 92, 85, 82; finais: 88, 90, 90. As três rodadas de 
 
 Relatórios: `lighthouse-before-*`, `lighthouse-after-*`, `lighthouse-original-mobile-control.json` e `lighthouse-paired-mobile.json` em `docs/design-system/`.
 
-## Decisão necessária para CLS zero
+## Decisão registrada sobre CLS zero
+
+Em 14/10/2026, o usuário respondeu:
+
+> Manter a zona protegida e aceitar o CLS preexistente documentado
+
+A pendência foi encerrada com essa limitação aceita. A decisão não autoriza aplicar a proposta nem editar arquivos protegidos. A paleta, o 3D e seus contratos continuam integralmente preservados.
 
 O elemento identificado é `.hero-opening`, dentro de `.hero-editorial`. Há regras diferentes para o texto antes/depois de `[data-immersive]`; a mudança de posição/largura/medida do eyebrow durante a hidratação é uma hipótese concreta para o deslocamento. A origem preexistente está comprovada pelo controle; a correção ainda não foi testada nem aplicada.
 
 [Proposta reviewável, não aplicada](design-system/proposed-hero-text-cls.patch): acrescentar, somente para mobile com altura acima de 560 px e sem reduced motion, o estado inicial de texto/eyebrow/controles igual ao estado imersivo final. Não modifica cores, canvas, container do canvas, câmera, shader, loop, loaders, ticker ou listeners. A proposta mira a viewport em que o problema foi reproduzido; não promete corrigir toda combinação de aparelho/hidratação sem verificação posterior.
 
-**Risco médio/alto:** exige editar `src/app/globals.css`, incluído na zona protegida. A regra 5 do usuário exige parar e pedir decisão antes de uma mudança que possa afetar o 3D. Portanto essa proposta permanece apenas em `.patch`, e o critério global de CLS zero não é declarado aprovado.
+**Risco médio/alto:** exigiria editar `src/app/globals.css`, incluído na zona protegida. A regra 5 do usuário motivou a consulta antes de qualquer implementação. A proposta permanece apenas em `.patch`, arquivada e não aplicada. O CLS não é zero; sua limitação preexistente foi aceita explicitamente.
 
-Opções: manter a zona protegida integral e aceitar a limitação preexistente documentada; ou autorizar uma exceção restrita ao CSS inicial do texto do hero, seguida de nova verificação de paleta, canvas, FPS, reduced motion e Lighthouse. Todos os demais padrões de risco médio/alto continuam não aplicados.
+Foi escolhida a opção de manter a zona protegida integral e aceitar a limitação preexistente documentada. Uma futura correção exigirá nova autorização específica e nova verificação de paleta, canvas, FPS, reduced motion e Lighthouse. Todos os demais padrões de risco médio/alto continuam não aplicados.
 
 ## Commits e arquivos alterados
 
@@ -117,7 +123,8 @@ Opções: manter a zona protegida integral e aceitar a limitação preexistente 
 | `4d80baf` | Serviços originais em linhas editoriais responsivas |
 | `d0c4066` | Contrato UI de movimento e foco/toque do rodapé |
 | `3705bfb` | Remoção de referência de classe não definida, sem mudar o DOM renderizado |
-| Commit que contém este relatório | Verificador, evidências finais e proposta protegida não aplicada |
+| `3650afb` | Verificador, evidências finais e proposta protegida não aplicada |
+| Commit de registro da decisão | Aceitação do CLS preexistente e preservação integral da zona protegida |
 
 Arquivos da aplicação: `src/components/sections/About.tsx`, `Services.tsx`, `Contact.tsx` e novo `Editorial.module.css`.
 

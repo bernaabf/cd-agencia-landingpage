@@ -17,7 +17,7 @@ Risco considera interferência em cores, hero/canvas e coordenação de scroll. 
 | Header que reagisse à direção do scroll | Navbar + Lenis atuais | `Navbar.tsx`, eventualmente `MotionRoot.tsx` | baixo / médio | Não aplicado; requer decisão antes de editar |
 | Menu full-screen com nova coreografia | Painel móvel e contrato de foco/stop/start atual | `Navbar.tsx` | baixo / médio | Não aplicado; requer decisão antes de editar |
 | Hero com nova tipografia/geometria | Palco imersivo, máscaras e controles | `Hero.tsx`, `HeroStage.tsx`, `globals.css` | baixo / alto | Não aplicado; zona protegida |
-| Estabilidade do estado inicial do texto (diagnóstico de CLS) | Igualar o CSS do texto antes/depois da hidratação | `globals.css` | baixo / médio-alto | Proposta em `.patch`, não aplicada; decisão necessária |
+| Estabilidade do estado inicial do texto (diagnóstico de CLS) | Igualar o CSS do texto antes/depois da hidratação | `globals.css` | baixo / médio-alto | Usuário aceitou o CLS preexistente e manteve a proteção; proposta arquivada, não aplicada |
 | Tokens globais ou hovers compartilhados | `@theme` e Button usados pelo hero | `globals.css`, `Button.tsx`, `lib/motion.ts` | médio / alto | Não aplicado; usar tokens locais |
 | Pins adicionais / outro smooth scroll | Lenis 0.09 + ticker GSAP + ScrollTrigger | `MotionRoot.tsx`, `scroll.ts`, mundo | baixo / alto | Não aplicado; não instalar Locomotive Scroll |
 | Cursor / magnetic buttons / mídia que segue ponteiro | Não há equivalente necessário | Novos listeners e loop potencial | baixo / médio | Não aplicado por custo/complexidade |
@@ -44,5 +44,7 @@ Definidos na classe local `scope`, sem `:root` e sem declarações de cor:
 São valores de composição próprios, não um clone da referência. Cores continuam nas classes Tailwind originais. Fontes continuam em `font-display`/`display` e `font-sans` originais. Duração/easing apenas nomeiam o contrato existente; não alteram `motion.world` nem a orquestração global.
 
 ## Aprovação
+
+Em 14/10/2026, o usuário decidiu: “Manter a zona protegida e aceitar o CLS preexistente documentado”. Essa decisão encerra a pendência de CLS sem autorizar alteração do hero ou de `globals.css`.
 
 Nenhuma proposta média/alta foi implementada. Uma futura aprovação deve especificar a linha da tabela, arquivos e risco autorizado. A regra inviolável sobre paleta/3D continua prevalecendo sobre a inspiração estética.
