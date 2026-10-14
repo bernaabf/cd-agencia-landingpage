@@ -8,13 +8,13 @@ export default function Services() {
       id="servicos"
       data-world-act="route"
       aria-labelledby="servicos-title"
-      className={`relative bg-brown-900 py-24 text-cream-50 sm:py-32 ${styles.scope}`}
+      className={`relative bg-brown-900 text-cream-50 ${styles.scope} ${styles.section}`}
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+      <div className={styles.container}>
         <h2
           id="servicos-title"
           data-split
-          className={`display mx-auto max-w-[18ch] text-center ${styles.heading}`}
+          className={`display ${styles.heading} ${styles.serviceHeading}`}
         >
           {services.title}
         </h2>

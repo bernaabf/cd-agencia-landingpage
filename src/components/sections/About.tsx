@@ -12,10 +12,10 @@ export default function About() {
       tabIndex={-1}
       data-world-act="valley"
       aria-labelledby="sobre-title"
-      className={`relative bg-cream-100 py-24 text-brown-900 sm:py-32 ${styles.scope}`}
+      className={`relative bg-cream-100 text-brown-900 ${styles.scope} ${styles.section}`}
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+      <div className={styles.container}>
+        <div className={styles.introGrid}>
           <div className="lg:col-span-5">
             <p data-reveal className="eyebrow text-brown-700">
               {about.eyebrow}
@@ -33,14 +33,14 @@ export default function About() {
           </div>
           <p
             data-reveal
-            className="text-[1.08rem] leading-[1.85] text-brown-900/85 sm:text-[1.15rem] lg:col-span-6 lg:col-start-7 lg:pt-9"
+            className={`text-[1.08rem] leading-[1.85] text-brown-900/85 sm:text-[1.15rem] lg:col-span-6 lg:col-start-7 lg:pt-9 ${styles.bodyCopy}`}
           >
             {about.text}
           </p>
         </div>
 
         {/* Composição editorial: três fotografias em alturas distintas */}
-        <div className="mt-14 grid grid-cols-6 items-end gap-3 sm:mt-20 sm:gap-6">
+        <div className={`grid grid-cols-6 items-end gap-3 sm:gap-6 ${styles.block}`}>
           <MediaFrame
             src="/images/globo.jpg"
             alt="Mãos apontando um destino em um globo terrestre"
@@ -64,7 +64,7 @@ export default function About() {
           />
         </div>
 
-        <ul className="mt-14 grid gap-3 sm:mt-16 sm:grid-cols-3 sm:gap-5">
+        <ul className={`grid gap-3 sm:grid-cols-3 sm:gap-5 ${styles.block}`}>
           {about.pillars.map((pillar, i) => {
             const Icon = pillarIcons[i];
             return (

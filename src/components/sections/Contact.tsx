@@ -31,14 +31,14 @@ export default function Contact() {
         id="contato"
         data-world-act="silence"
         aria-labelledby="contato-title"
-        className={`relative isolate overflow-hidden bg-brown-900 pb-10 pt-20 text-cream-50 sm:pt-28 ${styles.scope}`}
+        className={`relative isolate overflow-hidden bg-brown-900 pb-10 text-cream-50 ${styles.scope} ${styles.contactSection}`}
       >
         <div
           aria-hidden
           className="absolute inset-0 -z-10 bg-[radial-gradient(55%_60%_at_50%_0%,rgba(200,180,160,0.12),transparent_70%),linear-gradient(to_bottom,transparent,rgba(42,24,21,0.9))]"
         />
 
-        <div className="mx-auto max-w-3xl px-5 text-center sm:px-8">
+        <div className={`text-center ${styles.container} ${styles.closing}`}>
           <h2
             id="contato-title"
             data-split
@@ -73,7 +73,7 @@ export default function Contact() {
           </ul>
         </div>
 
-        <footer className="mx-auto mt-24 max-w-7xl px-5 sm:px-8">
+        <footer className={`mt-24 ${styles.container}`}>
           <div className="flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 sm:flex-row">
             <div className="flex items-center gap-3">
               <Image src="/images/logo-mark.png" alt="" width={26} height={28} className="h-7 w-auto" />
