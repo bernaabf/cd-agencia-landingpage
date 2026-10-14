@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import { services, whatsappLink } from "@/lib/site";
+import styles from "./Editorial.module.css";
 
 export default function Services() {
   return (
@@ -7,13 +8,13 @@ export default function Services() {
       id="servicos"
       data-world-act="route"
       aria-labelledby="servicos-title"
-      className="relative bg-brown-900 py-24 text-cream-50 sm:py-32"
+      className={`relative bg-brown-900 py-24 text-cream-50 sm:py-32 ${styles.scope}`}
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <h2
           id="servicos-title"
           data-split
-          className="display mx-auto max-w-[18ch] text-center text-[clamp(2rem,4.8vw,3.9rem)]"
+          className={`display mx-auto max-w-[18ch] text-center ${styles.heading}`}
         >
           {services.title}
         </h2>
@@ -32,7 +33,7 @@ export default function Services() {
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="display mt-3 text-[1.9rem] text-brown-900">{item.title}</h3>
+              <h3 className={`display mt-3 text-brown-900 ${styles.itemTitle}`}>{item.title}</h3>
               {item.clarification && (
                 <p className="mt-1 text-sm text-brown-700">{item.clarification}</p>
               )}

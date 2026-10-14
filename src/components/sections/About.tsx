@@ -1,6 +1,7 @@
 import { Clock, MapPin, Sparkles } from "lucide-react";
 import MediaFrame from "@/components/MediaFrame";
 import { about, site } from "@/lib/site";
+import styles from "./Editorial.module.css";
 
 const pillarIcons = [Sparkles, MapPin, Clock];
 
@@ -11,7 +12,7 @@ export default function About() {
       tabIndex={-1}
       data-world-act="valley"
       aria-labelledby="sobre-title"
-      className="relative bg-cream-100 py-24 text-brown-900 sm:py-32"
+      className={`relative bg-cream-100 py-24 text-brown-900 sm:py-32 ${styles.scope}`}
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
@@ -22,7 +23,7 @@ export default function About() {
             <h2
               id="sobre-title"
               data-split
-              className="display mt-5 text-[clamp(2.2rem,4.6vw,3.8rem)] text-brown-900"
+              className={`display mt-5 text-brown-900 ${styles.heading}`}
             >
               {about.title}
             </h2>

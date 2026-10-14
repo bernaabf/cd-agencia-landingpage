@@ -12,3 +12,17 @@
   --editorial-duration: 0.5s;
   --editorial-ease: var(--ease-premium);
 }
+
+.scope .heading {
+  font-size: var(--editorial-title);
+  line-height: var(--editorial-leading);
+  letter-spacing: var(--editorial-tracking);
+  text-wrap: balance;
+}
+
+.scope .itemTitle {
+  font-size: var(--editorial-item-title);
+  line-height: var(--editorial-leading);
+  letter-spacing: var(--editorial-tracking);
+  text-wrap: balance;
+}

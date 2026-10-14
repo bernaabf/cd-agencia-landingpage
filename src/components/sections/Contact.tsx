@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import { InstagramIcon, WhatsAppIcon } from "@/components/Icons";
 import MediaFrame from "@/components/MediaFrame";
 import { closing, generalMessage, navLinks, site, whatsappLink } from "@/lib/site";
+import styles from "./Editorial.module.css";
 
 const social = [
   { label: "Conversar pelo WhatsApp", href: whatsappLink(generalMessage), Icon: WhatsAppIcon },
@@ -30,7 +31,7 @@ export default function Contact() {
         id="contato"
         data-world-act="silence"
         aria-labelledby="contato-title"
-        className="relative isolate overflow-hidden bg-brown-900 pb-10 pt-20 text-cream-50 sm:pt-28"
+        className={`relative isolate overflow-hidden bg-brown-900 pb-10 pt-20 text-cream-50 sm:pt-28 ${styles.scope}`}
       >
         <div
           aria-hidden
@@ -41,7 +42,7 @@ export default function Contact() {
           <h2
             id="contato-title"
             data-split
-            className="display text-[clamp(2.1rem,5.6vw,4.4rem)]"
+            className={`display ${styles.heading}`}
           >
             {closing.title}
           </h2>
