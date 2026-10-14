@@ -1,0 +1,222 @@
+{
+  "baseCommit": "aa764e1022c617b98fb2918ddc5087a4232f2e92",
+  "tokens": {
+    "--color-brown-950": {
+      "hex": "#2a1815",
+      "hsl": "8.571 33.333% 12.353%"
+    },
+    "--color-brown-900": {
+      "hex": "#3d2521",
+      "hsl": "8.571 29.787% 18.431%"
+    },
+    "--color-brown-800": {
+      "hex": "#4b2d27",
+      "hsl": "10.000 31.579% 22.353%"
+    },
+    "--color-brown-700": {
+      "hex": "#5b3425",
+      "hsl": "16.667 42.188% 25.098%"
+    },
+    "--color-cream-50": {
+      "hex": "#fbf8f4",
+      "hsl": "34.286 46.667% 97.059%"
+    },
+    "--color-cream-100": {
+      "hex": "#f4eee7",
+      "hsl": "32.308 37.143% 93.137%"
+    },
+    "--color-cream-200": {
+      "hex": "#e6dbd0",
+      "hsl": "30.000 30.556% 85.882%"
+    },
+    "--color-sand-400": {
+      "hex": "#c8b4a0",
+      "hsl": "30.000 26.667% 70.588%"
+    },
+    "--color-sand-500": {
+      "hex": "#a8917b",
+      "hsl": "29.333 20.548% 57.059%"
+    }
+  },
+  "colorLiterals": {
+    "src/app/globals.css": [
+      "#2a1815",
+      "#2a1815",
+      "#2a181573",
+      "#2a1815a6",
+      "#2a1815a6",
+      "#2a1815bd",
+      "#2a1815d9",
+      "#3d2521",
+      "#4b2d27",
+      "#5b3425",
+      "#a8917b",
+      "#c8b4a0",
+      "#c8b4a04d",
+      "#c8b4a04d",
+      "#c8b4a059",
+      "#c8b4a080",
+      "#e6dbd0",
+      "#f4eee7",
+      "#fbf8f4",
+      "rgba(0, 0, 0, 0.1)",
+      "rgba(20, 10, 8, 0.18)",
+      "rgba(255, 255, 255, 0.14)",
+      "rgba(255, 255, 255, 0.14)",
+      "rgba(255, 255, 255, 0.28)",
+      "rgba(42, 24, 21, 0.94)",
+      "rgba(61, 37, 33, 0.72)",
+      "rgba(61, 37, 33, 0.82)"
+    ],
+    "src/app/layout.tsx": [
+      "#3d2521",
+      "bg-cream-100",
+      "text-brown-900"
+    ],
+    "src/app/opengraph-image.tsx": [
+      "#3d2521",
+      "#c8b4a0",
+      "#e6dbd0",
+      "#fbf8f4"
+    ],
+    "src/app/page.tsx": [],
+    "src/app/robots.ts": [],
+    "src/app/sitemap.ts": [],
+    "src/components/Button.tsx": [
+      "bg-brown-700",
+      "bg-brown-700",
+      "bg-brown-950",
+      "bg-cream-100",
+      "rgba(20,10,8,0.28)",
+      "text-brown-900",
+      "text-cream-50",
+      "text-cream-50",
+      "text-cream-50"
+    ],
+    "src/components/Icons.tsx": [],
+    "src/components/MediaFrame.tsx": [
+      "bg-brown-800"
+    ],
+    "src/components/MotionRoot.tsx": [],
+    "src/components/Navbar.tsx": [
+      "bg-brown-900/90",
+      "bg-brown-950/55",
+      "bg-cream-100",
+      "bg-cream-50",
+      "bg-cream-50",
+      "bg-cream-50",
+      "bg-white/10",
+      "border-white/10",
+      "text-cream-50",
+      "text-sand-400"
+    ],
+    "src/components/sections/About.tsx": [
+      "bg-brown-900",
+      "bg-cream-100",
+      "bg-white/45",
+      "border-brown-900/10",
+      "border-brown-900/25",
+      "text-brown-700",
+      "text-brown-700",
+      "text-brown-900",
+      "text-brown-900",
+      "text-brown-900/85",
+      "text-cream-100"
+    ],
+    "src/components/sections/Contact.tsx": [
+      "bg-brown-900",
+      "bg-brown-900",
+      "bg-white/25",
+      "border-white/10",
+      "rgba(200,180,160,0.12)",
+      "rgba(42,24,21,0.9)",
+      "text-cream-100/50",
+      "text-cream-100/75",
+      "text-cream-100/85",
+      "text-cream-50",
+      "text-cream-50",
+      "text-cream-50",
+      "text-sand-400"
+    ],
+    "src/components/sections/Hero.tsx": [],
+    "src/components/sections/Services.tsx": [
+      "bg-brown-900",
+      "bg-cream-200",
+      "border-white/40",
+      "rgba(20,10,8,0.18)",
+      "rgba(20,10,8,0.34)",
+      "text-brown-700",
+      "text-brown-700",
+      "text-brown-900",
+      "text-brown-900",
+      "text-brown-900/80",
+      "text-cream-50"
+    ],
+    "src/components/world/AlpineWorld.tsx": [],
+    "src/components/world/AlpineWorldLoader.tsx": [],
+    "src/components/world/Atmosphere.tsx": [],
+    "src/components/world/CameraRig.tsx": [],
+    "src/components/world/DepthLayers.tsx": [],
+    "src/components/world/HeroStage.tsx": [],
+    "src/components/world/Route.tsx": [],
+    "src/components/world/Terrain.tsx": [],
+    "src/lib/motion.ts": [],
+    "src/lib/scroll.ts": [],
+    "src/lib/site.ts": [],
+    "src/lib/world/journey.ts": [],
+    "src/lib/world/performance.ts": [],
+    "src/lib/world/progress.ts": [],
+    "src/lib/world/quality.ts": [],
+    "src/lib/world/shaders/terrain.glsl.ts": [],
+    "src/lib/world/terrain.ts": [],
+    "src/lib/world/terrain.worker.ts": [],
+    "src/lib/world/tokens.ts": []
+  },
+  "protectedFiles": {
+    "src/app/globals.css": "429305dd860070e72d3887bebca441b5c3355b4c8ab81a28addae94ebae83ae5",
+    "src/app/layout.tsx": "7613f3dd3fadaee8493dbd1b092e6e45e3b9cfda75cc1641541c28b385a376c8",
+    "src/app/page.tsx": "b9485af217126c3594e6732eee5090bf9d83902016cee64e622c6a7cd3c1803b",
+    "src/components/Button.tsx": "fb7ca820aeb37cfa54e9c76e1d095bf2d0f84fdf7f52b62b98d35cb67b848106",
+    "src/components/MediaFrame.tsx": "a0f05d0474fa100c1ec1facfff3e9216ece7b558638f0a037e5436ebd72c2bfc",
+    "src/components/MotionRoot.tsx": "8aafe0ecc92e403ea245d2ffc98281589efedc6baaca2846b9b7f684dda3488e",
+    "src/components/Navbar.tsx": "3b7212c2eae0105b0efc9f8c1593a1cd4f60a545646acc53a5fd2c64099998a4",
+    "src/components/sections/Hero.tsx": "3a0624d6fae1a9ab2e8abc547328c4d6314d5616d31fa302e5acaf87e755d4bf",
+    "src/components/world/AlpineWorld.tsx": "0c8321dd35ebcba4f03c0cbc3a9c20df1d351cd3ee1e1b1eae49e73a55dbb5c4",
+    "src/components/world/AlpineWorldLoader.tsx": "3eec366a3715771a034aa3db20a479ad7a90ad91d8342419fcc9b6127982bd70",
+    "src/components/world/Atmosphere.tsx": "1f3cd9f4fcb96304deb2a2d5599c2ab9fac584d1cf8e4f3cf1ba5bb472661957",
+    "src/components/world/CameraRig.tsx": "6163ffb414b537f4419dc8c450d7bc96f3e32c639e38c02a78fcb80c5d3003f5",
+    "src/components/world/DepthLayers.tsx": "26ddf95bed7c4e1e80b5eda23246309f45d3acff9c04323fb34ff5c3fa268834",
+    "src/components/world/HeroStage.tsx": "8989e944f0baa544e501075a8722fdea680ea3f37d575cb286f4a038180d8671",
+    "src/components/world/Route.tsx": "b7ba835250351243aa9e16353bc1f4536fc9eb4218f288d91c1eaa24383d9a6c",
+    "src/components/world/Terrain.tsx": "58953f98cc4b5cea159bb5b80a5de2a92f8cf6e75dc43b294fc999301d11e120",
+    "src/lib/motion.ts": "90b50ba719d173107431fa79e9197d705f639522e93b6f59572c3ac4a03dcb98",
+    "src/lib/scroll.ts": "83a4e0f4f76feb96d9252399fe45f748f702d461f9f4104f77f8750328e81f02",
+    "src/lib/site.ts": "f1f6a785d5930fa242eb399c1df0ef908f266c18c18a9652488886405f834e1f",
+    "src/lib/world/journey.ts": "63c3d2ecafbb1f99ebe9e20d460d47e1cf7b86bd7f5185e1596751b8333ec4de",
+    "src/lib/world/performance.ts": "47051d4dad0f6e490e369cf5418bd4d58e03470a1b0f6abf6dd17c8bb3fd8fd9",
+    "src/lib/world/progress.ts": "3665d0f5eb84788a4752eaded42996c04f80f8c6cf67f73f3cb3b670124800c9",
+    "src/lib/world/quality.ts": "c28c5afea7a5c7d33dc5faaf9f2ef53eac7f1c084676e17b77dc9be79117f91b",
+    "src/lib/world/shaders/terrain.glsl.ts": "4537d803a3eefcf92bc07fba87a1fc69dd2390a6a5e7e33ae0fba1df6af90b89",
+    "src/lib/world/terrain.ts": "6aae01c64d3a4d9f9b79205fa300cdb65e0fef3ee5fd80438c3955bc963eb7eb",
+    "src/lib/world/terrain.worker.ts": "62c03cb9ab97798d71208face271a0c2aed097ddc8328f706b537971ddbb3e05",
+    "src/lib/world/tokens.ts": "a94d037534a96b2ffbb1e79820b7e4311afa89f795978d61133e2aac61a57d70"
+  },
+  "hexValues": [
+    "#2a1815",
+    "#2a181573",
+    "#2a1815a6",
+    "#2a1815bd",
+    "#2a1815d9",
+    "#3d2521",
+    "#4b2d27",
+    "#5b3425",
+    "#a8917b",
+    "#c8b4a0",
+    "#c8b4a04d",
+    "#c8b4a059",
+    "#c8b4a080",
+    "#e6dbd0",
+    "#f4eee7",
+    "#fbf8f4"
+  ]
+}
