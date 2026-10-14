@@ -33,7 +33,7 @@ export default function Services() {
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <div className={styles.serviceTitle}>
+              <div>
                 <h3 className={`display text-brown-900 ${styles.itemTitle}`}>{item.title}</h3>
                 {item.clarification && (
                   <p className="mt-1 text-sm text-brown-700">{item.clarification}</p>
