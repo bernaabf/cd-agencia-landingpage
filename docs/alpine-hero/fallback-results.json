@@ -1,0 +1,29 @@
+[
+  {
+    "mode": "disable-webgl",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "mode": "context-loss",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "mode": "render-error",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "before": {
+    "token": 0.45194031400638146,
+    "listeners": [
+      "()=>{if(c(!document.hidden),!r.matches){document.documentElement.classList.remove(\"world-ready\"),i(null);return}u()}",
+      "function(){var t=ig.innerWidth,e=ig.innerHeight;im.hidden?(iP=t,iA=e):(iP!==t||iA!==e)&&sG()}"
+    ]
+  },
+  "after": {
+    "token": 0.45194031400638146,
+    "listeners": [
+      "function(){var t=ig.innerWidth,e=ig.innerHeight;im.hidden?(iP=t,iA=e):(iP!==t||iA!==e)&&sG()}"
+    ]
+  }
+}

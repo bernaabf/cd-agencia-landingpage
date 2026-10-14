@@ -1,0 +1,468 @@
+@import "tailwindcss";
+
+/* ---------- Design tokens ---------- */
+@theme {
+  --color-brown-950: #2a1815;
+  --color-brown-900: #3d2521; /* fundo principal da marca */
+  --color-brown-800: #4b2d27;
+  --color-brown-700: #5b3425; /* botões da marca */
+  --color-cream-50: #fbf8f4;
+  --color-cream-100: #f4eee7;
+  --color-cream-200: #e6dbd0; /* cards da marca */
+  --color-sand-400: #c8b4a0;
+  --color-sand-500: #a8917b;
+
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --radius-card: 24px;
+}
+
+/* ---------- Base ---------- */
+html {
+  background: var(--color-brown-900);
+  color-scheme: dark;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-brown-900);
+  color: var(--color-cream-50);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+::selection {
+  background: var(--color-sand-400);
+  color: var(--color-brown-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sand-400);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* ---------- Lenis ---------- */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ---------- Glassmorphism (uso estratégico) ---------- */
+.glass-dark {
+  background: rgba(61, 37, 33, 0.72);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 8px 32px rgba(20, 10, 8, 0.18);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.14);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass-dark {
+    background: rgba(42, 24, 21, 0.94);
+  }
+  .glass-light {
+    background: rgba(61, 37, 33, 0.82);
+  }
+}
+
+/* ---------- Palco alpino: a cena ocupa a viewport inteira ---------- */
+.site-content {
+  position: relative;
+}
+.hero-stage {
+  position: relative;
+  isolation: isolate;
+  background: var(--color-brown-950);
+  color: var(--color-cream-100);
+}
+.hero-stage-viewport {
+  position: relative;
+  overflow: clip;
+  min-height: 100svh;
+}
+.alpine-world, .hero-stage-scrim, .hero-stage-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.alpine-world {
+  z-index: 1;
+  opacity: 0;
+}
+.alpine-world canvas {
+  pointer-events: none !important;
+}
+.hero-stage-scrim {
+  z-index: 2;
+  background: linear-gradient(180deg, #2a1815a6, transparent 32%, transparent 70%, #2a1815d9), radial-gradient(ellipse at 50% 34%, #2a181573, transparent 68%);
+}
+.hero-editorial {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: auto;
+  padding: 9rem 1.5rem 4rem;
+}
+.hero-stage .hero-title {
+  font-size: clamp(3.2rem, 7.6vw, 7rem);
+  line-height: 1.02;
+  letter-spacing: 0.025em;
+  max-width: 16ch;
+  text-wrap: balance;
+}
+.hero-stage .hero-eyebrow {
+  max-width: 48ch;
+  color: var(--color-cream-100);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+.hero-title-mask {
+  overflow: clip;
+  padding-block: .12em;
+}
+.hero-glass {
+  background: #2a1815bd;
+  border: 1px solid #c8b4a04d;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-radius: 2px;
+  padding: clamp(1.4rem, 3vw, 2.6rem);
+}
+.hero-story {
+  max-width: 46ch;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.85;
+}
+.hero-invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+.hero-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding: 1.25rem 1.5rem;
+}
+.hero-credentials dd {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.hero-credentials dd span:first-child {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  line-height: 1;
+}
+.hero-credentials dd span:last-child {
+  font-size: .68rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.hero-credentials > div + div {
+  border-left: 1px solid #c8b4a04d;
+  padding-left: 2rem;
+}
+.hero-guide {
+  width: min(100%, 380px);
+}
+.hero-portrait {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: clip;
+  border: 1px solid #c8b4a080;
+}
+.hero-stage-shade {
+  z-index: 4;
+  background: var(--color-brown-950);
+  opacity: 0;
+}
+.hero-stage-controls {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .js .hero-stage .hero-act:not(.hero-opening) {
+    opacity: 0;
+  }
+  .js .hero-stage {
+    height: 350svh;
+    min-height: 350svh;
+  }
+  .js .hero-stage .hero-stage-viewport {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    min-height: 0;
+  }
+  .js .hero-stage .hero-editorial {
+    height: 100%;
+    padding: 0;
+  }
+  .js .hero-stage .hero-act {
+    position: absolute;
+    margin: 0;
+    will-change: transform, opacity;
+  }
+  .js .hero-stage .hero-opening {
+    inset: 21% 5% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .js .hero-stage .hero-title {
+    max-width: 16ch;
+    text-shadow: 0 2px 30px #2a1815a6;
+  }
+  .js .hero-stage .hero-eyebrow {
+    max-width: none;
+  }
+  .js .hero-stage .hero-story {
+    left: 7%;
+    bottom: 20%;
+    width: min(46ch, 86%);
+  }
+  .js .hero-stage .hero-invitation {
+    left: 7%;
+    bottom: 20%;
+  }
+  .js .hero-stage .hero-guide {
+    right: 9%;
+    top: 17%;
+    width: min(32vw, 360px, 54svh);
+  }
+  .js .hero-stage .hero-stage-controls {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    inset: auto 5% 2rem;
+    font-size: .7rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+  }
+  .hero-stage-controls:focus-within {
+    opacity: 1 !important;
+  }
+  .hero-stage-controls a {
+    padding: .6rem 0;
+    margin-left: auto;
+    text-shadow: 0 1px 10px #2a1815;
+  }
+  .hero-scroll-cue {
+    display: inline-flex;
+    align-items: center;
+    gap: .85rem;
+    min-height: 44px;
+    cursor: pointer;
+  }
+  .hero-scroll-cue svg {
+    flex-shrink: 0;
+  }
+  .hero-progress {
+    height: 1px;
+    width: clamp(60px, 15vw, 240px);
+    overflow: hidden;
+    background: #c8b4a059;
+  }
+  .hero-progress span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--color-cream-100);
+    transform: scaleX(var(--journey-progress, 0));
+    transform-origin: left;
+  }
+}
+@media (min-width: 768px) {
+  .hero-stage .hero-editorial {
+    grid-template-columns: 1fr .7fr;
+    align-items: center;
+    padding-inline: 3rem;
+  }
+  .hero-stage .hero-guide {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    justify-self: end;
+  }
+}
+@media (max-width: 767px) {
+  .js .hero-stage[data-immersive] .hero-opening {
+    top: 24%;
+    inset-inline: 6%;
+  }
+  .hero-stage .hero-title {
+    font-size: clamp(3rem, 12vw, 5.3rem);
+  }
+  .hero-stage .hero-eyebrow {
+    font-size: .68rem;
+    letter-spacing: .16em;
+  }
+  .js .hero-stage[data-immersive] .hero-eyebrow {
+    max-width: 34ch;
+  }
+  .js .hero-stage[data-immersive] .hero-story, .js .hero-stage[data-immersive] .hero-invitation {
+    bottom: 23%;
+  }
+  .js .hero-stage[data-immersive] .hero-invitation {
+    right: 7%;
+  }
+  .hero-credentials {
+    gap: 1rem;
+    padding: 1.25rem;
+  }
+  .hero-credentials > div + div {
+    padding-left: 1rem;
+  }
+  .hero-credentials dd span:first-child {
+    font-size: 1.6rem;
+  }
+  .js .hero-stage[data-immersive] .hero-guide {
+    width: min(72vw, 46svh);
+    right: 14%;
+    top: 19%;
+  }
+  .js .hero-stage[data-immersive] .hero-stage-controls {
+    gap: 1rem;
+    inset-inline: 7%;
+    bottom: 1.25rem;
+    font-size: .66rem;
+    letter-spacing: .09em;
+  }
+  .hero-progress {
+    display: none;
+  }
+}
+@media (max-height: 560px) and (prefers-reduced-motion: no-preference) {
+  .js .hero-stage[data-immersive] .hero-opening {
+    top: 25%;
+  }
+  .js .hero-stage[data-immersive] .hero-title {
+    font-size: clamp(2.4rem, 10svh, 4rem);
+    max-width: 20ch;
+  }
+  .js .hero-stage[data-immersive] .hero-eyebrow {
+    margin-bottom: .5rem;
+  }
+  .js .hero-stage[data-immersive] .hero-story, .js .hero-stage[data-immersive] .hero-invitation {
+    bottom: 17%;
+  }
+  .hero-story {
+    font-size: .9rem;
+    line-height: 1.6;
+    max-width: 64ch;
+  }
+  .hero-glass {
+    padding: 1rem;
+  }
+  .hero-invitation {
+    gap: .8rem;
+  }
+  .js .hero-stage[data-immersive] .hero-guide {
+    top: 20%;
+    width: min(28vw, 52svh);
+  }
+  .js .hero-stage[data-immersive] .hero-stage-controls {
+    bottom: .3rem;
+  }
+}
+
+
+/* ---------- Tipografia editorial ---------- */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.14;
+}
+
+/* Máscara usada pelo SplitText: folga para acentos em maiúsculas */
+.split-mask {
+  padding-block: 0.12em;
+  margin-block: -0.12em;
+}
+
+/* ---------- Estados iniciais das animações ---------- */
+/* Só se aplicam com JS ativo e sem prefers-reduced-motion; o script de
+   segurança no layout remove .js caso as animações não iniciem. */
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-split] {
+    visibility: hidden;
+  }
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  .js [data-mask] {
+    clip-path: inset(100% 0% 0% 0% round 24px);
+  }
+  .js [data-eyebrow] {
+    opacity: 0;
+  }
+  .js [data-hero-fade],
+  .js [data-hero-cta] {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  .js [data-nav] {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* Algarismos alinhados (lining) na fonte editorial */
+.font-display,
+.display {
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+}

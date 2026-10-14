@@ -1,0 +1,263 @@
+{
+  "samples": [
+    {
+      "time": 1300.5999999046326,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 1808.4000000953674,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 2312.4000000953674,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 2816,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 3327,
+      "canvas": true,
+      "world": false
+    },
+    {
+      "time": 4779.700000047684,
+      "canvas": true,
+      "tier": "high",
+      "world": true
+    },
+    {
+      "time": 5285.700000047684,
+      "canvas": true,
+      "tier": "high",
+      "world": true
+    },
+    {
+      "time": 5789.900000095367,
+      "canvas": true,
+      "tier": "high",
+      "world": true
+    },
+    {
+      "time": 6293.900000095367,
+      "canvas": true,
+      "tier": "high",
+      "world": true
+    },
+    {
+      "time": 6796.5,
+      "canvas": true,
+      "tier": "high",
+      "metrics": "{\"fps\":21.099069721870066,\"renderMs\":0.3681818030097268,\"gpuMs\":5.247749,\"dpr\":1.5,\"tier\":\"high\"}",
+      "world": true
+    },
+    {
+      "time": 7305.299999952316,
+      "canvas": true,
+      "tier": "high",
+      "metrics": "{\"fps\":19.984012790720335,\"renderMs\":0.2800000309944153,\"gpuMs\":4.96175,\"dpr\":1.2000000000000002,\"tier\":\"high\"}",
+      "world": true
+    },
+    {
+      "time": 7809.400000095367,
+      "canvas": true,
+      "tier": "high",
+      "metrics": "{\"fps\":19.984012790720335,\"renderMs\":0.2800000309944153,\"gpuMs\":4.96175,\"dpr\":1.2000000000000002,\"tier\":\"high\"}",
+      "world": true
+    },
+    {
+      "time": 8312.599999904633,
+      "canvas": true,
+      "tier": "high",
+      "metrics": "{\"fps\":19.99200319681469,\"renderMs\":0.30499998331069944,\"gpuMs\":3.670624,\"dpr\":1,\"tier\":\"high\"}",
+      "world": true
+    },
+    {
+      "time": 8816.5,
+      "canvas": true,
+      "tier": "high",
+      "metrics": "{\"fps\":19.99200319681469,\"renderMs\":0.30499998331069944,\"gpuMs\":3.670624,\"dpr\":1,\"tier\":\"high\"}",
+      "world": true
+    },
+    {
+      "time": 9347,
+      "canvas": true,
+      "tier": "high",
+      "metrics": "{\"fps\":20,\"renderMs\":0.27500003576278687,\"gpuMs\":2.959666,\"dpr\":1,\"tier\":\"high\"}",
+      "world": false
+    },
+    {
+      "time": 9853.200000047684,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":20,\"renderMs\":0.27500003576278687,\"gpuMs\":2.959666,\"dpr\":1,\"tier\":\"high\"}",
+      "world": true
+    },
+    {
+      "time": 10358.200000047684,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":20,\"renderMs\":0.27500003576278687,\"gpuMs\":2.959666,\"dpr\":1,\"tier\":\"high\"}",
+      "world": true
+    },
+    {
+      "time": 10862.299999952316,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":21.5285252940081,\"renderMs\":0.2318181883205067,\"gpuMs\":4.318541,\"dpr\":1.35,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 11372.599999904633,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":21.5285252940081,\"renderMs\":0.2318181883205067,\"gpuMs\":4.318541,\"dpr\":1.35,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 11875.799999952316,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":19.97602876453003,\"renderMs\":0.23999998569488526,\"gpuMs\":2.403291,\"dpr\":1.08,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 12379.900000095367,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":19.97602876453003,\"renderMs\":0.23999998569488526,\"gpuMs\":2.403291,\"dpr\":1.08,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 12884.299999952316,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":20.01906577693041,\"renderMs\":0.2999999750228155,\"gpuMs\":2.126458,\"dpr\":1,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 13387,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":20.01906577693041,\"renderMs\":0.2999999750228155,\"gpuMs\":2.126458,\"dpr\":1,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 13895.099999904633,
+      "canvas": true,
+      "tier": "medium",
+      "metrics": "{\"fps\":19.982871826870845,\"renderMs\":0.19523809069678896,\"gpuMs\":2.094124,\"dpr\":1,\"tier\":\"medium\"}",
+      "world": false
+    },
+    {
+      "time": 14402.099999904633,
+      "canvas": true,
+      "tier": "low",
+      "metrics": "{\"fps\":19.982871826870845,\"renderMs\":0.19523809069678896,\"gpuMs\":2.094124,\"dpr\":1,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 14906,
+      "canvas": true,
+      "tier": "low",
+      "metrics": "{\"fps\":19.982871826870845,\"renderMs\":0.19523809069678896,\"gpuMs\":2.094124,\"dpr\":1,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 15409.400000095367,
+      "canvas": true,
+      "tier": "low",
+      "metrics": "{\"fps\":19.982871826870845,\"renderMs\":0.19523809069678896,\"gpuMs\":2.094124,\"dpr\":1,\"tier\":\"medium\"}",
+      "world": true
+    },
+    {
+      "time": 15913.299999952316,
+      "canvas": true,
+      "tier": "low",
+      "metrics": "{\"fps\":20.19036631278291,\"renderMs\":0.22380951472691127,\"gpuMs\":2.469791,\"dpr\":1.25,\"tier\":\"low\"}",
+      "world": true
+    },
+    {
+      "time": 16417.099999904633,
+      "canvas": true,
+      "tier": "low",
+      "metrics": "{\"fps\":20.19036631278291,\"renderMs\":0.22380951472691127,\"gpuMs\":2.469791,\"dpr\":1.25,\"tier\":\"low\"}",
+      "world": true
+    },
+    {
+      "time": 16919.099999904633,
+      "canvas": true,
+      "tier": "low",
+      "metrics": "{\"fps\":20.04008015849683,\"renderMs\":0.33809523355393184,\"gpuMs\":1.667999,\"dpr\":1,\"tier\":\"low\"}",
+      "world": true
+    },
+    {
+      "time": 17422,
+      "canvas": true,
+      "tier": "low",
+      "metrics": "{\"fps\":20.04008015849683,\"renderMs\":0.33809523355393184,\"gpuMs\":1.667999,\"dpr\":1,\"tier\":\"low\"}",
+      "world": true
+    },
+    {
+      "time": 17925.900000095367,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 18431.200000047684,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 18936,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 19448.299999952316,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 19967.5,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 20550.400000095367,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 21081.200000047684,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 21588.400000095367,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 22130.5,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 22665.900000095367,
+      "canvas": false,
+      "world": false
+    },
+    {
+      "time": 23173.599999904633,
+      "canvas": false,
+      "world": false
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "width": 1440,
+    "staticMedian": 904,
+    "worldMedianAllNavigations": 752,
+    "worldMedianConfirmedCanvas": 836.0,
+    "confirmedCanvasSamples": 2,
+    "allWorldSamples": 3,
+    "shiftCount": 0,
+    "readyTimes": [
+      4652.800000190735,
+      4275.199999809265,
+      null
+    ]
+  },
+  {
+    "width": 820,
+    "staticMedian": 1984,
+    "worldMedianAllNavigations": 1948,
+    "worldMedianConfirmedCanvas": 1948,
+    "confirmedCanvasSamples": 3,
+    "allWorldSamples": 3,
+    "shiftCount": 0,
+    "readyTimes": [
+      4271,
+      3695.600000143051,
+      4201.600000143051
+    ]
+  },
+  {
+    "width": 390,
+    "staticMedian": 2128,
+    "worldMedianAllNavigations": 1664,
+    "worldMedianConfirmedCanvas": 1664,
+    "confirmedCanvasSamples": 3,
+    "allWorldSamples": 3,
+    "shiftCount": 0,
+    "readyTimes": [
+      4413.399999856949,
+      3716.4000000953674,
+      4036.5999999046326
+    ]
+  }
+]

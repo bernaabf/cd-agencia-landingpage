@@ -1,0 +1,14 @@
+{
+  "npm run lint": {
+    "exitCode": 0,
+    "newWarnings": 0
+  },
+  "npx tsc --noEmit": {
+    "exitCode": 0
+  },
+  "npm run build": {
+    "exitCode": 0,
+    "newWarnings": 0,
+    "temporaryVerificationRouteRemoved": true
+  }
+}

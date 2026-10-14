@@ -1,0 +1,11 @@
+{
+  "stage": "b",
+  "fps": 59.85053898457314,
+  "metrics": "{\"fps\":59.88621618354008,\"renderMs\":0.28166664044062295}",
+  "errors": [],
+  "serverLog": "\n> carolina-decaillet@1.0.0 start\n> next start --port 3200\n\n▲ Next.js 16.4.0\n- Local:         http://localhost:3200\n- Network:       http://192.168.0.75:3200\n✓ Ready in 155ms\n✓ Running next.config.ts took 40ms\n",
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "mounted": {
+    "canvas": 1,
+    "triggers": [
+      {
+        "enabled": true,
+        "id": "alpine-terrain"
+      }
+    ],
+    "observers": 3,
+    "route": {
+      "min": 1,
+      "max": 641,
+      "monotonic": true
+    }
+  },
+  "hiddenDraws": 0,
+  "contrastRegions": [
+    {
+      "rect": {
+        "x": 112,
+        "y": 256.828125,
+        "width": 584,
+        "height": 17.265625
+      },
+      "color": "rgb(200, 180, 160)",
+      "tag": "P"
+    },
+    {
+      "rect": {
+        "x": 112,
+        "y": 298.09375,
+        "width": 584,
+        "height": 306.375
+      },
+      "color": "rgb(251, 248, 244)",
+      "tag": "H1"
+    },
+    {
+      "rect": {
+        "x": 112,
+        "y": 632.46875,
+        "width": 484.875,
+        "height": 90.703125
+      },
+      "color": "oklab(0.951848 0.0035778 0.0108306 / 0.85)",
+      "tag": "P"
+    }
+  ],
+  "cycles": [
+    {
+      "canvas": 0,
+      "activeTriggers": 0,
+      "liveContexts": 0,
+      "heroPointerListeners": 0,
+      "contextListeners": 0
+    },
+    {
+      "canvas": 0,
+      "activeTriggers": 0,
+      "liveContexts": 0,
+      "heroPointerListeners": 0,
+      "contextListeners": 0
+    },
+    {
+      "canvas": 0,
+      "activeTriggers": 0,
+      "liveContexts": 0,
+      "heroPointerListeners": 0,
+      "contextListeners": 0
+    }
+  ],
+  "beforeNavigation": {
+    "triggers": 1,
+    "liveContexts": 1
+  },
+  "routerFound": true,
+  "afterNavigation": {
+    "canvas": 0,
+    "triggers": 0,
+    "liveContexts": 0,
+    "observers": 1,
+    "heroListeners": 0,
+    "visibilityListeners": 0,
+    "observerTargets": [
+      []
+    ],
+    "deletedBuffers": 0,
+    "deletedPrograms": 0
+  },
+  "errors": []
+}

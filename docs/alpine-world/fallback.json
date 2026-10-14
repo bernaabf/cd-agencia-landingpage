@@ -1,0 +1,68 @@
+[
+  {
+    "mode": "disable-webgl",
+    "worldClass": false,
+    "background": "rgb(61, 37, 33)",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "mode": "context-loss",
+    "worldClass": false,
+    "background": "rgb(61, 37, 33)",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "mode": "render-error",
+    "worldClass": false,
+    "background": "rgb(61, 37, 33)",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "mode": "reduce",
+    "worldClass": false,
+    "background": "rgb(61, 37, 33)",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "mode": "reduce-mobile",
+    "worldClass": false,
+    "background": "rgb(61, 37, 33)",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "mode": "weak",
+    "worldClass": false,
+    "background": "rgb(61, 37, 33)",
+    "canvas": 0,
+    "liveContexts": 0,
+    "title": "A Suíça além do roteiro.",
+    "ctaVisible": "1",
+    "overflow": false,
+    "errors": []
+  }
+]

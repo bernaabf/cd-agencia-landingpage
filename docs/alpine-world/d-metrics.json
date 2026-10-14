@@ -1,0 +1,12 @@
+{
+  "stage": "d",
+  "fps": 60.14790468364831,
+  "metrics": "{\"fps\":60.02164715424781,\"renderMs\":0.580327850873353}",
+  "errors": [],
+  "measurementNote": "Contagem original incluía a rota; 2 chamadas por frame. Corrigido para uma chamada do terreno por frame.",
+  "serverLog": "\n> carolina-decaillet@1.0.0 start\n> next start --port 3200\n\n▲ Next.js 16.4.0\n- Local:         http://localhost:3200\n- Network:       http://192.168.0.75:3200\n✓ Ready in 303ms\n✓ Running next.config.ts took 145ms\n",
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0
+  }
+}

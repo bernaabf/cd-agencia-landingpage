@@ -1,0 +1,98 @@
+{
+  "mounted": {
+    "canvas": 1,
+    "triggers": [
+      {
+        "enabled": true,
+        "id": "alpine-world"
+      }
+    ],
+    "observers": 2
+  },
+  "hiddenDraws": 0,
+  "contrastRegions": [
+    {
+      "rect": {
+        "x": 112,
+        "y": 256.828125,
+        "width": 584,
+        "height": 17.265625
+      },
+      "color": "rgb(200, 180, 160)",
+      "tag": "P"
+    },
+    {
+      "rect": {
+        "x": 112,
+        "y": 298.09375,
+        "width": 584,
+        "height": 306.375
+      },
+      "color": "rgb(251, 248, 244)",
+      "tag": "H1"
+    },
+    {
+      "rect": {
+        "x": 112,
+        "y": 632.46875,
+        "width": 484.875,
+        "height": 90.703125
+      },
+      "color": "oklab(0.951848 0.0035778 0.0108306 / 0.85)",
+      "tag": "P"
+    }
+  ],
+  "cycles": [
+    {
+      "canvas": 0,
+      "activeTriggers": 0,
+      "liveContexts": 0,
+      "heroPointerListeners": 0,
+      "deletedBuffers": 22,
+      "deletedPrograms": 5,
+      "contextListeners": 0
+    },
+    {
+      "canvas": 0,
+      "activeTriggers": 0,
+      "liveContexts": 0,
+      "heroPointerListeners": 0,
+      "deletedBuffers": 44,
+      "deletedPrograms": 10,
+      "contextListeners": 0
+    },
+    {
+      "canvas": 0,
+      "activeTriggers": 0,
+      "liveContexts": 0,
+      "heroPointerListeners": 0,
+      "deletedBuffers": 66,
+      "deletedPrograms": 15,
+      "contextListeners": 0
+    }
+  ],
+  "beforeNavigation": {
+    "documentToken": 0.44497884723928127,
+    "deletedBuffers": 66,
+    "deletedPrograms": 15,
+    "triggers": 1,
+    "liveContexts": 1
+  },
+  "routerFound": true,
+  "afterNavigation": {
+    "documentToken": 0.44497884723928127,
+    "canvas": 0,
+    "triggers": 0,
+    "liveContexts": 0,
+    "observers": 1,
+    "heroListeners": 0,
+    "visibilityListeners": 1,
+    "observerTargets": [
+      []
+    ],
+    "activeWorkers": 0,
+    "deletedBuffers": 88,
+    "deletedPrograms": 20
+  },
+  "errors": []
+}

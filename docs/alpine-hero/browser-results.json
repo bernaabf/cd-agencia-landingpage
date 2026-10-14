@@ -1,0 +1,198 @@
+[
+  {
+    "name": "desktop-3d",
+    "width": 1440,
+    "lcp": [
+      {
+        "time": 300,
+        "tag": "IMG",
+        "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+        "size": 45564
+      }
+    ],
+    "overflow": false,
+    "canvas": 1,
+    "contexts": [
+      {
+        "lost": true
+      },
+      {
+        "lost": false
+      }
+    ],
+    "axe": [],
+    "renderFPS": 60.21891738933644,
+    "offscreenDraws": 0,
+    "unmount": {
+      "canvas": 0,
+      "contexts": [
+        {
+          "lost": true
+        },
+        {
+          "lost": true
+        }
+      ]
+    },
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "name": "tablet-3d",
+    "width": 820,
+    "lcp": [
+      {
+        "time": 472,
+        "tag": "P",
+        "url": "",
+        "size": 7050
+      },
+      {
+        "time": 1172,
+        "tag": "P",
+        "url": "",
+        "size": 39591
+      },
+      {
+        "time": 1760,
+        "tag": "IMG",
+        "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=828&q=75",
+        "size": 354067
+      }
+    ],
+    "overflow": false,
+    "canvas": 1,
+    "contexts": [
+      {
+        "lost": true
+      },
+      {
+        "lost": false
+      }
+    ],
+    "axe": [],
+    "renderFPS": 59.88820867903626,
+    "offscreenDraws": 0,
+    "unmount": {
+      "canvas": 0,
+      "contexts": [
+        {
+          "lost": true
+        },
+        {
+          "lost": true
+        }
+      ]
+    },
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "lcp": [
+      {
+        "time": 480,
+        "tag": "P",
+        "url": "",
+        "size": 10200
+      },
+      {
+        "time": 1184,
+        "tag": "P",
+        "url": "",
+        "size": 37584
+      },
+      {
+        "time": 1768,
+        "tag": "IMG",
+        "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=384&q=75",
+        "size": 83447
+      }
+    ],
+    "overflow": false,
+    "canvas": 0,
+    "contexts": [],
+    "axe": [],
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "name": "desktop-reduced",
+    "width": 1440,
+    "lcp": [
+      {
+        "time": 128,
+        "tag": "IMG",
+        "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+        "size": 392210
+      }
+    ],
+    "overflow": false,
+    "canvas": 0,
+    "contexts": [],
+    "axe": [],
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "name": "mobile-reduced",
+    "width": 390,
+    "lcp": [
+      {
+        "time": 144,
+        "tag": "IMG",
+        "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=384&q=75",
+        "size": 83447
+      }
+    ],
+    "overflow": false,
+    "canvas": 0,
+    "contexts": [],
+    "axe": [],
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "name": "desktop-no-webgl",
+    "width": 1440,
+    "lcp": [
+      {
+        "time": 188,
+        "tag": "IMG",
+        "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+        "size": 38659
+      },
+      {
+        "time": 1188,
+        "tag": "P",
+        "url": "",
+        "size": 40068
+      }
+    ],
+    "overflow": false,
+    "canvas": 0,
+    "contexts": [],
+    "axe": [],
+    "errors": [],
+    "warnings": []
+  },
+  {
+    "name": "desktop-weak",
+    "width": 1440,
+    "lcp": [
+      {
+        "time": 216,
+        "tag": "IMG",
+        "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+        "size": 45564
+      }
+    ],
+    "overflow": false,
+    "canvas": 0,
+    "contexts": [],
+    "axe": [],
+    "errors": [],
+    "warnings": []
+  }
+]

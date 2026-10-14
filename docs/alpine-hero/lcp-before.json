@@ -1,0 +1,587 @@
+[
+  {
+    "width": 1440,
+    "run": 0,
+    "lcp": {
+      "time": 372,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+      "size": 84173
+    },
+    "fcp": 120,
+    "resources": [
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 22.5,
+        "size": 4690
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 22.5,
+        "size": 3814
+      },
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 22.5,
+        "size": 48599
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 22.5,
+        "size": 62592
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 22.5,
+        "size": 72199
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 1440,
+    "run": 1,
+    "lcp": {
+      "time": 384,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+      "size": 79599
+    },
+    "fcp": 140,
+    "resources": [
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 38,
+        "size": 4690
+      },
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 38,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 38,
+        "size": 72199
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 38.09999990463257,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 38.09999990463257,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 1440,
+    "run": 2,
+    "lcp": {
+      "time": 376,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+      "size": 85682
+    },
+    "fcp": 128,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 34.700000047683716,
+        "size": 48599
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 34.700000047683716,
+        "size": 4690
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 34.700000047683716,
+        "size": 72199
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 34.80000019073486,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 34.80000019073486,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 1440,
+    "run": 3,
+    "lcp": {
+      "time": 388,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+      "size": 98928
+    },
+    "fcp": 120,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 29.700000047683716,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 29.700000047683716,
+        "size": 72199
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 29.799999952316284,
+        "size": 4690
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 30.299999952316284,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 30.299999952316284,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 1440,
+    "run": 4,
+    "lcp": {
+      "time": 412,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=750&q=75",
+      "size": 97486
+    },
+    "fcp": 144,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 42.799999952316284,
+        "size": 48599
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 42.799999952316284,
+        "size": 4690
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 42.799999952316284,
+        "size": 72199
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 42.89999985694885,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 42.89999985694885,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 820,
+    "run": 0,
+    "lcp": {
+      "time": 1940,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=828&q=75",
+      "size": 354067
+    },
+    "fcp": 124,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 22.600000143051147,
+        "size": 48599
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 22.700000047683716,
+        "size": 3814
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 22.700000047683716,
+        "size": 4690
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 22.700000047683716,
+        "size": 62592
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 22.700000047683716,
+        "size": 72199
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 820,
+    "run": 1,
+    "lcp": {
+      "time": 1964,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=828&q=75",
+      "size": 354067
+    },
+    "fcp": 148,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 54,
+        "size": 48599
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 54,
+        "size": 3814
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 54,
+        "size": 4690
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 54,
+        "size": 62592
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 54,
+        "size": 72199
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 820,
+    "run": 2,
+    "lcp": {
+      "time": 1944,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=828&q=75",
+      "size": 354067
+    },
+    "fcp": 148,
+    "resources": [
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 41.09999990463257,
+        "size": 4690
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 41.09999990463257,
+        "size": 3814
+      },
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 41.09999990463257,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 41.09999990463257,
+        "size": 72199
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 41.09999990463257,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 820,
+    "run": 3,
+    "lcp": {
+      "time": 1936,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=828&q=75",
+      "size": 354067
+    },
+    "fcp": 136,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 37.700000047683716,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 37.700000047683716,
+        "size": 72199
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 37.799999952316284,
+        "size": 4690
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 37.799999952316284,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 37.799999952316284,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 820,
+    "run": 4,
+    "lcp": {
+      "time": 1948,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=828&q=75",
+      "size": 354067
+    },
+    "fcp": 132,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 43.200000047683716,
+        "size": 48599
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 43.200000047683716,
+        "size": 4690
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 43.200000047683716,
+        "size": 72199
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 43.60000014305115,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 43.60000014305115,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 390,
+    "run": 0,
+    "lcp": {
+      "time": 1920,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=384&q=75",
+      "size": 83447
+    },
+    "fcp": 120,
+    "resources": [
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 20.299999952316284,
+        "size": 4690
+      },
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 20.299999952316284,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 20.299999952316284,
+        "size": 72199
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 20.399999856948853,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 21,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 390,
+    "run": 1,
+    "lcp": {
+      "time": 1384,
+      "tag": "P",
+      "url": "",
+      "size": 37584
+    },
+    "fcp": 148,
+    "resources": [
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 32.200000047683716,
+        "size": 4690
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 32.200000047683716,
+        "size": 3814
+      },
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 32.200000047683716,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 32.200000047683716,
+        "size": 72199
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 32.299999952316284,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 390,
+    "run": 2,
+    "lcp": {
+      "time": 1952,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=384&q=75",
+      "size": 83447
+    },
+    "fcp": 132,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 44.39999985694885,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 44.39999985694885,
+        "size": 72199
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 45.09999990463257,
+        "size": 4690
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 45.09999990463257,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 45.09999990463257,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 390,
+    "run": 3,
+    "lcp": {
+      "time": 1940,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=384&q=75",
+      "size": 83447
+    },
+    "fcp": 152,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 33.5,
+        "size": 48599
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 33.59999990463257,
+        "size": 4690
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 33.59999990463257,
+        "size": 72199
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 33.799999952316284,
+        "size": 3814
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 33.799999952316284,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  },
+  {
+    "width": 390,
+    "run": 4,
+    "lcp": {
+      "time": 1920,
+      "tag": "IMG",
+      "url": "http://localhost:3100/_next/image?url=%2Fimages%2Fhero-carolina.jpg&w=384&q=75",
+      "size": 83447
+    },
+    "fcp": 120,
+    "resources": [
+      {
+        "name": "2cwx0s17guqmh.js",
+        "start": 30,
+        "size": 48599
+      },
+      {
+        "name": "0s7mvllxht1mo.js",
+        "start": 30,
+        "size": 72199
+      },
+      {
+        "name": "0umf92h1sb77c.js",
+        "start": 30.100000143051147,
+        "size": 3814
+      },
+      {
+        "name": "turbopack-2c3mg3r-05n1w.js",
+        "start": 30.100000143051147,
+        "size": 4690
+      },
+      {
+        "name": "2ru-rg4_fn0-u.js",
+        "start": 30.100000143051147,
+        "size": 62592
+      }
+    ],
+    "canvas": 0
+  }
+]
