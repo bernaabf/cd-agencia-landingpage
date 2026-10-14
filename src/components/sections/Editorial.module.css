@@ -65,8 +65,48 @@
   max-width: 48rem;
 }
 
+.serviceList {
+  display: grid;
+  gap: var(--editorial-gap);
+}
+
+.serviceCard {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.serviceNumber {
+  font-variant-numeric: tabular-nums;
+}
+
+.serviceDescription {
+  max-width: 52ch;
+}
+
+.serviceAction {
+  display: flex;
+  align-items: center;
+  padding-top: 0.75rem;
+}
+
 @media (min-width: 1024px) {
   .introGrid {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .serviceCard {
+    grid-template-columns: 3ch minmax(0, 0.9fr) minmax(0, 1.2fr) auto;
+    align-items: start;
+    column-gap: var(--editorial-gap);
+  }
+
+  .serviceNumber {
+    padding-top: 0.35rem;
+  }
+
+  .serviceAction {
+    align-self: center;
+    justify-content: flex-end;
+    padding-top: 0;
   }
 }
