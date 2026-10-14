@@ -1,0 +1,297 @@
+[
+  {
+    "width": 1280,
+    "start": {
+      "canvas": true,
+      "ready": "true",
+      "tier": "high",
+      "metrics": {
+        "fps": 60.003934684153634,
+        "renderMs": 0.4016393441401544,
+        "gpuMs": 3.064291,
+        "dpr": 1,
+        "tier": "high"
+      },
+      "benchmark": {
+        "fps": 60.957329868910094,
+        "renderMs": 0.5377049181060712,
+        "gpuMs": 3.172625,
+        "dpr": 1
+      },
+      "progress": "0.0000",
+      "hero": {
+        "height": 3150,
+        "viewport": 900
+      },
+      "canvasStyle": {
+        "width": "1280px",
+        "height": "900px",
+        "pointerEvents": "none"
+      },
+      "scrollY": 0,
+      "journey": "0",
+      "lenis": true,
+      "overflow": false
+    },
+    "acts": [
+      {
+        "canvas": true,
+        "ready": "true",
+        "tier": "high",
+        "metrics": {
+          "fps": 60.063016936154,
+          "renderMs": 0.3524590165155833,
+          "gpuMs": 3.197124,
+          "dpr": 1,
+          "tier": "high"
+        },
+        "benchmark": {
+          "fps": 60.957329868910094,
+          "renderMs": 0.5377049181060712,
+          "gpuMs": 3.172625,
+          "dpr": 1
+        },
+        "progress": "0.2502",
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": {
+          "width": "1280px",
+          "height": "900px",
+          "pointerEvents": "none"
+        },
+        "scrollY": 563,
+        "journey": "0.250189",
+        "lenis": true,
+        "overflow": false
+      },
+      {
+        "canvas": true,
+        "ready": "true",
+        "tier": "high",
+        "metrics": {
+          "fps": 60.08076430629278,
+          "renderMs": 0.314754098409512,
+          "gpuMs": 2.789583,
+          "dpr": 1,
+          "tier": "high"
+        },
+        "benchmark": {
+          "fps": 60.957329868910094,
+          "renderMs": 0.5377049181060712,
+          "gpuMs": 3.172625,
+          "dpr": 1
+        },
+        "progress": "0.4600",
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": {
+          "width": "1280px",
+          "height": "900px",
+          "pointerEvents": "none"
+        },
+        "scrollY": 1035,
+        "journey": "0.459992",
+        "lenis": true,
+        "overflow": false
+      },
+      {
+        "canvas": true,
+        "ready": "true",
+        "tier": "high",
+        "metrics": {
+          "fps": 59.946048556388575,
+          "renderMs": 0.26333333340783915,
+          "gpuMs": 1.259166,
+          "dpr": 1,
+          "tier": "high"
+        },
+        "benchmark": {
+          "fps": 60.957329868910094,
+          "renderMs": 0.5377049181060712,
+          "gpuMs": 3.172625,
+          "dpr": 1
+        },
+        "progress": "0.7400",
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": {
+          "width": "1280px",
+          "height": "900px",
+          "pointerEvents": "none"
+        },
+        "scrollY": 1665,
+        "journey": "0.739987",
+        "lenis": true,
+        "overflow": false
+      },
+      {
+        "canvas": true,
+        "ready": "true",
+        "tier": "high",
+        "metrics": {
+          "fps": 51.46630413687452,
+          "renderMs": 0.21886792497814828,
+          "gpuMs": 1.832416,
+          "dpr": 1,
+          "tier": "high"
+        },
+        "benchmark": {
+          "fps": 60.957329868910094,
+          "renderMs": 0.5377049181060712,
+          "gpuMs": 3.172625,
+          "dpr": 1
+        },
+        "progress": "1.0000",
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": {
+          "width": "1280px",
+          "height": "900px",
+          "pointerEvents": "none"
+        },
+        "scrollY": 2520,
+        "journey": "1",
+        "lenis": true,
+        "overflow": false
+      }
+    ],
+    "reduced": {
+      "canvas": false,
+      "metrics": null,
+      "benchmark": null,
+      "hero": {
+        "height": 940,
+        "viewport": 940
+      },
+      "canvasStyle": null,
+      "scrollY": 0,
+      "journey": "",
+      "lenis": false,
+      "overflow": false
+    },
+    "errors": []
+  },
+  {
+    "width": 360,
+    "start": {
+      "canvas": true,
+      "ready": "true",
+      "tier": "low",
+      "metrics": null,
+      "benchmark": null,
+      "progress": "0.0000",
+      "hero": {
+        "height": 3150,
+        "viewport": 900
+      },
+      "canvasStyle": {
+        "width": "360px",
+        "height": "900px",
+        "pointerEvents": "none"
+      },
+      "scrollY": 0,
+      "journey": "0",
+      "lenis": true,
+      "overflow": false
+    },
+    "acts": [
+      {
+        "canvas": true,
+        "ready": "true",
+        "tier": "low",
+        "metrics": {
+          "fps": 30.941211697820247,
+          "renderMs": 0.303225805922862,
+          "gpuMs": 0.504583,
+          "dpr": 1,
+          "tier": "low"
+        },
+        "benchmark": {
+          "fps": 30.941211697820247,
+          "renderMs": 0.303225805922862,
+          "gpuMs": 0.504583,
+          "dpr": 1
+        },
+        "progress": "0.2502",
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": {
+          "width": "360px",
+          "height": "900px",
+          "pointerEvents": "none"
+        },
+        "scrollY": 563,
+        "journey": "0.250183",
+        "lenis": true,
+        "overflow": false
+      },
+      {
+        "canvas": false,
+        "metrics": null,
+        "benchmark": null,
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": null,
+        "scrollY": 1035,
+        "journey": "0.459992",
+        "lenis": true,
+        "overflow": false
+      },
+      {
+        "canvas": false,
+        "metrics": null,
+        "benchmark": null,
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": null,
+        "scrollY": 1665,
+        "journey": "0.739988",
+        "lenis": true,
+        "overflow": false
+      },
+      {
+        "canvas": false,
+        "metrics": null,
+        "benchmark": null,
+        "hero": {
+          "height": 3150,
+          "viewport": 900
+        },
+        "canvasStyle": null,
+        "scrollY": 2520,
+        "journey": "1",
+        "lenis": true,
+        "overflow": false
+      }
+    ],
+    "reduced": {
+      "canvas": false,
+      "metrics": null,
+      "benchmark": null,
+      "hero": {
+        "height": 1309,
+        "viewport": 1309
+      },
+      "canvasStyle": null,
+      "scrollY": 0,
+      "journey": "",
+      "lenis": false,
+      "overflow": false
+    },
+    "errors": []
+  }
+]
