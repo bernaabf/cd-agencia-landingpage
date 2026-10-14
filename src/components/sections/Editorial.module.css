@@ -89,6 +89,33 @@
   padding-top: 0.75rem;
 }
 
+/* Reuse the existing UI timing; no new timeline, RAF or scroll subscription. */
+.scope .serviceCard,
+.scope .socialLink {
+  transition-duration: var(--editorial-duration);
+  transition-timing-function: var(--editorial-ease);
+}
+
+.footerLink {
+  display: inline-flex;
+  align-items: center;
+  min-width: 24px;
+  min-height: 44px;
+  text-underline-offset: 0.3em;
+}
+
+.footerLink:hover,
+.footerLink:focus-visible {
+  text-decoration-line: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scope .serviceCard,
+  .scope .socialLink {
+    transition-duration: 0.01ms;
+  }
+}
+
 @media (min-width: 1024px) {
   .introGrid {
     grid-template-columns: repeat(12, minmax(0, 1fr));

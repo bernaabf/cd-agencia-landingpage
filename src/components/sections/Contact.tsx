@@ -64,7 +64,7 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${label} (abre em nova aba)`}
-                  className="glass-light group grid size-14 place-items-center rounded-full text-cream-50 transition-[translate,scale,background-color] duration-500 ease-premium hover:-translate-y-1 hover:bg-white/25 active:scale-95"
+                  className={`glass-light group grid size-14 place-items-center rounded-full text-cream-50 transition-[translate,scale,background-color] duration-500 ease-premium hover:-translate-y-1 hover:bg-white/25 active:scale-95 ${styles.socialLink}`}
                 >
                   <Icon className="size-6 transition-transform duration-500 ease-premium group-hover:scale-110" />
                 </a>
@@ -90,7 +90,7 @@ export default function Contact() {
                   <li key={link.id}>
                     <a
                       href={`#${link.id}`}
-                      className="text-[0.7rem] font-medium uppercase tracking-[0.16em] text-cream-100/75 transition-colors hover:text-cream-50"
+                      className={`text-[0.7rem] font-medium uppercase tracking-[0.16em] text-cream-100/75 transition-colors hover:text-cream-50 ${styles.footerLink}`}
                     >
                       {link.label}
                     </a>
