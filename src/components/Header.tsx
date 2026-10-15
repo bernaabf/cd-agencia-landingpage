@@ -1,14 +1,17 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { scrollToSection } from "@/lib/scroll";
 import Image from "next/image";
 import { generalMessage, navLinks, site, whatsappLink } from "@/lib/site";
+import MenuOverlay from "./MenuOverlay";
 import styles from "./Header.module.css";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+  const toggle = useRef<HTMLButtonElement>(null);
   const root = useRef<HTMLElement>(null);
   const surface = useRef<HTMLDivElement>(null);
   const show = useRef<() => void>(() => {});
@@ -56,6 +59,7 @@ export default function Header() {
     scrollToSection(id);
   };
   return (
+    <>
     <header ref={root} className={styles.header} onFocusCapture={() => show.current()}>
       <div ref={surface} className={styles.surface} aria-hidden="true" />
       <nav data-nav aria-label="Principal" className={styles.nav}>
@@ -74,9 +78,11 @@ export default function Header() {
           <a className={`${styles.link} ${styles.cta}`} href={whatsappLink(generalMessage)} target="_blank" rel="noopener noreferrer">
             {site.contactCta}<span className="sr-only"> (abre em nova aba)</span>
           </a>
-          <button type="button" className={styles.control} disabled>Menu</button>
+          <button ref={toggle} type="button" className={styles.control} aria-expanded={open} aria-controls="site-menu" aria-haspopup="dialog" onClick={() => { show.current(); setOpen(true); }}>Menu</button>
         </div>
       </nav>
     </header>
+    <MenuOverlay open={open} close={() => { show.current(); setOpen(false); }} trigger={toggle} />
+    </>
   );
 }

@@ -97,3 +97,29 @@
     display: inline-flex;
   }
 }
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  border: 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--color-brown-900);
+  color: var(--color-cream-50);
+}
+
+.dialog::backdrop { background: var(--color-brown-900); }
+.dialog:not([open]) { display: none; }
+.menuFrame { max-width: 1280px; margin: auto; min-height: calc(100dvh - clamp(2.5rem, 6vw, 5rem)); display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; }
+.menuTop { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.menuLinks { padding-block: 1rem; }
+.menuLinks li { overflow: clip; padding-block: 0.12em; }
+.menuLinks a { display: inline-block; font-family: var(--font-display); font-size: clamp(2.6rem, 8vw, 7rem); font-weight: 300; line-height: 1.08; }
+.menuFooter { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; border-top: 1px solid color-mix(in srgb, var(--color-cream-100) 16%, transparent); padding-top: 1.5rem; font-size: 0.85rem; line-height: 1.7; }
+.menuFooter div { display: flex; flex-wrap: wrap; gap: 1.5rem; }
