@@ -33,14 +33,16 @@ export default function MenuOverlay({ open, close, trigger }: Props) {
           const html = document.documentElement, body = document.body;
           const gutter = html.style.scrollbarGutter;
           const overflow = html.style.overflow, bodyOverflow = body.style.overflow, padding = body.style.paddingRight;
-          const gap = window.innerWidth - html.clientWidth;
+          const originalWidth = html.clientWidth;
+          const gap = window.innerWidth - originalWidth;
           const originalPadding = parseFloat(getComputedStyle(body).paddingRight) || 0;
           const lenis = getLenis(), stopped = lenis?.isStopped;
           lenis?.stop();
           if (gap) html.style.scrollbarGutter = "stable";
           html.style.overflow = "hidden";
           body.style.overflow = "hidden";
-          if (gap) body.style.paddingRight = `${originalPadding + gap}px`;
+          const extraWidth = html.clientWidth - originalWidth;
+          if (extraWidth > 0) body.style.paddingRight = `${originalPadding + extraWidth}px`;
           release = () => {
             html.style.overflow = overflow;
             html.style.scrollbarGutter = gutter;

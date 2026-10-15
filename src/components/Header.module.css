@@ -127,7 +127,7 @@
 .nav:focus-within { opacity: 1 !important; transform: none !important; }
 .link::after, .control::after { content: ""; position: absolute; inset: auto 0 8px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 0.3s var(--header-ease); }
 .link:hover::after, .link:focus-visible::after, .link[aria-current="location"]::after, .control:hover::after { transform: scaleX(1); transform-origin: left; }
-.header a:focus-visible, .header button:focus-visible, .dialog a:focus-visible, .dialog button:focus-visible { outline: 2px solid var(--color-sand-400); outline-offset: 5px; border-radius: 0; }
+.header a:focus-visible, .header button:focus-visible, .dialog a:focus-visible, .dialog button:focus-visible { outline: 2px solid var(--color-cream-50); outline-offset: 5px; border-radius: 0; }
 .menuLinks a { transition: transform 0.3s var(--header-ease); }
 .menuLinks a:hover { transform: translateX(0.2em); }
 .header[data-hidden="true"] { pointer-events: none; }
