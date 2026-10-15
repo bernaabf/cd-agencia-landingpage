@@ -31,16 +31,19 @@ export default function MenuOverlay({ open, close, trigger }: Props) {
         gsap.killTweensOf(element);
         if (!element.open) {
           const html = document.documentElement, body = document.body;
+          const gutter = html.style.scrollbarGutter;
           const overflow = html.style.overflow, bodyOverflow = body.style.overflow, padding = body.style.paddingRight;
           const gap = window.innerWidth - html.clientWidth;
           const originalPadding = parseFloat(getComputedStyle(body).paddingRight) || 0;
           const lenis = getLenis(), stopped = lenis?.isStopped;
           lenis?.stop();
+          if (gap) html.style.scrollbarGutter = "stable";
           html.style.overflow = "hidden";
           body.style.overflow = "hidden";
           if (gap) body.style.paddingRight = `${originalPadding + gap}px`;
           release = () => {
             html.style.overflow = overflow;
+            html.style.scrollbarGutter = gutter;
             body.style.overflow = bodyOverflow;
             body.style.paddingRight = padding;
             if (lenis === getLenis() && !stopped) lenis?.start();

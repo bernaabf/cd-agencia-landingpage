@@ -18,10 +18,11 @@ export default function Header() {
   const show = useRef<() => void>(() => {});
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    const ctx = gsap.context((context) => {
+    const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
       mm.add({ reduced: "(prefers-reduced-motion: reduce)", full: "(prefers-reduced-motion: no-preference)" }, (media) => {
         const reduced = Boolean(media.conditions?.reduced);
+        root.current!.dataset.hidden = "false";
         let heroEnd = 0, last = window.scrollY, hidden = false, solid: boolean | undefined;
         const reveal = (next: boolean) => {
           if (hidden === next) return;
@@ -29,9 +30,9 @@ export default function Header() {
           root.current!.dataset.hidden = String(next);
           gsap.to(root.current, { yPercent: reduced ? 0 : next ? -100 : 0, opacity: reduced && next ? 0 : 1, duration: reduced ? 0 : 0.4, ease: "power3.out", overwrite: true });
         };
-        context.add("show", () => reveal(false));
-        show.current = () => context.show();
-        const update = (y: number) => {
+        media.add("show", () => reveal(false));
+        show.current = () => media.show();
+        media.add("update", (y: number) => {
           const nextSolid = y >= heroEnd;
           if (solid !== nextSolid) {
             solid = nextSolid;
@@ -42,7 +43,8 @@ export default function Header() {
             reveal(y > 88 && y > last && !root.current?.querySelector(":focus-visible"));
             last = y;
           }
-        };
+        });
+        const update = (y: number) => media.update(y);
         const measure = () => {
           const hero = document.getElementById("inicio");
           heroEnd = hero ? hero.offsetTop + hero.offsetHeight : 0;
