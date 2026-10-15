@@ -1,0 +1,826 @@
+{
+  "before": {
+    "desktop": {
+      "lighthouseVersion": "13.5.0",
+      "fetchTime": "2026-10-14T23:57:23.232Z",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "audits": {
+        "first-contentful-paint": {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 249.0577,
+          "numericUnit": "millisecond",
+          "displayValue": "0.2 s",
+          "scoringOptions": {
+            "p10": 934,
+            "median": 1600
+          }
+        },
+        "largest-contentful-paint": {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.99,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 664.58655,
+          "numericUnit": "millisecond",
+          "displayValue": "0.7 s",
+          "scoringOptions": {
+            "p10": 1200,
+            "median": 2400
+          }
+        },
+        "speed-index": {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.97,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 965.4708814902403,
+          "numericUnit": "millisecond",
+          "displayValue": "1.0 s",
+          "scoringOptions": {
+            "p10": 1311,
+            "median": 2300
+          }
+        },
+        "total-blocking-time": {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 0,
+          "numericUnit": "millisecond",
+          "displayValue": "0 ms",
+          "scoringOptions": {
+            "p10": 150,
+            "median": 350
+          }
+        },
+        "cumulative-layout-shift": {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 0,
+          "numericUnit": "unitless",
+          "displayValue": "0",
+          "scoringOptions": {
+            "p10": 0.1,
+            "median": 0.25
+          },
+          "details": {
+            "type": "debugdata",
+            "items": [
+              {
+                "cumulativeLayoutShiftMainFrame": 0,
+                "newEngineResult": {
+                  "cumulativeLayoutShift": 0,
+                  "cumulativeLayoutShiftMainFrame": 0
+                },
+                "newEngineResultDiffered": false
+              }
+            ]
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "aria-dialog-name": {
+          "id": "aria-dialog-name",
+          "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+          "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name).",
+          "score": null,
+          "scoreDisplayMode": "notApplicable"
+        },
+        "document-title": {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.13/document-title).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "meta-description": {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/).",
+          "score": 1,
+          "scoreDisplayMode": "binary"
+        },
+        "label-content-name-mismatch": {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-BUTTON",
+                  "path": "1,HTML,1,BODY,2,DIV,1,MAIN,0,SECTION,0,DIV,4,DIV,0,BUTTON",
+                  "selector": "section#inicio > div.hero-stage-viewport > div.hero-stage-controls > button.hero-scroll-cue",
+                  "boundingRect": {
+                    "top": 864,
+                    "bottom": 908,
+                    "left": 68,
+                    "right": 240,
+                    "width": 172,
+                    "height": 44
+                  },
+                  "snippet": "<button type=\"button\" class=\"hero-scroll-cue\" aria-label=\"Avançar pela experiência nos Alpes\">",
+                  "nodeLabel": "Explore pela rolagem",
+                  "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.semantics",
+                "wcag21a",
+                "wcag253",
+                "EN-301-549",
+                "EN-9.2.5.3",
+                "RGAAv4",
+                "RGAA-6.1.5"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "mobile": {
+      "lighthouseVersion": "13.5.0",
+      "fetchTime": "2026-10-14T23:49:04.192Z",
+      "scores": {
+        "performance": 84,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "audits": {
+        "first-contentful-paint": {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 908.3841,
+          "numericUnit": "millisecond",
+          "displayValue": "0.9 s",
+          "scoringOptions": {
+            "p10": 1800,
+            "median": 3000
+          }
+        },
+        "largest-contentful-paint": {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.62,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 3568.07615,
+          "numericUnit": "millisecond",
+          "displayValue": "3.6 s",
+          "scoringOptions": {
+            "p10": 2500,
+            "median": 4000
+          }
+        },
+        "speed-index": {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.96,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 2770.0725711110513,
+          "numericUnit": "millisecond",
+          "displayValue": "2.8 s",
+          "scoringOptions": {
+            "p10": 3387,
+            "median": 5800
+          }
+        },
+        "total-blocking-time": {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+          "score": 0.78,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 302.5,
+          "numericUnit": "millisecond",
+          "displayValue": "300 ms",
+          "scoringOptions": {
+            "p10": 200,
+            "median": 600
+          }
+        },
+        "cumulative-layout-shift": {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 0.03488155062158992,
+          "numericUnit": "unitless",
+          "displayValue": "0.035",
+          "scoringOptions": {
+            "p10": 0.1,
+            "median": 0.25
+          },
+          "details": {
+            "type": "debugdata",
+            "items": [
+              {
+                "cumulativeLayoutShiftMainFrame": 0.03488155062158992,
+                "newEngineResultDiffered": false
+              }
+            ]
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "aria-dialog-name": {
+          "id": "aria-dialog-name",
+          "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+          "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name).",
+          "score": null,
+          "scoreDisplayMode": "notApplicable"
+        },
+        "document-title": {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.13/document-title).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "meta-description": {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/).",
+          "score": 1,
+          "scoreDisplayMode": "binary"
+        },
+        "label-content-name-mismatch": {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-BUTTON",
+                  "path": "1,HTML,1,BODY,2,DIV,1,MAIN,0,SECTION,0,DIV,4,DIV,0,BUTTON",
+                  "selector": "section#inicio > div.hero-stage-viewport > div.hero-stage-controls > button.hero-scroll-cue",
+                  "boundingRect": {
+                    "top": 759,
+                    "bottom": 803,
+                    "left": 29,
+                    "right": 178,
+                    "width": 150,
+                    "height": 44
+                  },
+                  "snippet": "<button type=\"button\" class=\"hero-scroll-cue\" aria-label=\"Avançar pela experiência nos Alpes\">",
+                  "nodeLabel": "Explore pela rolagem",
+                  "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.semantics",
+                "wcag21a",
+                "wcag253",
+                "EN-301-549",
+                "EN-9.2.5.3",
+                "RGAAv4",
+                "RGAA-6.1.5"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "after": {
+    "desktop": {
+      "lighthouseVersion": "13.5.0",
+      "fetchTime": "2026-10-15T00:14:43.757Z",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "audits": {
+        "first-contentful-paint": {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 252.87329999999997,
+          "numericUnit": "millisecond",
+          "displayValue": "0.3 s",
+          "scoringOptions": {
+            "p10": 934,
+            "median": 1600
+          }
+        },
+        "largest-contentful-paint": {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.99,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 688.30995,
+          "numericUnit": "millisecond",
+          "displayValue": "0.7 s",
+          "scoringOptions": {
+            "p10": 1200,
+            "median": 2400
+          }
+        },
+        "speed-index": {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.98,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 932.2145157658309,
+          "numericUnit": "millisecond",
+          "displayValue": "0.9 s",
+          "scoringOptions": {
+            "p10": 1311,
+            "median": 2300
+          }
+        },
+        "total-blocking-time": {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 0,
+          "numericUnit": "millisecond",
+          "displayValue": "0 ms",
+          "scoringOptions": {
+            "p10": 150,
+            "median": 350
+          }
+        },
+        "cumulative-layout-shift": {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 0,
+          "numericUnit": "unitless",
+          "displayValue": "0",
+          "scoringOptions": {
+            "p10": 0.1,
+            "median": 0.25
+          },
+          "details": {
+            "type": "debugdata",
+            "items": [
+              {
+                "cumulativeLayoutShiftMainFrame": 0,
+                "newEngineResult": {
+                  "cumulativeLayoutShift": 0,
+                  "cumulativeLayoutShiftMainFrame": 0
+                },
+                "newEngineResultDiffered": false
+              }
+            ]
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "aria-dialog-name": {
+          "id": "aria-dialog-name",
+          "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+          "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name).",
+          "score": null,
+          "scoreDisplayMode": "notApplicable"
+        },
+        "document-title": {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.13/document-title).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "meta-description": {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/).",
+          "score": 1,
+          "scoreDisplayMode": "binary"
+        },
+        "label-content-name-mismatch": {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-BUTTON",
+                  "path": "1,HTML,1,BODY,2,DIV,2,MAIN,0,SECTION,0,DIV,4,DIV,0,BUTTON",
+                  "selector": "section#inicio > div.hero-stage-viewport > div.hero-stage-controls > button.hero-scroll-cue",
+                  "boundingRect": {
+                    "top": 864,
+                    "bottom": 908,
+                    "left": 68,
+                    "right": 240,
+                    "width": 172,
+                    "height": 44
+                  },
+                  "snippet": "<button type=\"button\" class=\"hero-scroll-cue\" aria-label=\"Avançar pela experiência nos Alpes\">",
+                  "nodeLabel": "Explore pela rolagem",
+                  "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.semantics",
+                "wcag21a",
+                "wcag253",
+                "EN-301-549",
+                "EN-9.2.5.3",
+                "RGAAv4",
+                "RGAA-6.1.5"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "mobile": {
+      "lighthouseVersion": "13.5.0",
+      "fetchTime": "2026-10-15T00:14:55.464Z",
+      "scores": {
+        "performance": 94,
+        "accessibility": 100,
+        "seo": 100
+      },
+      "audits": {
+        "first-contentful-paint": {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 908.5450000000001,
+          "numericUnit": "millisecond",
+          "displayValue": "0.9 s",
+          "scoringOptions": {
+            "p10": 1800,
+            "median": 3000
+          }
+        },
+        "largest-contentful-paint": {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+          "score": 0.85,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 2719.22625,
+          "numericUnit": "millisecond",
+          "displayValue": "2.7 s",
+          "scoringOptions": {
+            "p10": 2500,
+            "median": 4000
+          }
+        },
+        "speed-index": {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+          "score": 0.97,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 2571.078666168378,
+          "numericUnit": "millisecond",
+          "displayValue": "2.6 s",
+          "scoringOptions": {
+            "p10": 3387,
+            "median": 5800
+          }
+        },
+        "total-blocking-time": {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+          "score": 0.93,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 165.5,
+          "numericUnit": "millisecond",
+          "displayValue": "170 ms",
+          "scoringOptions": {
+            "p10": 200,
+            "median": 600
+          }
+        },
+        "cumulative-layout-shift": {
+          "id": "cumulative-layout-shift",
+          "title": "Cumulative Layout Shift",
+          "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "numericValue": 0.03882586513398925,
+          "numericUnit": "unitless",
+          "displayValue": "0.039",
+          "scoringOptions": {
+            "p10": 0.1,
+            "median": 0.25
+          },
+          "details": {
+            "type": "debugdata",
+            "items": [
+              {
+                "cumulativeLayoutShiftMainFrame": 0.03882586513398925,
+                "newEngineResultDiffered": false
+              }
+            ]
+          }
+        },
+        "color-contrast": {
+          "id": "color-contrast",
+          "title": "Background and foreground colors have a sufficient contrast ratio",
+          "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.13/color-contrast).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "aria-dialog-name": {
+          "id": "aria-dialog-name",
+          "title": "Elements with `role=\"dialog\"` or `role=\"alertdialog\"` have accessible names.",
+          "description": "ARIA dialog elements without accessible names may prevent screen readers users from discerning the purpose of these elements. [Learn how to make ARIA dialog elements more accessible](https://dequeuniversity.com/rules/axe/4.13/aria-dialog-name).",
+          "score": null,
+          "scoreDisplayMode": "notApplicable"
+        },
+        "document-title": {
+          "id": "document-title",
+          "title": "Document has a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.13/document-title).",
+          "score": 1,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": []
+          }
+        },
+        "meta-description": {
+          "id": "meta-description",
+          "title": "Document has a meta description",
+          "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/).",
+          "score": 1,
+          "scoreDisplayMode": "binary"
+        },
+        "label-content-name-mismatch": {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "description": "Visible text labels that do not match the accessible name can result in a confusing experience for screen reader users. [Learn more about accessible names](https://dequeuniversity.com/rules/axe/4.13/label-content-name-mismatch).",
+          "score": 0,
+          "scoreDisplayMode": "binary",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-BUTTON",
+                  "path": "1,HTML,1,BODY,2,DIV,2,MAIN,0,SECTION,0,DIV,4,DIV,0,BUTTON",
+                  "selector": "section#inicio > div.hero-stage-viewport > div.hero-stage-controls > button.hero-scroll-cue",
+                  "boundingRect": {
+                    "top": 759,
+                    "bottom": 803,
+                    "left": 29,
+                    "right": 178,
+                    "width": 150,
+                    "height": 44
+                  },
+                  "snippet": "<button type=\"button\" class=\"hero-scroll-cue\" aria-label=\"Avançar pela experiência nos Alpes\">",
+                  "nodeLabel": "Explore pela rolagem",
+                  "explanation": "Fix any of the following:\n  Text inside the element is not included in the accessible name"
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.semantics",
+                "wcag21a",
+                "wcag253",
+                "EN-301-549",
+                "EN-9.2.5.3",
+                "RGAAv4",
+                "RGAA-6.1.5"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

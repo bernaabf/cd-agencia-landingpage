@@ -1,0 +1,106 @@
+[
+  {
+    "width": 360,
+    "act": 0,
+    "minimumContrast": 14.674516089030075
+  },
+  {
+    "width": 360,
+    "act": 1,
+    "minimumContrast": 11.118614195698338
+  },
+  {
+    "width": 360,
+    "act": 2,
+    "minimumContrast": 15.825620770017103
+  },
+  {
+    "width": 360,
+    "act": 3,
+    "minimumContrast": 15.825620770017103
+  },
+  {
+    "width": 360,
+    "act": 4,
+    "minimumContrast": 15.996977787155744
+  },
+  {
+    "width": 768,
+    "act": 0,
+    "minimumContrast": 14.674516089030075
+  },
+  {
+    "width": 768,
+    "act": 1,
+    "minimumContrast": 4.924234005073554
+  },
+  {
+    "width": 768,
+    "act": 2,
+    "minimumContrast": 5.121587987510971
+  },
+  {
+    "width": 768,
+    "act": 3,
+    "minimumContrast": 11.28539901143286
+  },
+  {
+    "width": 768,
+    "act": 4,
+    "minimumContrast": 15.996977787155744
+  },
+  {
+    "width": 1280,
+    "act": 0,
+    "minimumContrast": 14.674516089030075
+  },
+  {
+    "width": 1280,
+    "act": 1,
+    "minimumContrast": 5.253065779931727
+  },
+  {
+    "width": 1280,
+    "act": 2,
+    "minimumContrast": 5.662306900511837
+  },
+  {
+    "width": 1280,
+    "act": 3,
+    "minimumContrast": 11.28539901143286
+  },
+  {
+    "width": 1280,
+    "act": 4,
+    "minimumContrast": 15.996977787155744
+  },
+  {
+    "width": 1920,
+    "act": 0,
+    "minimumContrast": 14.674516089030075
+  },
+  {
+    "width": 1920,
+    "act": 1,
+    "minimumContrast": 5.546010918413611
+  },
+  {
+    "width": 1920,
+    "act": 2,
+    "minimumContrast": 5.8632417987225
+  },
+  {
+    "width": 1920,
+    "act": 3,
+    "minimumContrast": 11.28539901143286
+  },
+  {
+    "width": 1920,
+    "act": 4,
+    "minimumContrast": 15.996977787155744
+  },
+  {
+    "solidCreamOnBrown900": 13.356921158180189,
+    "focusCreamOnBrown900": 13.356921158180189
+  }
+]

@@ -55,3 +55,15 @@ Para avaliar transparência, a pílula foi ocultada somente durante screenshots 
 5. Remoção de `Navbar.tsx` e registro/verificação do novo escopo de proteção.
 
 Contraste final, paleta, geometria/FPS, acessibilidade, quatro larguras, build/lint/typecheck e Lighthouse serão registrados no relatório final. Não se afirma CLS global zero enquanto o deslocamento preexistente do hero continuar presente.
+
+## Mapeamento e risco
+
+| Padrão estrutural | Equivalente nesta marca | Arquivos | Risco residual paleta/3D |
+| --- | --- | --- | --- |
+| Barra horizontal contínua | Logo existente, links reais e CTA textual, altura fixa 88 px | Header.tsx, Header.module.css, page.tsx | Baixo: fixed não participa do layout; nenhum token alterado |
+| Transparência e direção do scroll | Superfície transparente no hero; brown-900 no conteúdo; hide/show por transform | Header.tsx | Baixo: ScrollTrigger existente, sem pin, scroller ou RAF próprio |
+| Menu editorial full-screen | Links originais em Cormorant local, Instagram e WhatsApp originais | MenuOverlay.tsx, Header.module.css | Baixo: modalidade solicitada; canvas não é remontado nem reposicionado; scroll lock restaurável |
+| Stagger de linhas e underline | GSAP context no menu; sublinhado por transform | MenuOverlay.tsx, Header.module.css | Baixo: efeitos restritos à UI, reduced motion instantâneo |
+| Offset de âncora | CSS variable escopada de 88 px, contrato atual do helper mantido | Header.module.css, page.tsx | Baixo: apenas scroll-margin-top; dimensões do hero intactas |
+
+Nenhum padrão de risco médio/alto foi aplicado. Não foi necessário editar a zona protegida.

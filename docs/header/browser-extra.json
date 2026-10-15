@@ -1,0 +1,164 @@
+[
+  {
+    "classic": false,
+    "before": {
+      "canvas": {
+        "w": 360,
+        "h": 600
+      },
+      "viewport": {
+        "w": 360,
+        "h": 600
+      },
+      "gap": 0,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "focus": "BODY"
+    },
+    "opened": {
+      "canvas": {
+        "w": 360,
+        "h": 600
+      },
+      "viewport": {
+        "w": 360,
+        "h": 600
+      },
+      "gap": 0,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "hidden",
+        "",
+        "hidden",
+        ""
+      ],
+      "focus": "BUTTON"
+    },
+    "closed": {
+      "canvas": {
+        "w": 360,
+        "h": 600
+      },
+      "viewport": {
+        "w": 360,
+        "h": 600
+      },
+      "gap": 0,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "focus": "BUTTON"
+    },
+    "mediaChange": {
+      "canvas": null,
+      "viewport": {
+        "w": 360,
+        "h": 1309.4375
+      },
+      "gap": 0,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "focus": "BUTTON"
+    },
+    "errors": []
+  },
+  {
+    "classic": true,
+    "before": {
+      "canvas": {
+        "w": 345,
+        "h": 600
+      },
+      "viewport": {
+        "w": 345,
+        "h": 600
+      },
+      "gap": 15,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "focus": "BODY"
+    },
+    "opened": {
+      "canvas": {
+        "w": 345,
+        "h": 600
+      },
+      "viewport": {
+        "w": 345,
+        "h": 600
+      },
+      "gap": 0,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "hidden",
+        "stable",
+        "hidden",
+        "15px"
+      ],
+      "focus": "BUTTON"
+    },
+    "closed": {
+      "canvas": {
+        "w": 345,
+        "h": 600
+      },
+      "viewport": {
+        "w": 345,
+        "h": 600
+      },
+      "gap": 15,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "focus": "BUTTON"
+    },
+    "mediaChange": {
+      "canvas": null,
+      "viewport": {
+        "w": 345,
+        "h": 1290.6875
+      },
+      "gap": 15,
+      "y": 0,
+      "overflow": false,
+      "styles": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "focus": "BUTTON"
+    },
+    "errors": []
+  }
+]
