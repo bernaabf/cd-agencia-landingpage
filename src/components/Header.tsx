@@ -10,6 +10,7 @@ import MenuOverlay from "./MenuOverlay";
 import styles from "./Header.module.css";
 
 export default function Header() {
+  const [active, setActive] = useState("inicio");
   const [open, setOpen] = useState(false);
   const toggle = useRef<HTMLButtonElement>(null);
   const root = useRef<HTMLElement>(null);
@@ -53,6 +54,13 @@ export default function Header() {
     }, root);
     return () => ctx.revert();
   }, []);
+  useLayoutEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) if (entry.isIntersecting) setActive(entry.target.id);
+    }, { rootMargin: "-20% 0px -60% 0px" });
+    navLinks.forEach(({ id }) => { const section = document.getElementById(id); if (section) observer.observe(section); });
+    return () => observer.disconnect();
+  }, []);
   const navigate = (event: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
@@ -70,7 +78,7 @@ export default function Header() {
         <ul className={styles.links}>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a className={styles.link} href={`#${link.id}`} onClick={(event) => navigate(event, link.id)}>{link.label}</a>
+              <a className={styles.link} aria-current={active === link.id ? "location" : undefined} href={`#${link.id}`} onClick={(event) => navigate(event, link.id)}>{link.label}</a>
             </li>
           ))}
         </ul>

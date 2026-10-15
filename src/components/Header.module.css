@@ -123,3 +123,20 @@
 .menuLinks a { display: inline-block; font-family: var(--font-display); font-size: clamp(2.6rem, 8vw, 7rem); font-weight: 300; line-height: 1.08; }
 .menuFooter { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; border-top: 1px solid color-mix(in srgb, var(--color-cream-100) 16%, transparent); padding-top: 1.5rem; font-size: 0.85rem; line-height: 1.7; }
 .menuFooter div { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+
+.nav:focus-within { opacity: 1 !important; transform: none !important; }
+.link::after, .control::after { content: ""; position: absolute; inset: auto 0 8px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+.link:hover::after, .link:focus-visible::after, .link[aria-current="location"]::after, .control:hover::after { transform: scaleX(1); transform-origin: left; }
+.header a:focus-visible, .header button:focus-visible, .dialog a:focus-visible, .dialog button:focus-visible { outline: 2px solid var(--color-sand-400); outline-offset: 5px; border-radius: 0; }
+.menuLinks a { transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+.menuLinks a:hover { transform: translateX(0.2em); }
+.header[data-hidden="true"] { pointer-events: none; }
+@media (prefers-reduced-motion: reduce) {
+  .link::after, .control::after, .menuLinks a { transition: none; }
+  .menuLinks a:hover { transform: none; }
+}
+@media (max-width: 400px) {
+  .brand { font-size: 0.93rem; letter-spacing: 0.07em; gap: 0.5rem; }
+  .nav { gap: 1rem; }
+  .menuTop { gap: 0.5rem; }
+}
