@@ -30,7 +30,7 @@ export default function Hero() {
         <figure className="hero-act hero-guide" data-stage-guide>
           <div className="hero-portrait" data-stage-portrait>
             <Image src="/images/hero-carolina.jpg"
-              alt="Retrato de Carolina Décaillet, turismóloga, sorrindo com a mão apoiada no queixo"
+              alt="Retrato de Carolina Décaillet, turismóloga, de blusa marrom com a mão apoiada no queixo"
               fill sizes="(min-width: 768px) 32vw, 76vw" loading="eager"
               className="object-cover" style={{ objectPosition: "45% 20%" }} />
           </div>

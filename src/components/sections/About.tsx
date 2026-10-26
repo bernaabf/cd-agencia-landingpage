@@ -42,22 +42,22 @@ export default function About() {
         {/* Composição editorial: três fotografias em alturas distintas */}
         <div className={`grid grid-cols-6 items-end gap-3 sm:gap-6 ${styles.block}`}>
           <MediaFrame
-            src="/images/globo.jpg"
+            src="/images/globo-destinos.jpg"
             alt="Mãos apontando um destino em um globo terrestre"
             sizes="(min-width: 1280px) 30vw, 40vw"
             parallax={5}
             className="col-span-3 aspect-[3/4] sm:col-span-2 sm:aspect-[3/3.6]"
           />
           <MediaFrame
-            src="/images/carolina-tablet.jpg"
-            alt="Carolina Décaillet em pé, de blazer, consultando um tablet"
+            src="/images/carolina-consultora.jpg"
+            alt="Carolina Décaillet sorrindo, em pé, de terno vinho"
             sizes="(min-width: 1280px) 30vw, 40vw"
             parallax={4}
             className="col-span-3 aspect-[3/4] sm:col-span-2 sm:aspect-[3/4.4]"
           />
           <MediaFrame
-            src="/images/mapa-notebook.jpg"
-            alt="Notebook exibindo um trem panorâmico suíço sobre um mapa de viagem"
+            src="/images/planejamento-viagem.jpg"
+            alt="Mãos planejando uma viagem sobre um mapa, ao lado de um notebook"
             sizes="(min-width: 1280px) 30vw, 80vw"
             parallax={5}
             className="col-span-6 aspect-[16/10] sm:col-span-2 sm:aspect-[3/3.6]"

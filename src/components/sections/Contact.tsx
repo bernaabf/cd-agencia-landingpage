@@ -18,10 +18,10 @@ export default function Contact() {
         <div className="mx-auto max-w-6xl">
           <MediaFrame
             src="/images/mapa-rota.jpg"
-            alt="Mãos traçando uma rota sobre um mapa em relevo da Suíça"
+            alt="Carolina Décaillet sorrindo enquanto planeja uma viagem sobre um mapa da Suíça"
             sizes="(min-width: 1152px) 1152px, 92vw"
             parallax={7}
-            objectPosition="50% 55%"
+            objectPosition="50% 20%"
             className="aspect-[4/3] w-full sm:aspect-[16/9] lg:aspect-[2/1]"
           />
         </div>
