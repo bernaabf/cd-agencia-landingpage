@@ -21,7 +21,7 @@ export default function Contact() {
             alt="Carolina Décaillet sorrindo enquanto planeja uma viagem sobre um mapa da Suíça"
             sizes="(min-width: 1152px) 1152px, 92vw"
             parallax={7}
-            objectPosition="50% 20%"
+            objectPosition="50% 100%"
             className="aspect-[4/3] w-full sm:aspect-[16/9] lg:aspect-[2/1]"
           />
         </div>
