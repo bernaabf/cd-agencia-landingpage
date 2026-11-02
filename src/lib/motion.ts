@@ -30,7 +30,7 @@ export const motion = {
     routeDuration: 3.2,
     driftPeriod: 48,
     fogSpeed: 0.002,
-    scrollScrub: 0.8,
+    scrollScrub: 1.1,
   },
   /** Parallax só em telas largas. */
   desktopQuery: "(min-width: 768px)",

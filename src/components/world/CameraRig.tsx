@@ -11,6 +11,8 @@ export function createCameraRig(camera: PerspectiveCamera, data: TerrainData, in
   return {
     update() {
       const progress = getJourneyProgress();
+      // Ambient fog can render at rest without recalculating the camera path.
+      if (progress === last) return progress;
       curves.camera.getPoint(progress, position);
       curves.look.getPoint(progress, target);
       position.y = Math.max(position.y, sampleHeight(data, position.x, position.z) + 3.2);

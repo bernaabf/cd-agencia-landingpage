@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import { Component, useCallback, useEffect, useState, type ReactNode } from "react";
 import { motion } from "@/lib/motion";
-import { detectQuality, lowerTier, supportsWebGL2, type QualityTier } from "@/lib/world/quality";
+import { detectQuality, lowerTier, hasWebGL2API, type QualityTier } from "@/lib/world/quality";
 
 const AlpineWorld = dynamic(() => import("./AlpineWorld"), { ssr: false });
 class WorldBoundary extends Component<{ children: ReactNode; onFailure: () => void }, { failed: boolean }> {
@@ -41,7 +41,7 @@ export default function AlpineWorldLoader() {
       if (!checked) {
         checked = true;
         const selected = detectQuality();
-        capability = selected && supportsWebGL2() ? selected : null;
+        capability = selected && hasWebGL2API() ? selected : null;
       }
       setTier(current => current ?? capability);
     };

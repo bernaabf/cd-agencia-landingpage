@@ -1,3 +1,4 @@
+import GaleriaPaisagens from "@/components/paisagens/GaleriaPaisagens";
 import MotionRoot from "@/components/MotionRoot";
 import Header from "@/components/Header";
 import headerStyles from "@/components/Header.module.css";
@@ -14,6 +15,7 @@ export default function Home() {
         <main>
           <Hero />
           <About />
+          <GaleriaPaisagens />
           <Services />
           <Contact />
         </main>

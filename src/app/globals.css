@@ -215,8 +215,8 @@ html.lenis body {
     opacity: 0;
   }
   .js .hero-stage {
-    height: 350svh;
-    min-height: 350svh;
+    height: 720svh;
+    min-height: 720svh;
   }
   .js .hero-stage .hero-stage-viewport {
     position: sticky;

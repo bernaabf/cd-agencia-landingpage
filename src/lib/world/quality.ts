@@ -19,11 +19,8 @@ export function lowerTier(tier: QualityTier): QualityTier | null {
   return tier === "high" ? "medium" : tier === "medium" ? "low" : null;
 }
 
-export function supportsWebGL2() {
-  try {
-    const context = document.createElement("canvas").getContext("webgl2", { failIfMajorPerformanceCaveat: true });
-    if (!context) return false;
-    context.getExtension("WEBGL_lose_context")?.loseContext();
-    return true;
-  } catch { return false; }
+/** The real Canvas validates driver support inside WorldBoundary.
+ * Creating a throwaway WebGL context here initializes the GPU twice and can stall scroll. */
+export function hasWebGL2API() {
+  return typeof window.WebGL2RenderingContext !== "undefined";
 }

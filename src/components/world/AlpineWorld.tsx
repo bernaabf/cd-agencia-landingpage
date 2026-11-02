@@ -49,7 +49,7 @@ function WorldScene({ tier, active, onFailure, onDowngrade }: WorldProps) {
     const shaderError = gl.debug.onShaderError;
     gl.debug.onShaderError = onFailure;
     worker.onerror = onFailure;
-    worker.onmessage = ({ data }: MessageEvent<TerrainData>) => {
+    worker.onmessage = async ({ data }: MessageEvent<TerrainData>) => {
       if (disposed) return;
       worker.terminate();
       try {
@@ -61,6 +61,9 @@ function WorldScene({ tier, active, onFailure, onDowngrade }: WorldProps) {
         rig = createCameraRig(camera, data, invalidate);
         route = createRoute(data, model, tier); scene.add(route.group);
         depth = createDepthLayers(data, model, tier); scene.add(depth.group);
+        // Use parallel shader compilation when supported before revealing the scene.
+        await gl.compileAsync(scene, camera);
+        if (disposed) return;
         const now = performance.now();
         runtime.current = { terrain: model, atmosphere, rig, route, gpu: createGpuTimer(gl.getContext() as WebGL2RenderingContext),
           wrapper: gl.domElement.closest<HTMLElement>(".alpine-world"), time: 0, opacity: -1, reportedProgress: -1, ready: false,

@@ -1,0 +1,230 @@
+[
+  {
+    "id": "matterhorn-zermatt-valais",
+    "titulo": "Matterhorn",
+    "local": "Zermatt, Valais",
+    "categoria": "montanhas",
+    "src": "/images/paisagens/matterhorn-zermatt-valais",
+    "alt": "Pico rochoso do Matterhorn entre montanhas dos Alpes, visto de Zermatt",
+    "credito": {
+      "autor": "Ximonic (Simo Räsänen)",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Matterhorn_as_seen_from_Zermatt,_Wallis,_Switzerland,_2012_August.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Matterhorn_as_seen_from_Zermatt%2C_Wallis%2C_Switzerland%2C_2012_August.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 3600,
+    "originalAltura": 2387,
+    "destaque": true
+  },
+  {
+    "id": "vale-lauterbrunnen-berna",
+    "titulo": "Vale de Lauterbrunnen",
+    "local": "Lauterbrunnen, Berna",
+    "categoria": "vales",
+    "src": "/images/paisagens/vale-lauterbrunnen-berna",
+    "alt": "Vale verde de Lauterbrunnen entre encostas íngremes no verão",
+    "credito": {
+      "autor": "Marine4",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen_valley_mid_summer.jpg",
+      "licenca": "Public domain",
+      "licencaUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Lauterbrunnen_valley_mid_summer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 3524,
+    "originalAltura": 2389,
+    "destaque": false
+  },
+  {
+    "id": "grindelwald-berna",
+    "titulo": "Grindelwald",
+    "local": "Grindelwald, Berna",
+    "categoria": "montanhas",
+    "src": "/images/paisagens/grindelwald-berna",
+    "alt": "Montanhas Wetterhorn e Mettenberg e teleféricos em Grindelwald no verão",
+    "credito": {
+      "autor": "MartySwissCH",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Wetterhor,_Mettenberg,_and_Grindelwald-First_Cable_Cars_(view_from_Eggboden_Road)_-_Summer_2022.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Wetterhor%2C_Mettenberg%2C_and_Grindelwald-First_Cable_Cars_%28view_from_Eggboden_Road%29_-_Summer_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 4032,
+    "originalAltura": 3024,
+    "destaque": false
+  },
+  {
+    "id": "lago-lucerna",
+    "titulo": "Lago de Lucerna",
+    "local": "Lucerna, Lucerna",
+    "categoria": "cidades",
+    "src": "/images/paisagens/lago-lucerna",
+    "alt": "Águas azuis do Lago de Lucerna com construções na margem e montanhas ao fundo",
+    "credito": {
+      "autor": "OlhaSolodenko",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Lucerne_in_Lucerne_city.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Lake_Lucerne_in_Lucerne_city.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 5682,
+    "originalAltura": 3788,
+    "destaque": false
+  },
+  {
+    "id": "lavaux-lago-leman-vaud",
+    "titulo": "Lavaux e Lago Léman",
+    "local": "Lavaux, Vaud",
+    "categoria": "vinhedos",
+    "src": "/images/paisagens/lavaux-lago-leman-vaud",
+    "alt": "Vinhedos em terraços de Lavaux acima das águas do Lago Léman",
+    "credito": {
+      "autor": "Lorenz Poffet",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Lavaux_Switzerland.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Lavaux_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 5463,
+    "originalAltura": 3073,
+    "destaque": true
+  },
+  {
+    "id": "castelo-chillon-vaud",
+    "titulo": "Castelo de Chillon",
+    "local": "Veytaux, Vaud",
+    "categoria": "lagos",
+    "src": "/images/paisagens/castelo-chillon-vaud",
+    "alt": "Castelo de Chillon à beira das águas do Lago Léman",
+    "credito": {
+      "autor": "SimonWaldherr",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Chillon_Castle_08.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Chillon_Castle_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 6000,
+    "originalAltura": 4000,
+    "destaque": false
+  },
+  {
+    "id": "glaciar-aletsch-valais",
+    "titulo": "Glaciar de Aletsch",
+    "local": "Valais",
+    "categoria": "glaciares",
+    "src": "/images/paisagens/glaciar-aletsch-valais",
+    "alt": "Língua de gelo do Glaciar de Aletsch entre montanhas rochosas",
+    "credito": {
+      "autor": "Seba3mmm",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Aletsch_Glacier_view.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Aletsch_Glacier_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 5028,
+    "originalAltura": 3352,
+    "destaque": false
+  },
+  {
+    "id": "viaduto-landwasser-grisoes",
+    "titulo": "Viaduto Landwasser",
+    "local": "Filisur, Grisões",
+    "categoria": "trens",
+    "src": "/images/paisagens/viaduto-landwasser-grisoes",
+    "alt": "Trem vermelho cruzando os arcos de pedra do Viaduto Landwasser",
+    "credito": {
+      "autor": "Kabelleger / David Gubler",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/RhB_Ge_4-4_II_614_Glacier_Express_on_Landwasser_Viaduct.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 6307,
+    "originalAltura": 4205,
+    "destaque": false
+  },
+  {
+    "id": "lago-sils-engadina",
+    "titulo": "Lago de Sils",
+    "local": "Engadina, Grisões",
+    "categoria": "montanhas",
+    "src": "/images/paisagens/lago-sils-engadina",
+    "alt": "Lago de Sils cercado pelas montanhas da Engadina",
+    "credito": {
+      "autor": "Tiia Monto",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Sils_im_Engadin_-_Silsersee.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Sils_im_Engadin_-_Silsersee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 5195,
+    "originalAltura": 2510,
+    "destaque": false
+  },
+  {
+    "id": "lago-oeschinen-berna",
+    "titulo": "Lago Oeschinen",
+    "local": "Kandersteg, Berna",
+    "categoria": "lagos",
+    "src": "/images/paisagens/lago-oeschinen-berna",
+    "alt": "Águas azuladas do Lago Oeschinen cercadas por encostas alpinas",
+    "credito": {
+      "autor": "Martin Thurnherr",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Oeschinensee_0437.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Oeschinensee_0437.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 3456,
+    "originalAltura": 2304,
+    "destaque": false
+  },
+  {
+    "id": "iseltwald-lago-brienz-berna",
+    "titulo": "Iseltwald e Lago Brienz",
+    "local": "Iseltwald, Berna",
+    "categoria": "lagos",
+    "src": "/images/paisagens/iseltwald-lago-brienz-berna",
+    "alt": "Píer de madeira sobre o Lago Brienz em Iseltwald, com montanhas refletidas na água",
+    "credito": {
+      "autor": "Sidharthmittal13",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Iseltwald_sidharthmittal13.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Iseltwald_sidharthmittal13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 4608,
+    "originalAltura": 2592,
+    "destaque": false
+  },
+  {
+    "id": "lago-lugano-ticino",
+    "titulo": "Lago de Lugano",
+    "local": "Lugano, Ticino",
+    "categoria": "lagos",
+    "src": "/images/paisagens/lago-lugano-ticino",
+    "alt": "Vista panorâmica do Lago de Lugano entre montanhas e construções à margem",
+    "credito": {
+      "autor": "Samuel Ferrara",
+      "fonte": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Lake_Lugano_Panorama.jpg",
+      "licenca": "CC BY-SA 4.0",
+      "licencaUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Lake_Lugano_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "originalLargura": 8192,
+    "originalAltura": 3428,
+    "destaque": false
+  }
+]

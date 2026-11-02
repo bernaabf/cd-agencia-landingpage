@@ -26,7 +26,7 @@ export default function HeroStage({ children }: { children: ReactNode }) {
       const invitation = select("[data-stage-invitation]");
       const guide = select("[data-stage-guide]");
       const progress = { value: 0 };
-      gsap.set([story, invitation, guide], { opacity: 0, y: 32, pointerEvents: "none" });
+      gsap.set([story, invitation, guide], { opacity: 0, y: 20, pointerEvents: "none" });
       gsap.fromTo(select(".hero-eyebrow"), { opacity: 0 }, { opacity: 1, duration: 0.8 });
       gsap.fromTo(select("[data-stage-title]"), { yPercent: 115 },
         { yPercent: 0, duration: 1.4, delay: 0.2, ease: "power3.out" });
@@ -43,30 +43,30 @@ export default function HeroStage({ children }: { children: ReactNode }) {
           stage.style.setProperty("--journey-progress", String(progress.value));
         },
       }, 0)
-        .to(opening, { opacity: 0, y: -70, scale: 0.94, duration: 0.09 }, 0.12)
-        .to(story, { opacity: 1, y: 0, duration: 0.07 }, 0.17)
-        .to(story, { opacity: 0, y: -32, duration: 0.06 }, 0.32)
-        .set(invitation, { pointerEvents: "auto" }, 0.36)
-        .to(invitation, { opacity: 1, y: 0, duration: 0.07 }, 0.36)
-        .to(invitation, { opacity: 0, y: -32, duration: 0.06 }, 0.57)
-        .set(invitation, { pointerEvents: "none" }, 0.63)
-        .to(guide, { opacity: 1, y: 0, duration: 0.07 }, 0.62)
-        .fromTo(select("[data-stage-portrait]"), { clipPath: "inset(100% 0 0 0)", scale: 1.08 },
-          { clipPath: "inset(0% 0 0 0)", scale: 1, duration: 0.12, ease: "power2.out" }, 0.62)
-        .to(guide, { opacity: 0, y: -24, duration: 0.09 }, 0.84)
-        .to(select(".hero-stage-shade"), { opacity: 1, duration: 0.15 }, 0.85)
-        .to(select(".hero-stage-controls"), { opacity: 0, duration: 0.06 }, 0.93);
+        .to(opening, { opacity: 0, y: -32, scale: 0.98, duration: 0.08, ease: "power2.inOut" }, 0.16)
+        .to(story, { opacity: 1, y: 0, duration: 0.07, ease: "power2.inOut" }, 0.21)
+        .to(story, { opacity: 0, y: -20, duration: 0.06, ease: "power2.inOut" }, 0.47)
+        .set(invitation, { pointerEvents: "auto" }, 0.53)
+        .to(invitation, { opacity: 1, y: 0, duration: 0.07, ease: "power2.inOut" }, 0.53)
+        .to(invitation, { opacity: 0, y: -20, duration: 0.05, ease: "power2.inOut" }, 0.73)
+        .set(invitation, { pointerEvents: "none" }, 0.78)
+        .to(guide, { opacity: 1, y: 0, duration: 0.07, ease: "power2.inOut" }, 0.78)
+        .fromTo(select("[data-stage-portrait]"), { scale: 1.04 },
+          { scale: 1, duration: 0.12, ease: "power2.out" }, 0.78)
+        .to(guide, { opacity: 0, y: -16, duration: 0.05 }, 0.93)
+        .to(select(".hero-stage-shade"), { opacity: 1, duration: 0.05 }, 0.95)
+        .to(select(".hero-stage-controls"), { opacity: 0, duration: 0.05 }, 0.95);
 
       // Focus seeks the CTA's act; opacity never removes copy from the reading order.
       const focus = (event: FocusEvent) => {
         if (!(event.target instanceof Element) || !event.target.closest("[data-stage-invitation]")) return;
-        const y = stage.getBoundingClientRect().top + scrollY + distance() * 0.46;
+        const y = stage.getBoundingClientRect().top + scrollY + distance() * 0.65;
         const lenis = getLenis();
         if (lenis) lenis.scrollTo(y, { immediate: true });
         else window.scrollTo({ top: y, behavior: "instant" });
         ScrollTrigger.update();
         timeline.scrollTrigger?.getTween()?.progress(1);
-        timeline.progress(0.46);
+        timeline.progress(0.65);
       };
       stage.addEventListener("focusin", focus);
       ScrollTrigger.refresh();
@@ -88,17 +88,17 @@ export default function HeroStage({ children }: { children: ReactNode }) {
         {children}
         <div className="hero-stage-shade" aria-hidden="true" />
         <div className="hero-stage-controls">
-          <button type="button" className="hero-scroll-cue" aria-label="Avançar pela experiência nos Alpes"
+          <button type="button" className="hero-scroll-cue" aria-label="Explore pela rolagem: avançar pela experiência nos Alpes"
             onClick={() => {
               const stage = ref.current;
               if (!stage) return;
               const start = stage.getBoundingClientRect().top + scrollY;
               const distance = stage.offsetHeight - (stage.firstElementChild as HTMLElement).offsetHeight;
               const p = (scrollY - start) / distance;
-              const next = [0.25, 0.46, 0.74, 1.12].find(value => value > p + 0.08) ?? 1.12;
+              const next = [0.36, 0.65, 0.88, 1.02].find(value => value > p + 0.03) ?? 1.02;
               const target = start + distance * next;
               const lenis = getLenis();
-              if (lenis) lenis.scrollTo(target, { duration: 1.6 });
+              if (lenis) lenis.scrollTo(target, { duration: 2.2 });
               else window.scrollTo({ top: target, behavior: "smooth" });
             }}><ArrowDown size={16} aria-hidden="true" /><span>Explore pela rolagem</span></button>
           <div className="hero-progress" aria-hidden="true"><span /></div>

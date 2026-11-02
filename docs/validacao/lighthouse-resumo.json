@@ -1,0 +1,142 @@
+{
+  "mobile": {
+    "url": "http://127.0.0.1:3001/",
+    "fetchTime": "2026-10-31T21:18:31.447Z",
+    "lighthouseVersion": "13.6.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 1060.2905,
+        "display": "1.1 s"
+      },
+      "largest-contentful-paint": {
+        "value": 1060.2905,
+        "display": "1.1 s"
+      },
+      "cumulative-layout-shift": {
+        "value": 0.02326831691134252,
+        "display": "0.023"
+      },
+      "total-blocking-time": {
+        "value": 198,
+        "display": "200 ms"
+      },
+      "speed-index": {
+        "value": 2638.806673904743,
+        "display": "2.6 s"
+      }
+    },
+    "runtimeError": null,
+    "warnings": []
+  },
+  "desktop": {
+    "url": "http://127.0.0.1:3001/",
+    "fetchTime": "2026-10-31T21:19:08.371Z",
+    "lighthouseVersion": "13.6.0",
+    "screenEmulation": {
+      "mobile": false,
+      "width": 1280,
+      "height": 900,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 286.5471,
+        "display": "0.3 s"
+      },
+      "largest-contentful-paint": {
+        "value": 286.5471,
+        "display": "0.3 s"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "display": "0"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "display": "0 ms"
+      },
+      "speed-index": {
+        "value": 979.8040509385573,
+        "display": "1.0 s"
+      }
+    },
+    "runtimeError": null,
+    "warnings": []
+  },
+  "galeria-360": {
+    "url": "http://127.0.0.1:3001/#paisagens",
+    "fetchTime": "2026-10-31T21:16:24.498Z",
+    "lighthouseVersion": "13.6.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 360,
+      "height": 800,
+      "deviceScaleFactor": 2,
+      "disabled": false
+    },
+    "scores": {
+      "accessibility": 100
+    },
+    "metrics": {},
+    "runtimeError": null,
+    "warnings": []
+  },
+  "galeria-768": {
+    "url": "http://127.0.0.1:3001/#paisagens",
+    "fetchTime": "2026-10-31T21:16:39.724Z",
+    "lighthouseVersion": "13.6.0",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 768,
+      "height": 1024,
+      "deviceScaleFactor": 2,
+      "disabled": false
+    },
+    "scores": {
+      "accessibility": 100
+    },
+    "metrics": {},
+    "runtimeError": null,
+    "warnings": []
+  },
+  "galeria-1920": {
+    "url": "http://127.0.0.1:3001/#paisagens",
+    "fetchTime": "2026-10-31T21:17:25.179Z",
+    "lighthouseVersion": "13.6.0",
+    "screenEmulation": {
+      "mobile": false,
+      "width": 1920,
+      "height": 1080,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    },
+    "scores": {
+      "accessibility": 100
+    },
+    "metrics": {},
+    "runtimeError": null,
+    "warnings": []
+  }
+}
