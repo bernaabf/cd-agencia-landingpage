@@ -31,6 +31,7 @@ export function whatsappLink(message: string): string {
 export const navLinks = [
   { id: "inicio", label: "Início" },
   { id: "sobre", label: "Sobre" },
+  { id: "paisagens", label: "Paisagens" },
   { id: "servicos", label: "Serviços" },
   { id: "contato", label: "Contato" },
 ] as const;

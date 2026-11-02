@@ -25,28 +25,22 @@ export default function Services() {
               key={item.title}
               data-world-stop={i}
               data-reveal
-              className={`group relative rounded-[24px] border border-white/40 bg-cream-200 p-7 text-brown-900 shadow-[0_8px_32px_rgba(20,10,8,0.18)] transition-[translate,box-shadow] duration-500 ease-premium hover:-translate-y-1.5 hover:shadow-[0_24px_56px_rgba(20,10,8,0.34)] sm:p-9 ${styles.serviceCard}`}
+              className={styles.serviceRow}
             >
-              <span
-                aria-hidden
-                className={`font-display text-base tracking-[0.1em] text-brown-700 ${styles.serviceNumber}`}
-              >
-                {String(i + 1).padStart(2, "0")}
-              </span>
               <div>
-                <h3 className={`display text-brown-900 ${styles.itemTitle}`}>{item.title}</h3>
+                <h3 className={`display ${styles.itemTitle}`}>{item.title}</h3>
                 {item.clarification && (
-                  <p className="mt-1 text-sm text-brown-700">{item.clarification}</p>
+                  <p className="mt-3 text-sm text-sand-400">{item.clarification}</p>
                 )}
               </div>
               <div className={styles.serviceDescription}>
-                <p className="text-[0.95rem] font-semibold leading-snug">{item.lead}</p>
-                <p className="mt-4 text-[0.95rem] leading-[1.75] text-brown-900/80">{item.text}</p>
-              </div>
-              <div className={styles.serviceAction}>
-                <Button href={whatsappLink(item.message)} variant="dark" size="sm">
-                  {item.cta}
-                </Button>
+                <p className="text-base font-medium leading-relaxed">{item.lead}</p>
+                <p className="mt-3 text-base leading-[1.8] text-cream-100/85">{item.text}</p>
+                <div className={styles.serviceAction}>
+                  <Button href={whatsappLink(item.message)} size="sm">
+                    {item.cta}
+                  </Button>
+                </div>
               </div>
             </li>
           ))}

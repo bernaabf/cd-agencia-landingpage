@@ -3,14 +3,12 @@
   --editorial-title: clamp(2.2rem, 5.5vw, 4.6rem);
   --editorial-item-title: clamp(1.9rem, 3vw, 2.8rem);
   --editorial-leading: 1.08;
-  --editorial-tracking: 0.025em;
+  --editorial-tracking: 0.015em;
   --editorial-section: clamp(6rem, 8vw, 8rem);
   --editorial-block: clamp(3.5rem, 6vw, 5rem);
   --editorial-margin: clamp(1.25rem, 3vw, 2.5rem);
   --editorial-gap: clamp(1.25rem, 2vw, 2rem);
   --editorial-measure: 1280px;
-  --editorial-duration: 0.5s;
-  --editorial-ease: var(--ease-premium);
 }
 
 .scope .heading {
@@ -45,6 +43,17 @@
 
 .bodyCopy {
   max-width: 52ch;
+  text-wrap: pretty;
+}
+
+.pillars {
+  display: grid;
+  gap: 0 2rem;
+}
+
+.scope:focus-visible,
+.scope a:focus-visible {
+  outline-color: currentColor;
 }
 
 .block {
@@ -52,7 +61,7 @@
 }
 
 .serviceHeading {
-  max-width: 16ch;
+  max-width: 22ch;
   margin-inline: 0;
   text-align: left;
 }
@@ -61,39 +70,69 @@
   padding-top: var(--editorial-section);
 }
 
-.closing {
-  max-width: 48rem;
+.closingGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+.closingTitle {
+  max-width: 14ch;
+}
+
+.closingCopy {
+  max-width: 52ch;
+  text-wrap: pretty;
+}
+
+.contactImage {
+  margin-top: var(--editorial-block);
+}
+
+.socialList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 44px;
+  font-size: 0.875rem;
+  text-underline-offset: 0.3em;
+}
+
+.socialLink:hover,
+.socialLink:focus-visible {
+  text-decoration: underline;
 }
 
 .serviceList {
-  display: grid;
-  gap: var(--editorial-gap);
+  border-top: 1px solid color-mix(in srgb, var(--color-sand-400) 40%, transparent);
 }
 
-.serviceCard {
+.serviceRow {
   display: grid;
   gap: 1.25rem;
-}
-
-.serviceNumber {
-  font-variant-numeric: tabular-nums;
+  padding-block: clamp(2rem, 4vw, 3rem);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-sand-400) 40%, transparent);
 }
 
 .serviceDescription {
   max-width: 52ch;
+  text-wrap: pretty;
+}
+
+.serviceRow .itemTitle {
+  max-width: 15ch;
 }
 
 .serviceAction {
   display: flex;
   align-items: center;
-  padding-top: 0.75rem;
-}
-
-/* Reuse the existing UI timing; no new timeline, RAF or scroll subscription. */
-.scope .serviceCard,
-.scope .socialLink {
-  transition-duration: var(--editorial-duration);
-  transition-timing-function: var(--editorial-ease);
+  padding-top: 1.5rem;
 }
 
 .footerLink {
@@ -109,31 +148,20 @@
   text-decoration-line: underline;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .scope .serviceCard,
-  .scope .socialLink {
-    transition-duration: 0.01ms;
+@media (min-width: 768px) {
+  .pillars {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .serviceRow,
+  .closingGrid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    column-gap: clamp(2rem, 7vw, 7rem);
   }
 }
 
 @media (min-width: 1024px) {
   .introGrid {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
-
-  .serviceCard {
-    grid-template-columns: 3ch minmax(0, 0.9fr) minmax(0, 1.2fr) auto;
-    align-items: start;
-    column-gap: var(--editorial-gap);
-  }
-
-  .serviceNumber {
-    padding-top: 0.35rem;
-  }
-
-  .serviceAction {
-    align-self: center;
-    justify-content: flex-end;
-    padding-top: 0;
   }
 }

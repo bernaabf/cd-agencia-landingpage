@@ -6,7 +6,7 @@ const loader = ({ src, width }: ImageLoaderProps) => `${src}-${widths.find(w => 
 export default function PaisagemImage({ paisagem, sizes, contain = false, eager = false }: {
   paisagem: Paisagem; sizes: string; contain?: boolean; eager?: boolean;
 }) {
-  return <picture>
+  return <picture style={{ position: "absolute", inset: 0, display: "block" }}>
     <source type="image/avif" srcSet={widths.map(w => `${paisagem.src}-${w}.avif ${w}w`).join(", ")} sizes={sizes} />
     <source type="image/webp" srcSet={widths.map(w => `${paisagem.src}-${w}.webp ${w}w`).join(", ")} sizes={sizes} />
     <Image loader={loader} src={paisagem.src} fill alt={paisagem.alt} sizes={sizes}

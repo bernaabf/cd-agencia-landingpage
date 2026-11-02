@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-02",
+  "environment": "Chromium headless local, Next.js dev",
+  "automatedAccessibilityScope": "main; WCAG 2 A/AA e WCAG 2.1 AA via axe-core; prefers-reduced-motion: reduce",
+  "responsive": [
+    {
+      "width": 360,
+      "documentWidth": 360,
+      "axeViolations": 0,
+      "runtimeErrors": [],
+      "serviceButtonHeights": [
+        44,
+        44,
+        44
+      ],
+      "filteredLakes": {
+        "count": 4,
+        "status": "4 paisagens"
+      },
+      "lightbox": {
+        "lightboxBefore": "Castelo de Chillon",
+        "lightboxAfter": "Lago Oeschinen",
+        "restored": true
+      },
+      "landscapesInNavigation": true
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "axeViolations": 0,
+      "runtimeErrors": [],
+      "serviceButtonHeights": [
+        44,
+        44,
+        44
+      ],
+      "filteredLakes": {
+        "count": 4,
+        "status": "4 paisagens"
+      },
+      "lightbox": {
+        "lightboxBefore": "Castelo de Chillon",
+        "lightboxAfter": "Lago Oeschinen",
+        "restored": true
+      },
+      "landscapesInNavigation": true
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "axeViolations": 0,
+      "runtimeErrors": [],
+      "serviceButtonHeights": [
+        44,
+        44,
+        44
+      ],
+      "filteredLakes": {
+        "count": 4,
+        "status": "4 paisagens"
+      },
+      "lightbox": {
+        "lightboxBefore": "Castelo de Chillon",
+        "lightboxAfter": "Lago Oeschinen",
+        "restored": true
+      },
+      "landscapesInNavigation": true
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1024,
+      "axeViolations": 0,
+      "runtimeErrors": [],
+      "serviceButtonHeights": [
+        44,
+        44,
+        44
+      ],
+      "filteredLakes": {
+        "count": 4,
+        "status": "4 paisagens"
+      },
+      "lightbox": {
+        "lightboxBefore": "Castelo de Chillon",
+        "lightboxAfter": "Lago Oeschinen",
+        "restored": true
+      },
+      "landscapesInNavigation": true
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "axeViolations": 0,
+      "runtimeErrors": [],
+      "serviceButtonHeights": [
+        44,
+        44,
+        44
+      ],
+      "filteredLakes": {
+        "count": 4,
+        "status": "4 paisagens"
+      },
+      "lightbox": {
+        "lightboxBefore": "Castelo de Chillon",
+        "lightboxAfter": "Lago Oeschinen",
+        "restored": true
+      },
+      "landscapesInNavigation": true
+    },
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "axeViolations": 0,
+      "runtimeErrors": [],
+      "serviceButtonHeights": [
+        44,
+        44,
+        44
+      ],
+      "filteredLakes": {
+        "count": 4,
+        "status": "4 paisagens"
+      },
+      "lightbox": {
+        "lightboxBefore": "Castelo de Chillon",
+        "lightboxAfter": "Lago Oeschinen",
+        "restored": true
+      },
+      "landscapesInNavigation": true
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "height": 844,
+      "reduced": false,
+      "menu": {
+        "hasPaisagens": true,
+        "focusInDialog": true
+      },
+      "restored": true,
+      "destination": {
+        "offset": 90.703125,
+        "closed": true
+      },
+      "services": {
+        "titleVisible": "visible",
+        "firstRowOpacity": "1",
+        "pageWidth": 390,
+        "viewport": 390,
+        "canvases": 1
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "reduced": false,
+      "menu": {
+        "hasPaisagens": true,
+        "focusInDialog": true
+      },
+      "restored": true,
+      "destination": {
+        "offset": 90.953125,
+        "closed": true
+      },
+      "services": {
+        "titleVisible": "visible",
+        "firstRowOpacity": "1",
+        "pageWidth": 1440,
+        "viewport": 1440,
+        "canvases": 1
+      },
+      "errors": []
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "reduced": true,
+      "menu": {
+        "hasPaisagens": true,
+        "focusInDialog": true
+      },
+      "restored": true,
+      "destination": {
+        "offset": 87.9375,
+        "closed": true
+      },
+      "services": {
+        "titleVisible": "visible",
+        "firstRowOpacity": "1",
+        "pageWidth": 320,
+        "viewport": 320,
+        "canvases": 0
+      },
+      "errors": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "reduced": true,
+      "menu": {
+        "hasPaisagens": true,
+        "focusInDialog": true
+      },
+      "restored": true,
+      "destination": {
+        "offset": 88.4375,
+        "closed": true
+      },
+      "services": {
+        "titleVisible": "visible",
+        "firstRowOpacity": "1",
+        "pageWidth": 844,
+        "viewport": 844,
+        "canvases": 0
+      },
+      "errors": []
+    }
+  ],
+  "checks": {
+    "lint": "passed without warnings",
+    "typecheck": "passed",
+    "build": "passed",
+    "diffCheck": "passed",
+    "brandTokensAndFonts": "src/app/globals.css, src/app/layout.tsx, src/fonts unchanged against HEAD",
+    "brandImagesAnd3D": "public/images, src/components/world, src/lib/world unchanged against HEAD"
+  },
+  "limitations": [
+    "WhatsApp number not configured locally; no real conversation sent.",
+    "No physical-device or screen-reader session was performed.",
+    "A development LCP hint occurred for the below-the-fold contact image during scripted scrolling; no production performance score claimed."
+  ]
+}

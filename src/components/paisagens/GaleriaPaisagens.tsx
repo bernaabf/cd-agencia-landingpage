@@ -42,8 +42,13 @@ export default function GaleriaPaisagens() {
         <h2 className="display" id="paisagens-title">A Suíça além do roteiro.</h2>
         <p>Montanhas, lagos e caminhos da Suíça.</p>
       </div>
-      <FiltroCategorias value={category} onChange={setCategory} />
-      <p className="sr-only" role="status">{filtered.length} paisagens{loadingDialog ? ". Abrindo paisagem." : ""}</p>
+      <div className={styles.toolbar}>
+        <FiltroCategorias value={category} onChange={setCategory} />
+        <p className={styles.resultCount} role="status">
+          {filtered.length} {filtered.length === 1 ? "paisagem" : "paisagens"}
+          {loadingDialog && <span className="sr-only">. Abrindo paisagem.</span>}
+        </p>
+      </div>
       <div className={styles.grid} ref={grid} id="paisagens-grid">
         {filtered.map((p, index) => <PaisagemCard key={p.id} paisagem={p} onOpen={() => {
           setLoadingDialog(true);

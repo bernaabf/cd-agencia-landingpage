@@ -34,13 +34,13 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   const v = variants[variant];
-  const sizing = size === "sm" ? "h-10 px-5 text-[0.68rem]" : "h-12 px-7 text-[0.72rem]";
+  const sizing = size === "sm" ? "min-h-11 px-5 py-3 text-[0.72rem]" : "min-h-12 px-7 py-3 text-[0.75rem]";
 
   return (
     <a
       href={href}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      className={`group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full font-sans font-semibold uppercase tracking-[0.16em] transition-[scale,box-shadow] duration-500 ease-premium hover:shadow-[0_10px_30px_rgba(20,10,8,0.28)] active:scale-[0.97] ${v.base} ${sizing} ${className}`}
+      className={`group relative inline-flex max-w-full items-center justify-center gap-3 overflow-hidden rounded-full text-center font-sans font-semibold uppercase leading-relaxed tracking-[0.12em] transition-transform duration-300 ease-premium active:scale-[0.98] ${v.base} ${sizing} ${className}`}
     >
       <span
         aria-hidden
@@ -49,7 +49,7 @@ export default function Button({
       <span className={`relative z-10 transition-colors duration-500 ${v.hoverText}`}>{children}</span>
       <ArrowUpRight
         aria-hidden
-        className={`relative z-10 size-3.5 transition-transform duration-500 ease-premium group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ${v.hoverText}`}
+        className={`relative z-10 size-3.5 shrink-0 transition-transform duration-300 ease-premium group-hover:-translate-y-0.5 group-hover:translate-x-0.5 ${v.hoverText}`}
       />
       {external && <span className="sr-only"> (abre em nova aba)</span>}
     </a>

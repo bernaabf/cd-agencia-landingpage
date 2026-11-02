@@ -17,13 +17,10 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.introGrid}>
           <div className="lg:col-span-5">
-            <p data-reveal className="eyebrow text-brown-700">
-              {about.eyebrow}
-            </p>
             <h2
               id="sobre-title"
               data-split
-              className={`display mt-5 text-brown-900 ${styles.heading}`}
+              className={`display text-brown-900 ${styles.heading}`}
             >
               {about.title}
             </h2>
@@ -33,7 +30,7 @@ export default function About() {
           </div>
           <p
             data-reveal
-            className={`text-[1.08rem] leading-[1.85] text-brown-900/85 sm:text-[1.15rem] lg:col-span-6 lg:col-start-7 lg:pt-9 ${styles.bodyCopy}`}
+            className={`text-[1.08rem] leading-[1.85] text-brown-900/85 sm:text-[1.15rem] lg:col-span-6 lg:col-start-7 lg:pt-2 ${styles.bodyCopy}`}
           >
             {about.text}
           </p>
@@ -64,19 +61,17 @@ export default function About() {
           />
         </div>
 
-        <ul className={`grid gap-3 sm:grid-cols-3 sm:gap-5 ${styles.block}`}>
+        <ul className={`${styles.pillars} ${styles.block}`}>
           {about.pillars.map((pillar, i) => {
             const Icon = pillarIcons[i];
             return (
               <li
                 key={pillar}
                 data-reveal
-                className="flex items-center gap-4 rounded-[20px] border border-brown-900/10 bg-white/45 px-5 py-4 backdrop-blur-md transition-[translate,border-color] duration-500 ease-premium hover:-translate-y-0.5 hover:border-brown-900/25"
+                className="flex items-center gap-4 border-t border-brown-900/20 py-5"
               >
-                <span className="grid size-10 shrink-0 place-items-center rounded-full bg-brown-900 text-cream-100">
-                  <Icon aria-hidden className="size-[1.1rem]" strokeWidth={1.5} />
-                </span>
-                <span className="font-display text-[1.3rem] leading-tight">{pillar}</span>
+                <Icon aria-hidden className="size-5 shrink-0 text-brown-700" strokeWidth={1.5} />
+                <span className="font-display text-[1.55rem] leading-tight">{pillar}</span>
               </li>
             );
           })}
