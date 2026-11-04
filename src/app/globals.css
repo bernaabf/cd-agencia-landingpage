@@ -465,7 +465,6 @@ html.lenis body {
 
 /* Touch feedback and device cutouts keep the existing visual tokens. */
 a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; }
-.mobile-contact, .mobile-contact[hidden] { display: none; }
 .hero-stage-controls {
   padding-bottom: env(safe-area-inset-bottom, 0px);
   padding-left: env(safe-area-inset-left, 0px);
@@ -473,14 +472,6 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
 }
 #contato { padding-bottom: max(2.5rem, env(safe-area-inset-bottom, 0px)); }
 @media (max-width: 767px) {
-  .mobile-contact {
-    position: fixed;
-    z-index: 40;
-    display: block;
-    right: max(1.25rem, env(safe-area-inset-right, 0px));
-    bottom: max(1rem, env(safe-area-inset-bottom, 0px));
-  }
-  #contato { padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px)); }
   .js .hero-stage[data-immersive] .hero-stage-controls { bottom: 5rem; }
   .hero-glass { -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
 }
