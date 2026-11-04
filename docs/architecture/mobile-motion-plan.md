@@ -85,7 +85,7 @@ flowchart TD
 
 Proposta explícita: mobile em <=767px, ou touch primário sem hover até 1023px, cobrindo telefone em paisagem. Desktop com mouse a partir de 768px continua no caminho atual; >=1024px conserva desktop. Testar essa política em dispositivos híbridos e em rotação. A regra deve ser idêntica para seleção JS e layout CSS.
 
-A seleção precisa ocorrer antes da montagem do runtime desktop. CSS ocultando canvas não basta. Verificar a rede para garantir que mobile não solicita Three/R3F nem terrain.worker. Não duplicar h1, IDs, texto ou CTAs. A extração do controlador desktop é mecânica e local ao hero; não muda rotas, stack nem contratos de negócio.
+A seleção precisa ocorrer antes da montagem do runtime desktop. A implementação mantém a entrada pequena do controlador disponível sem outro request; a fronteira dinâmica continua no renderer pesado Three/R3F. Esse trade-off evita atrasar a entrada desktop e é verificado pela ausência de recursos 3D no mobile. CSS ocultando canvas não basta. Verificar a rede para garantir que mobile não solicita Three/R3F nem terrain.worker. Não duplicar h1, IDs, texto ou CTAs. A extração do controlador desktop é mecânica e local ao hero; não muda rotas, stack nem contratos de negócio.
 
 GSAP ainda pode estar no JS mobile por header/menu. Não prometer sua eliminação completa: a meta é tirar o renderer 3D e o trabalho de scroll decorativo. Se traces mostrarem custo significativo no header, simplificar apenas seu ramo mobile em commit separado, sem alterar o desktop.
 

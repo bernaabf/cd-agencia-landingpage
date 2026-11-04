@@ -1,10 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useLayoutEffect, useRef, type ReactNode } from "react";
 import { useMobilePresentation } from "@/hooks/useMobilePresentation";
 
-const DesktopHeroExperience = dynamic(() => import("./DesktopHeroExperience"), { ssr: false });
+import DesktopHeroExperience from "./DesktopHeroExperience";
 
 /** One semantic hero; the desktop runtime is never mounted on mobile. */
 export default function HeroStage({ children, mobileScene }: { children: ReactNode; mobileScene: ReactNode }) {

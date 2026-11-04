@@ -14,7 +14,7 @@ O pedido atual substitui a regra anterior de conservar o 3D no mobile: o desktop
 ## Decisão
 
 1. Manter Next/React, uma página, um conteúdo semântico e um deploy. Criar apenas uma fronteira local de apresentação do hero.
-2. Desktop: extrair mecanicamente o controlador existente para um módulo exclusivo, carregado condicionalmente. Manter câmera, terreno, duração, composição e regras de qualidade existentes.
+2. Desktop: extrair mecanicamente o controlador existente para um módulo exclusivo, montado condicionalmente. O controlador pequeno pode integrar o bundle compartilhado para evitar uma cascata de carregamento no desktop; o renderer Three/R3F continua em import dinâmico, sem SSR, e só é requisitado após a seleção desktop. Manter câmera, terreno, duração, composição e regras de qualidade existentes.
 3. Mobile: criar MobileAlpineScene, fotografia do Matterhorn já selecionada na galeria, variantes AVIF/WebP locais responsivas e uma entrada breve (aproximadamente 450–700ms, opacity/transform). Sem câmera 3D, shader, partículas, backdrop-filter ou loop infinito. Sem animação vinculada continuamente à posição de scroll.
 4. Usar IntersectionObserver para disparar a entrada uma vez. Conteúdo visível por padrão; com reduced-motion/saveData, apresentar composição estática. A fotografia estática é o fallback. Sem JavaScript, manter título, texto, CTAs e fotografia utilizáveis. Usar créditos existentes e não introduzir destinos ou fatos novos.
 5. Mobile: conteúdo do hero em fluxo normal, altura definida pelo conteúdo com mínimo estável apenas na abertura, sem corredor 480svh, sem sticky de narrativa nem atos ocultos que exijam seek de foco.
@@ -36,7 +36,7 @@ O pedido atual substitui a regra anterior de conservar o 3D no mobile: o desktop
 ## Consequências e trade-offs
 
 - Positivas: remove o custo 3D do mobile; desacopla a leitura da câmera; reduz ciclos de execução e estados; facilita testes isolados.
-- Negativas: mobile perde o voo pela paisagem e a narrativa por scrub; haverá dois pequenos controladores de apresentação para manter.
+- Negativas: mobile perde o voo pela paisagem e a narrativa por scrub; haverá dois pequenos controladores de apresentação para manter. A entrada compartilhada contém o controlador desktop pequeno, embora ele nunca seja montado no mobile; isso evita atrasar a coreografia desktop por outro request.
 - Neutras: Three/R3F e GSAP permanecem dependências do projeto porque o desktop continua usando-os. Não prometer zero GSAP no bundle mobile: header/menu ainda possuem interações existentes.
 - Custos de infraestrutura e superfície de dados permanecem iguais; nenhum serviço, banco, pacote ou telemetria novo.
 
