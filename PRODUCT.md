@@ -26,7 +26,7 @@ O visitante conhece a profissional, explora paisagens, compara os três serviço
 
 - Site institucional existente em Next.js, React e TypeScript, com conteúdo centralizado em `src/lib/site.ts`.
 - Serviços: Suíça Sob Medida, Concierge e Transfert Privé (transfer privativo).
-- Preservar a abertura alpina em 3D e seus caminhos de navegação e redução de movimento durante este refinamento.
+- Preservar a abertura alpina em 3D no desktop. No mobile, usar uma fotografia das paisagens selecionadas no projeto, com movimento leve e scroll nativo, conforme aprovação do responsável em 03/11/2026.
 - Número de WhatsApp e URL pública dependem das variáveis de ambiente; não inventar contatos.
 - Nenhuma funcionalidade SaaS, dashboard ou métrica comercial foi solicitada para o produto.
 
