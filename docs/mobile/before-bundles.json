@@ -1,0 +1,887 @@
+{
+  "route": "/",
+  "initial": [
+    "1g28e174r-lid.js",
+    "216iyidhmrh3u.js",
+    "turbopack-2c3mg3r-05n1w.js",
+    "0umf92h1sb77c.js",
+    "2j-m1yrcsz12i.js",
+    "0dur0mfajr5eo.js",
+    "2ghuyzzi0br3l.js",
+    "0cz1d0mv5g_q7.js",
+    "01ce6pg25fldo.js"
+  ],
+  "initialBytes": 771222,
+  "initialGzip": 248794,
+  "chunks": [
+    {
+      "name": "115ztmrhgjsjt.js",
+      "bytes": 908940,
+      "gzip": 243531
+    },
+    {
+      "name": "216iyidhmrh3u.js",
+      "bytes": 229597,
+      "gzip": 71899
+    },
+    {
+      "name": "1g28e174r-lid.js",
+      "bytes": 179944,
+      "gzip": 48295
+    },
+    {
+      "name": "0cz1d0mv5g_q7.js",
+      "bytes": 112594,
+      "gzip": 39627
+    },
+    {
+      "name": "0dur0mfajr5eo.js",
+      "bytes": 106755,
+      "gzip": 36859
+    },
+    {
+      "name": "2ghuyzzi0br3l.js",
+      "bytes": 70866,
+      "gzip": 27462
+    },
+    {
+      "name": "2j-m1yrcsz12i.js",
+      "bytes": 23792,
+      "gzip": 9197
+    },
+    {
+      "name": "01ce6pg25fldo.js",
+      "bytes": 22597,
+      "gzip": 7551
+    },
+    {
+      "name": "0umf92h1sb77c.js",
+      "bytes": 13822,
+      "gzip": 3514
+    },
+    {
+      "name": "turbopack-2c3mg3r-05n1w.js",
+      "bytes": 11255,
+      "gzip": 4390
+    },
+    {
+      "name": "15rbj58hzx56n.js",
+      "bytes": 4103,
+      "gzip": 1794
+    },
+    {
+      "name": "0vwo4ing6idj3.js",
+      "bytes": 3968,
+      "gzip": 2038
+    },
+    {
+      "name": "2x7j-dmy5h2b8.js",
+      "bytes": 3342,
+      "gzip": 1728
+    },
+    {
+      "name": "turbopack-worker-1hrsqshz0gfey.js",
+      "bytes": 927,
+      "gzip": 597
+    },
+    {
+      "name": "turbopack-3-qrkekup-0so.js",
+      "bytes": 188,
+      "gzip": 174
+    }
+  ],
+  "images": [
+    {
+      "path": "carolina-consultora.jpg",
+      "bytes": 60001
+    },
+    {
+      "path": "globo-destinos.jpg",
+      "bytes": 80448
+    },
+    {
+      "path": "hero-carolina.jpg",
+      "bytes": 60001
+    },
+    {
+      "path": "logo-mark.png",
+      "bytes": 33067
+    },
+    {
+      "path": "mapa-rota.jpg",
+      "bytes": 81264
+    },
+    {
+      "path": "planejamento-viagem.jpg",
+      "bytes": 106216
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-1080.avif",
+      "bytes": 49863
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-1080.jpg",
+      "bytes": 80228
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-1080.webp",
+      "bytes": 69422
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-1600.avif",
+      "bytes": 98905
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-1600.jpg",
+      "bytes": 163374
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-1600.webp",
+      "bytes": 139044
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-2400.avif",
+      "bytes": 192532
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-2400.jpg",
+      "bytes": 329295
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-2400.webp",
+      "bytes": 261900
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-480.avif",
+      "bytes": 12001
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-480.jpg",
+      "bytes": 18806
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-480.webp",
+      "bytes": 15982
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-768.avif",
+      "bytes": 26860
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-768.jpg",
+      "bytes": 43166
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud-768.webp",
+      "bytes": 36880
+    },
+    {
+      "path": "paisagens/castelo-chillon-vaud.jpg",
+      "bytes": 551213
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-1080.avif",
+      "bytes": 78179
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-1080.jpg",
+      "bytes": 115530
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-1080.webp",
+      "bytes": 105068
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-1600.avif",
+      "bytes": 157436
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-1600.jpg",
+      "bytes": 231816
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-1600.webp",
+      "bytes": 200778
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-2400.avif",
+      "bytes": 305257
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-2400.jpg",
+      "bytes": 459327
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-2400.webp",
+      "bytes": 363044
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-480.avif",
+      "bytes": 17445
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-480.jpg",
+      "bytes": 27116
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-480.webp",
+      "bytes": 24148
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-768.avif",
+      "bytes": 40555
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-768.jpg",
+      "bytes": 62458
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais-768.webp",
+      "bytes": 56044
+    },
+    {
+      "path": "paisagens/glaciar-aletsch-valais.jpg",
+      "bytes": 805533
+    },
+    {
+      "path": "paisagens/grindelwald-berna-1080.avif",
+      "bytes": 133051
+    },
+    {
+      "path": "paisagens/grindelwald-berna-1080.jpg",
+      "bytes": 150455
+    },
+    {
+      "path": "paisagens/grindelwald-berna-1080.webp",
+      "bytes": 147056
+    },
+    {
+      "path": "paisagens/grindelwald-berna-1600.avif",
+      "bytes": 277287
+    },
+    {
+      "path": "paisagens/grindelwald-berna-1600.jpg",
+      "bytes": 375742
+    },
+    {
+      "path": "paisagens/grindelwald-berna-1600.webp",
+      "bytes": 395592
+    },
+    {
+      "path": "paisagens/grindelwald-berna-2400.avif",
+      "bytes": 554280
+    },
+    {
+      "path": "paisagens/grindelwald-berna-2400.jpg",
+      "bytes": 792007
+    },
+    {
+      "path": "paisagens/grindelwald-berna-2400.webp",
+      "bytes": 776516
+    },
+    {
+      "path": "paisagens/grindelwald-berna-480.avif",
+      "bytes": 25980
+    },
+    {
+      "path": "paisagens/grindelwald-berna-480.jpg",
+      "bytes": 36227
+    },
+    {
+      "path": "paisagens/grindelwald-berna-480.webp",
+      "bytes": 37804
+    },
+    {
+      "path": "paisagens/grindelwald-berna-768.avif",
+      "bytes": 65860
+    },
+    {
+      "path": "paisagens/grindelwald-berna-768.jpg",
+      "bytes": 89115
+    },
+    {
+      "path": "paisagens/grindelwald-berna-768.webp",
+      "bytes": 93322
+    },
+    {
+      "path": "paisagens/grindelwald-berna.jpg",
+      "bytes": 1300485
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-1080.avif",
+      "bytes": 68670
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-1080.jpg",
+      "bytes": 106821
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-1080.webp",
+      "bytes": 94194
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-1600.avif",
+      "bytes": 136297
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-1600.jpg",
+      "bytes": 210608
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-1600.webp",
+      "bytes": 178806
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-2400.avif",
+      "bytes": 266052
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-2400.jpg",
+      "bytes": 419376
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-2400.webp",
+      "bytes": 330240
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-480.avif",
+      "bytes": 17183
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-480.jpg",
+      "bytes": 26592
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-480.webp",
+      "bytes": 23060
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-768.avif",
+      "bytes": 37599
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-768.jpg",
+      "bytes": 58859
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna-768.webp",
+      "bytes": 50854
+    },
+    {
+      "path": "paisagens/iseltwald-lago-brienz-berna.jpg",
+      "bytes": 724412
+    },
+    {
+      "path": "paisagens/lago-lucerna-1080.avif",
+      "bytes": 102111
+    },
+    {
+      "path": "paisagens/lago-lucerna-1080.jpg",
+      "bytes": 135596
+    },
+    {
+      "path": "paisagens/lago-lucerna-1080.webp",
+      "bytes": 151026
+    },
+    {
+      "path": "paisagens/lago-lucerna-1600.avif",
+      "bytes": 197801
+    },
+    {
+      "path": "paisagens/lago-lucerna-1600.jpg",
+      "bytes": 326378
+    },
+    {
+      "path": "paisagens/lago-lucerna-1600.webp",
+      "bytes": 293076
+    },
+    {
+      "path": "paisagens/lago-lucerna-2400.avif",
+      "bytes": 372465
+    },
+    {
+      "path": "paisagens/lago-lucerna-2400.jpg",
+      "bytes": 653042
+    },
+    {
+      "path": "paisagens/lago-lucerna-2400.webp",
+      "bytes": 546734
+    },
+    {
+      "path": "paisagens/lago-lucerna-480.avif",
+      "bytes": 23091
+    },
+    {
+      "path": "paisagens/lago-lucerna-480.jpg",
+      "bytes": 33436
+    },
+    {
+      "path": "paisagens/lago-lucerna-480.webp",
+      "bytes": 33026
+    },
+    {
+      "path": "paisagens/lago-lucerna-768.avif",
+      "bytes": 56200
+    },
+    {
+      "path": "paisagens/lago-lucerna-768.jpg",
+      "bytes": 83058
+    },
+    {
+      "path": "paisagens/lago-lucerna-768.webp",
+      "bytes": 80660
+    },
+    {
+      "path": "paisagens/lago-lucerna.jpg",
+      "bytes": 1124356
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-1080.avif",
+      "bytes": 49171
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-1080.jpg",
+      "bytes": 72083
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-1080.webp",
+      "bytes": 64100
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-1600.avif",
+      "bytes": 96747
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-1600.jpg",
+      "bytes": 144657
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-1600.webp",
+      "bytes": 127810
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-2400.avif",
+      "bytes": 195905
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-2400.jpg",
+      "bytes": 301383
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-2400.webp",
+      "bytes": 251604
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-480.avif",
+      "bytes": 11645
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-480.jpg",
+      "bytes": 16763
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-480.webp",
+      "bytes": 14654
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-768.avif",
+      "bytes": 26869
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-768.jpg",
+      "bytes": 38726
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino-768.webp",
+      "bytes": 34258
+    },
+    {
+      "path": "paisagens/lago-lugano-ticino.jpg",
+      "bytes": 528120
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-1080.avif",
+      "bytes": 80449
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-1080.jpg",
+      "bytes": 115347
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-1080.webp",
+      "bytes": 105600
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-1600.avif",
+      "bytes": 157345
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-1600.jpg",
+      "bytes": 232665
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-1600.webp",
+      "bytes": 201460
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-2400.avif",
+      "bytes": 304658
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-2400.jpg",
+      "bytes": 465022
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-2400.webp",
+      "bytes": 374556
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-480.avif",
+      "bytes": 19173
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-480.jpg",
+      "bytes": 26341
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-480.webp",
+      "bytes": 24510
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-768.avif",
+      "bytes": 43932
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-768.jpg",
+      "bytes": 61795
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna-768.webp",
+      "bytes": 56188
+    },
+    {
+      "path": "paisagens/lago-oeschinen-berna.jpg",
+      "bytes": 837530
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-1080.avif",
+      "bytes": 61082
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-1080.jpg",
+      "bytes": 83148
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-1080.webp",
+      "bytes": 75864
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-1600.avif",
+      "bytes": 118110
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-1600.jpg",
+      "bytes": 164659
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-1600.webp",
+      "bytes": 147026
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-2400.avif",
+      "bytes": 231557
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-2400.jpg",
+      "bytes": 330608
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-2400.webp",
+      "bytes": 264930
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-480.avif",
+      "bytes": 14249
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-480.jpg",
+      "bytes": 19223
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-480.webp",
+      "bytes": 18098
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-768.avif",
+      "bytes": 32602
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-768.jpg",
+      "bytes": 44835
+    },
+    {
+      "path": "paisagens/lago-sils-engadina-768.webp",
+      "bytes": 41128
+    },
+    {
+      "path": "paisagens/lago-sils-engadina.jpg",
+      "bytes": 587743
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-1080.avif",
+      "bytes": 78329
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-1080.jpg",
+      "bytes": 117273
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-1080.webp",
+      "bytes": 113236
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-1600.avif",
+      "bytes": 162679
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-1600.jpg",
+      "bytes": 249946
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-1600.webp",
+      "bytes": 239516
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-2400.avif",
+      "bytes": 352982
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-2400.jpg",
+      "bytes": 541041
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-2400.webp",
+      "bytes": 504876
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-480.avif",
+      "bytes": 17940
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-480.jpg",
+      "bytes": 25017
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-480.webp",
+      "bytes": 23254
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-768.avif",
+      "bytes": 41430
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-768.jpg",
+      "bytes": 60090
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud-768.webp",
+      "bytes": 57248
+    },
+    {
+      "path": "paisagens/lavaux-lago-leman-vaud.jpg",
+      "bytes": 967384
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-1080.avif",
+      "bytes": 73402
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-1080.jpg",
+      "bytes": 104532
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-1080.webp",
+      "bytes": 102796
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-1600.avif",
+      "bytes": 151859
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-1600.jpg",
+      "bytes": 217883
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-1600.webp",
+      "bytes": 211736
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-2400.avif",
+      "bytes": 303476
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-2400.jpg",
+      "bytes": 455576
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-2400.webp",
+      "bytes": 418374
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-480.avif",
+      "bytes": 15720
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-480.jpg",
+      "bytes": 22775
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-480.webp",
+      "bytes": 21256
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-768.avif",
+      "bytes": 37909
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-768.jpg",
+      "bytes": 54166
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais-768.webp",
+      "bytes": 52262
+    },
+    {
+      "path": "paisagens/matterhorn-zermatt-valais.jpg",
+      "bytes": 753186
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-1080.avif",
+      "bytes": 87465
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-1080.jpg",
+      "bytes": 126682
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-1080.webp",
+      "bytes": 116014
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-1600.avif",
+      "bytes": 158187
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-1600.jpg",
+      "bytes": 240650
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-1600.webp",
+      "bytes": 191478
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-2400.avif",
+      "bytes": 275906
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-2400.jpg",
+      "bytes": 445827
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-2400.webp",
+      "bytes": 314370
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-480.avif",
+      "bytes": 21104
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-480.jpg",
+      "bytes": 29844
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-480.webp",
+      "bytes": 28682
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-768.avif",
+      "bytes": 48212
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-768.jpg",
+      "bytes": 69150
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna-768.webp",
+      "bytes": 65428
+    },
+    {
+      "path": "paisagens/vale-lauterbrunnen-berna.jpg",
+      "bytes": 775618
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-1080.avif",
+      "bytes": 119516
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-1080.jpg",
+      "bytes": 138056
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-1080.webp",
+      "bytes": 147688
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-1600.avif",
+      "bytes": 249242
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-1600.jpg",
+      "bytes": 340658
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-1600.webp",
+      "bytes": 349570
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-2400.avif",
+      "bytes": 513939
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-2400.jpg",
+      "bytes": 725496
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-2400.webp",
+      "bytes": 707634
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-480.avif",
+      "bytes": 25260
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-480.jpg",
+      "bytes": 34992
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-480.webp",
+      "bytes": 35336
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-768.avif",
+      "bytes": 61053
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-768.jpg",
+      "bytes": 84318
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes-768.webp",
+      "bytes": 86372
+    },
+    {
+      "path": "paisagens/viaduto-landwasser-grisoes.jpg",
+      "bytes": 1222294
+    }
+  ]
+}
