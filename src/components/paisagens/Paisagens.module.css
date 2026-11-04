@@ -7,7 +7,7 @@
 .filters { display: flex; flex-wrap: wrap; gap: .5rem; }
 .resultCount { color: var(--color-sand-400); font-size: .8rem; font-variant-numeric: tabular-nums; }
 .filters button { min-height: 44px; padding: .65rem 1.1rem; border: 1px solid var(--color-sand-500); border-radius: 100px; font-size: .8rem; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
-.filters button:hover { background: var(--color-brown-950); border-color: var(--color-cream-100); }
+@media (hover: hover) { .filters button:hover { background: var(--color-brown-950); border-color: var(--color-cream-100); } }
 .filters button:focus-visible { outline-color: var(--color-cream-100); }
 .filters button[aria-pressed="true"] { background: var(--color-cream-100); color: var(--color-brown-900); border-color: var(--color-cream-100); }
 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 2rem); align-items: start; }
@@ -56,3 +56,5 @@
 @media (prefers-reduced-motion: reduce) { .open img, .filters button { transition: none; } .fade { animation: none; } }
 
 .contactFallback { display: inline-flex; align-items: center; min-height: 48px; padding: .75rem 1.5rem; border-radius: 100px; background: var(--color-cream-100); color: var(--color-brown-900); font-size: .75rem; font-weight: 600; }
+
+.dialogPanel { padding-top: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-top, 0px)); padding-bottom: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-bottom, 0px)); padding-left: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-left, 0px)); padding-right: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-right, 0px)); }

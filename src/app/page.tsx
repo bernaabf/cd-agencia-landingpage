@@ -6,6 +6,8 @@ import About from "@/components/sections/About";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
+import Button from "@/components/Button";
+import { generalMessage, site, whatsappLink } from "@/lib/site";
 
 export default function Home() {
   return (
@@ -19,6 +21,10 @@ export default function Home() {
           <Services />
           <Contact />
         </main>
+        <div className="mobile-contact">
+          <Button href={site.whatsappNumber ? whatsappLink(generalMessage) : "#contato"}
+            external={Boolean(site.whatsappNumber)} size="sm">{site.contactCta}</Button>
+        </div>
         <MotionRoot />
       </div>
     </>

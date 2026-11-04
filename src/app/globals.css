@@ -103,6 +103,7 @@ html.lenis body {
 .hero-stage-viewport {
   position: relative;
   overflow: clip;
+  min-height: 100vh;
   min-height: 100svh;
 }
 .alpine-world, .hero-stage-scrim, .hero-stage-shade {
@@ -215,12 +216,15 @@ html.lenis body {
     opacity: 0;
   }
   .js .hero-stage {
+    height: 720vh;
     height: 720svh;
+    min-height: 720vh;
     min-height: 720svh;
   }
   .js .hero-stage .hero-stage-viewport {
     position: sticky;
     top: 0;
+    height: 100vh;
     height: 100svh;
     min-height: 0;
   }
@@ -231,7 +235,6 @@ html.lenis body {
   .js .hero-stage .hero-act {
     position: absolute;
     margin: 0;
-    will-change: transform, opacity;
   }
   .js .hero-stage .hero-opening {
     inset: 21% 5% auto;
@@ -276,6 +279,9 @@ html.lenis body {
     opacity: 1 !important;
   }
   .hero-stage-controls a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
     padding: .6rem 0;
     margin-left: auto;
     text-shadow: 0 1px 10px #2a1815;
@@ -465,4 +471,30 @@ html.lenis body {
 .display {
   font-variant-numeric: lining-nums;
   font-feature-settings: "lnum" 1;
+}
+
+/* Touch feedback and device cutouts keep the existing visual tokens. */
+a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; }
+.mobile-contact { display: none; }
+.hero-stage-controls {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+#contato { padding-bottom: max(2.5rem, env(safe-area-inset-bottom, 0px)); }
+@media (max-width: 767px) {
+  .mobile-contact {
+    position: fixed;
+    z-index: 40;
+    display: block;
+    right: max(1.25rem, env(safe-area-inset-right, 0px));
+    bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  }
+  #contato { padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px)); }
+  .js .hero-stage[data-immersive] { height: 480vh; height: 480svh; min-height: 480vh; min-height: 480svh; }
+  .js .hero-stage[data-immersive] .hero-stage-controls { bottom: 5rem; }
+  .hero-glass { -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .hero-glass { background: #2a1815f0; }
 }

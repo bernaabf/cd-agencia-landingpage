@@ -33,7 +33,8 @@
   width: 100%;
   max-width: var(--editorial-measure);
   margin-inline: auto;
-  padding-inline: var(--editorial-margin);
+  padding-left: max(var(--editorial-margin), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--editorial-margin), env(safe-area-inset-right, 0px));
 }
 
 .introGrid {
@@ -138,7 +139,7 @@
 .footerLink {
   display: inline-flex;
   align-items: center;
-  min-width: 24px;
+  min-width: 44px;
   min-height: 44px;
   text-underline-offset: 0.3em;
 }
