@@ -36,7 +36,7 @@ export default function Services() {
               <div className={styles.serviceDescription}>
                 <p className="text-base font-medium leading-relaxed">{item.lead}</p>
                 <p className="mt-3 text-base leading-[1.8] text-cream-100/85">{item.text}</p>
-                <div className={styles.serviceAction}>
+                <div data-contact-action className={styles.serviceAction}>
                   <Button href={whatsappLink(item.message)} size="sm">
                     {item.cta}
                   </Button>

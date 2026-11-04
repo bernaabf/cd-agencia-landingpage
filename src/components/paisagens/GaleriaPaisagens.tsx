@@ -58,7 +58,7 @@ export default function GaleriaPaisagens() {
         }} />)}
       </div>
       {/* TODO: configurar NEXT_PUBLIC_WHATSAPP_NUMBER para ativar o CTA contextual. */}
-      <div className={styles.footer}>
+      <div data-contact-action className={styles.footer}>
         {site.whatsappNumber ? <Button href={whatsappLink(generalMessage)}>Planejar esta experiência</Button>
           : <Button href="#contato" external={false}>Fale com a Carolina</Button>}
         <details className={styles.credits}>

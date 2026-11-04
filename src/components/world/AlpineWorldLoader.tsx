@@ -1,5 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { Component, useCallback, useEffect, useState, type ReactNode } from "react";
 import { motion } from "@/lib/motion";
 import { detectQuality, lowerTier, hasWebGL2API, type QualityTier } from "@/lib/world/quality";
@@ -16,6 +17,7 @@ export default function AlpineWorldLoader() {
   const [tier, setTier] = useState<QualityTier | null>(null);
   const [visible, setVisible] = useState(true);
   const [failed, setFailed] = useState(false);
+  const [poster, setPoster] = useState(false);
   const failure = useCallback(() => {
     document.documentElement.classList.remove("world-ready");
     setFailed(true);
@@ -27,13 +29,14 @@ export default function AlpineWorldLoader() {
 
   useEffect(() => {
     const media = matchMedia(motion.motionQuery);
-    let disposed = false, inView = true, eligible = false, checked = false;
+    let disposed = false, inView = false, eligible = false, checked = false;
     let capability: QualityTier | null = null;
     const mount = () => {
       const active = !document.hidden && inView;
       setVisible(active);
       if (disposed || !eligible || !active) return;
       if (!media.matches) {
+        setPoster(true);
         document.documentElement.classList.remove("world-ready");
         setTier(null);
         return;
@@ -43,10 +46,11 @@ export default function AlpineWorldLoader() {
         const selected = detectQuality();
         capability = selected && hasWebGL2API() ? selected : null;
       }
+      setPoster(!capability);
       setTier(current => current ?? capability);
     };
     const syncMotion = () => {
-      if (!media.matches) { document.documentElement.classList.remove("world-ready"); setTier(null); }
+      if (!media.matches) { setPoster(true); document.documentElement.classList.remove("world-ready"); setTier(null); }
       else mount();
     };
     const stage = document.getElementById("inicio");
@@ -68,6 +72,10 @@ export default function AlpineWorldLoader() {
       document.documentElement.classList.remove("world-ready");
     };
   }, []);
+
+  if (failed || poster) return <div className="alpine-poster" aria-hidden="true">
+    <Image src="/images/paisagens/matterhorn-zermatt-valais-1600.jpg" alt="" fill sizes="100vw" />
+  </div>;
 
   return tier && !failed ? (
     <WorldBoundary onFailure={failure}>

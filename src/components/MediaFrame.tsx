@@ -48,7 +48,7 @@ export default function MediaFrame({
             priority={priority}
             quality={85}
             style={{ objectPosition }}
-            className="object-cover transition-transform duration-[1400ms] ease-premium group-hover:scale-[1.04]"
+            className="object-cover transition-transform duration-[1400ms] ease-premium [@media(hover:hover)]:group-hover:scale-[1.04]"
           />
         </div>
       </div>

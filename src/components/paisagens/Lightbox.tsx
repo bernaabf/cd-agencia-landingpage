@@ -37,10 +37,14 @@ export default function Lightbox({ paisagens, initialIndex, origin, onClose, onR
     };
   }, [origin]);
   useEffect(() => {
-    // Only the two adjacent previews are warmed; no hidden full gallery downloads.
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+    if (connection?.saveData) return;
+    // Warm only adjacent previews at the same responsive width as the viewer.
+    const pixels = Math.min(1440, innerWidth * 0.94) * Math.min(devicePixelRatio || 1, 2);
+    const width = [480, 768, 1080, 1600, 2400].find(width => width >= pixels) ?? 2400;
     const images = [-1, 1].map(step => {
       const image = new window.Image();
-      image.src = `${paisagens[(index + step + paisagens.length) % paisagens.length].src}-1600.avif`;
+      image.src = `${paisagens[(index + step + paisagens.length) % paisagens.length].src}-${width}.avif`;
       return image;
     });
     return () => images.forEach(image => { image.src = ""; });
