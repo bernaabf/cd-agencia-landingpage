@@ -17,7 +17,9 @@ export default function HeroStage({ children }: { children: ReactNode }) {
     if (!stage) return;
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
-    mm.add(motion.motionQuery, () => {
+    mm.add({ motion: motion.motionQuery, mobile: "(max-width: 767px)" }, (context) => {
+      if (!context.conditions?.motion) return;
+      const mobile = context.conditions.mobile;
       stage.dataset.immersive = "true";
       const distance = () => stage.offsetHeight - (stage.firstElementChild as HTMLElement).offsetHeight;
       const select = gsap.utils.selector(stage);
@@ -34,7 +36,7 @@ export default function HeroStage({ children }: { children: ReactNode }) {
         defaults: { ease: "none" },
         scrollTrigger: {
           id: "hero-stage", trigger: stage, start: "top top", end: () => `+=${distance()}`,
-          scrub: motion.world.scrollScrub, invalidateOnRefresh: true,
+          scrub: mobile ? 0.35 : motion.world.scrollScrub, invalidateOnRefresh: true,
         },
       });
       timeline.to(progress, { value: 1, duration: 1,

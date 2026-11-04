@@ -432,16 +432,6 @@ html.lenis body {
 /* Só se aplicam com JS ativo e sem prefers-reduced-motion; o script de
    segurança no layout remove .js caso as animações não iniciem. */
 @media (prefers-reduced-motion: no-preference) {
-  .js [data-split] {
-    visibility: hidden;
-  }
-  .js [data-reveal] {
-    opacity: 0;
-    transform: translateY(28px);
-  }
-  .js [data-mask] {
-    clip-path: inset(100% 0% 0% 0% round 24px);
-  }
   .js [data-eyebrow] {
     opacity: 0;
   }

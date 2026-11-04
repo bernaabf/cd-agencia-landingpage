@@ -3,161 +3,115 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
-import Lenis from "lenis";
 import { motion } from "@/lib/motion";
 import { registerLenis } from "@/lib/scroll";
 
-/**
- * Orquestra todas as animações do site a partir de atributos data-*:
- *  data-split      títulos revelados por linha com máscara
- *  data-reveal     fade + deslocamento vertical ao entrar no viewport
- *  data-mask       imagem revelada por máscara (clip-path)
- *  data-reveal-scale  zoom suave de entrada da imagem
- *  data-parallax   parallax sutil (somente telas largas)
- *  data-nav        entrada da navegação (HeroStage controla o hero)
- *
- * Tudo é revertido na desmontagem (matchMedia.revert + destroy do Lenis).
- */
+/** Desktop keeps the authored masks; touch uses native scroll and lighter reveals. */
 export default function MotionRoot() {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
+    gsap.registerPlugin(ScrollTrigger);
     const root = document.documentElement;
     const mm = gsap.matchMedia();
+    let disposed = false;
+    let refreshFrame = 0;
+    const refresh = () => {
+      cancelAnimationFrame(refreshFrame);
+      refreshFrame = requestAnimationFrame(() => { if (!disposed) ScrollTrigger.refresh(); });
+    };
+    void document.fonts.ready.then(refresh);
+    // Capture load because image events do not bubble. Batch completions in one frame.
+    document.addEventListener("load", refresh, true);
 
-    mm.add(
-      { motion: motion.motionQuery, desktop: motion.desktopQuery },
-      (context) => {
-        const { motion: allowed, desktop } = context.conditions as {
-          motion: boolean;
-          desktop: boolean;
-        };
-        if (!allowed) return;
+    mm.add({ motion: motion.motionQuery, desktop: motion.desktopQuery,
+      smooth: "(min-width: 768px) and (hover: hover) and (pointer: fine)" }, context => {
+      const { motion: allowed, desktop, smooth } = context.conditions!;
+      if (!allowed) return;
+      let cancelled = false;
+      let stopSmooth: (() => void) | undefined;
+      let revertSplits: (() => void) | undefined;
+      const q = (selector: string) => gsap.utils.toArray<HTMLElement>(selector);
 
-        /* ---------- Smooth scroll (Lenis) integrado ao ScrollTrigger ---------- */
-        const lenis = new Lenis({ lerp: 0.09 });
-        lenis.on("scroll", ScrollTrigger.update);
-        const tick = (time: number) => lenis.raf(time * 1000);
-        gsap.ticker.add(tick);
-        gsap.ticker.lagSmoothing(0);
-        registerLenis(lenis);
+      if (smooth) {
+        // Do not download Lenis or run its ticker for native touch scrolling.
+        context.add("startSmooth", (Lenis: typeof import("lenis").default) => {
+          const lenis = new Lenis({ lerp: 0.09, syncTouch: false });
+          lenis.on("scroll", ScrollTrigger.update);
+          const tick = (time: number) => lenis.raf(time * 1000);
+          gsap.ticker.add(tick);
+          registerLenis(lenis);
+          stopSmooth = () => { gsap.ticker.remove(tick); lenis.destroy(); registerLenis(null); };
+        });
+        void import("lenis").then(({ default: Lenis }) => { if (!cancelled) context.startSmooth(Lenis); });
+      }
 
-        const splits: SplitText[] = [];
-        const q = <T extends Element = HTMLElement>(sel: string) =>
-          gsap.utils.toArray<T>(sel);
-
-        /* ---------- Títulos: split por linhas + máscara ---------- */
-        q("[data-split]").forEach((el) => {
-          const isHero = el.hasAttribute("data-hero");
-          const split = SplitText.create(el, {
-            type: "lines",
-            mask: "lines",
-            autoSplit: true,
-            linesClass: "split-line",
-            maskClass: "split-mask",
+      if (desktop) {
+        context.add("splitTitles", (SplitText: typeof import("gsap/SplitText").SplitText) => {
+          gsap.registerPlugin(SplitText);
+          const splits = q("[data-split]").map(el => SplitText.create(el, {
+            type: "lines", mask: "lines", autoSplit: true,
+            linesClass: "split-line", maskClass: "split-mask",
             onSplit(self) {
-              gsap.set(el, { visibility: "visible" });
-              return gsap.from(self.lines, {
-                yPercent: 110,
-                duration: motion.duration.slow,
-                ease: motion.ease.out,
-                stagger: motion.stagger.lines,
-                delay: isHero ? motion.hero.title : 0,
-                scrollTrigger: isHero
-                  ? undefined
-                  : { trigger: el, start: motion.start, once: true },
-              });
+              return gsap.from(self.lines, { yPercent: 110, duration: motion.duration.slow,
+                ease: motion.ease.out, stagger: motion.stagger.lines,
+                scrollTrigger: { trigger: el, start: motion.start, once: true } });
             },
-          });
-          splits.push(split);
+          }));
+          revertSplits = () => splits.forEach(split => split.revert());
+          refresh();
         });
+        void import("gsap/SplitText").then(({ SplitText }) => { if (!cancelled) context.splitTitles(SplitText); });
+      } else {
+        q("[data-split]").forEach(el => gsap.from(el, { opacity: 0, y: 16, duration: 0.55,
+          ease: motion.ease.soft, scrollTrigger: { trigger: el, start: motion.start, once: true } }));
+      }
 
-        /* ---------- Navegação; o palco tem sua própria timeline ---------- */
-        gsap.to("[data-nav]", {
-          opacity: 1, y: 0, duration: motion.duration.base,
-          delay: motion.hero.nav, ease: motion.ease.out,
+      gsap.to("[data-nav]", { opacity: 1, y: 0, duration: desktop ? motion.duration.base : 0.45,
+        delay: desktop ? motion.hero.nav : 0, ease: motion.ease.out });
+
+      q("[data-mask]").forEach(el => {
+        gsap.fromTo(el, desktop ? { clipPath: "inset(100% 0% 0% 0% round 24px)" } : { opacity: 0, y: 16 }, {
+          ...(desktop ? { clipPath: "inset(0% 0% 0% 0% round 24px)" } : { opacity: 1, y: 0 }),
+          duration: desktop ? motion.duration.slow + 0.2 : 0.55, ease: motion.ease.out,
+          scrollTrigger: { trigger: el, start: "top 90%", once: true },
         });
+        const inner = el.querySelector("[data-reveal-scale]");
+        if (inner && desktop) gsap.fromTo(inner, { scale: 1.18 }, { scale: 1, duration: 1.8,
+          ease: motion.ease.out, scrollTrigger: { trigger: el, start: "top 90%", once: true } });
+      });
 
-        /* ---------- Imagens: máscara + zoom de entrada ---------- */
-        q("[data-mask]").forEach((el) => {
-          const isHero = el.hasAttribute("data-hero");
-          gsap.fromTo(
-            el,
-            { clipPath: "inset(100% 0% 0% 0% round 24px)" },
-            {
-              clipPath: "inset(0% 0% 0% 0% round 24px)",
-              duration: motion.duration.slow + 0.2,
-              ease: motion.ease.out,
-              delay: isHero ? motion.hero.image : 0,
-              scrollTrigger: isHero ? undefined : { trigger: el, start: "top 90%", once: true },
-            },
-          );
-          const inner = el.querySelector("[data-reveal-scale]");
-          if (inner) {
-            gsap.fromTo(
-              inner,
-              { scale: 1.18 },
-              {
-                scale: 1,
-                duration: 1.8,
-                ease: motion.ease.out,
-                delay: isHero ? motion.hero.image : 0,
-                scrollTrigger: isHero ? undefined : { trigger: el, start: "top 90%", once: true },
-              },
-            );
-          }
-        });
-
-        /* ---------- Reveals em lote (cards, textos, ícones) ---------- */
+      if (desktop) {
+        gsap.set("[data-reveal]", { opacity: 0, y: 28 });
         ScrollTrigger.batch("[data-reveal]", {
-          start: motion.start,
-          once: true,
-          onEnter: (batch) =>
-            gsap.to(batch, {
-              opacity: 1,
-              y: 0,
-              duration: motion.duration.base,
-              ease: motion.ease.out,
-              stagger: motion.stagger.items,
-              overwrite: true,
-            }),
+          start: motion.start, once: true,
+          onEnter: batch => gsap.to(batch, { opacity: 1, y: 0,
+            duration: motion.duration.base, ease: motion.ease.out,
+            stagger: motion.stagger.items, overwrite: true }),
         });
+      } else {
+        q("[data-reveal]").forEach(el => gsap.from(el, { opacity: 0, y: 16,
+          duration: 0.5, ease: motion.ease.out,
+          scrollTrigger: { trigger: el, start: motion.start, once: true } }));
+      }
 
-        /* ---------- Parallax sutil (telas largas) ---------- */
-        if (desktop) {
-          q("[data-parallax]").forEach((el) => {
-            const amount = Number(el.getAttribute("data-parallax")) || 6;
-            gsap.fromTo(
-              el,
-              { yPercent: -amount },
-              {
-                yPercent: amount,
-                ease: motion.ease.none,
-                scrollTrigger: {
-                  trigger: el.parentElement ?? el,
-                  start: "top bottom",
-                  end: "bottom top",
-                  scrub: true,
-                },
-              },
-            );
-          });
-        }
-
-        root.classList.add("motion-ready");
-
-        return () => {
-          gsap.ticker.remove(tick);
-          lenis.destroy();
-          registerLenis(null);
-          splits.forEach((s) => s.revert());
-          root.classList.remove("motion-ready");
-        };
-      },
-    );
-
-    return () => mm.revert();
+      if (desktop) q("[data-parallax]").forEach(el => {
+        const amount = Number(el.dataset.parallax) || 6;
+        gsap.fromTo(el, { yPercent: -amount }, { yPercent: amount, ease: motion.ease.none,
+          scrollTrigger: { trigger: el.parentElement ?? el, start: "top bottom", end: "bottom top", scrub: true } });
+      });
+      root.classList.add("motion-ready");
+      return () => {
+        cancelled = true;
+        stopSmooth?.();
+        revertSplits?.();
+        root.classList.remove("motion-ready");
+      };
+    });
+    return () => {
+      disposed = true;
+      document.removeEventListener("load", refresh, true);
+      cancelAnimationFrame(refreshFrame);
+      mm.revert();
+    };
   }, []);
-
   return null;
 }

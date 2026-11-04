@@ -20,11 +20,13 @@ export default function GaleriaPaisagens() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
-    mm.add("(prefers-reduced-motion: no-preference)", () => {
+    mm.add({ motion: "(prefers-reduced-motion: no-preference)", mobile: "(max-width: 767px)" }, (context) => {
+      if (!context.conditions?.motion) return;
+      const mobile = context.conditions.mobile;
       const ctx = gsap.context(() => {
         gsap.utils.toArray<HTMLElement>("[data-landscape-card]", grid.current).forEach((card, index) => {
-          gsap.fromTo(card, { opacity: 0, y: 24, scale: 0.985 }, {
-            opacity: 1, y: 0, scale: 1, duration: 0.85, delay: (index % 2) * 0.08, ease: "power3.out",
+          gsap.fromTo(card, { opacity: 0, y: mobile ? 12 : 24, scale: mobile ? 1 : 0.985 }, {
+            opacity: 1, y: 0, scale: 1, duration: mobile ? 0.5 : 0.85, delay: mobile ? 0 : (index % 2) * 0.08, ease: "power3.out",
             clearProps: "transform,opacity", scrollTrigger: { trigger: card, start: "top 96%", once: true },
           });
         });
