@@ -486,3 +486,67 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
   /* Match the first paint to hydration so direct section links keep their target. */
   .js .hero-stage { height: 480vh; height: 480svh; min-height: 480vh; min-height: 480svh; }
 }
+
+/* Mobile photo presentation. Desktop selectors above retain the authored 3D scene. */
+.mobile-alpine-scene { display: none; }
+@media (max-width: 767px), (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .hero-stage {
+    --mobile-photo-height: max(28rem, min(78svh, 40rem));
+    --mobile-hero-top: calc(8.5rem + env(safe-area-inset-top, 0px));
+  }
+  .mobile-alpine-scene {
+    display: block;
+    position: absolute;
+    inset: 0 0 auto;
+    height: var(--mobile-photo-height);
+    overflow: clip;
+  }
+  .mobile-alpine-scene picture { display: block; }
+  .hero-stage .hero-stage-scrim { height: var(--mobile-photo-height); bottom: auto; }
+  .js .hero-stage, .js .hero-stage[data-immersive] { height: auto; min-height: 0; }
+  .hero-stage .hero-stage-viewport, .js .hero-stage .hero-stage-viewport {
+    position: relative; height: auto; min-height: 0;
+  }
+  .hero-stage .hero-editorial, .js .hero-stage .hero-editorial {
+    display: grid; grid-template-columns: minmax(0, 1fr); height: auto; gap: 1.5rem;
+    padding: var(--mobile-hero-top) max(1.5rem, env(safe-area-inset-right, 0px)) 4rem max(1.5rem, env(safe-area-inset-left, 0px));
+  }
+  .hero-stage .hero-act, .js .hero-stage .hero-act {
+    position: relative; inset: auto; width: auto; max-width: 100%; margin: 0;
+    opacity: 1; transform: none; pointer-events: auto;
+  }
+  .hero-stage .hero-opening, .js .hero-stage .hero-opening {
+    grid-row: 1; min-height: max(12rem, calc(var(--mobile-photo-height) - var(--mobile-hero-top) - 5rem));
+    display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left;
+  }
+  .hero-stage .hero-title { font-size: clamp(3rem, 12vw, 5.3rem); }
+  .hero-stage .hero-eyebrow { max-width: 34ch; font-size: .68rem; letter-spacing: .16em; }
+  .hero-stage .hero-invitation, .js .hero-stage .hero-invitation { display: contents; }
+  .hero-invitation > a { grid-row: 2; justify-self: start; }
+  .hero-stage .hero-story { grid-row: 3; margin-top: 1rem; font-size: 1.05rem; line-height: 1.85; }
+  .hero-credentials { grid-row: 4; justify-self: start; }
+  .hero-stage .hero-glass { background: none; border: 0; padding: 0; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .hero-stage .hero-guide, .js .hero-stage .hero-guide {
+    grid-row: 5; grid-column: 1; justify-self: start; width: min(76vw, 380px); margin-top: 1rem;
+  }
+  .hero-stage .hero-title-mask { overflow: visible; }
+  .hero-stage .hero-stage-controls, .js .hero-stage .hero-stage-controls { display: none; }
+  .hero-stage .hero-stage-shade, .hero-stage .alpine-world { display: none; }
+  .js [data-nav] { opacity: 1; transform: none; }
+  .mobile-reveal { transition: opacity .4s var(--ease-premium), transform .4s var(--ease-premium); }
+  .mobile-reveal-pending { opacity: 0; transform: translateY(12px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-alpine-scene img { animation: mobile-alpine-arrival .65s var(--ease-premium) both; }
+}
+@keyframes mobile-alpine-arrival {
+  from { opacity: .7; transform: scale(1.025); }
+  to { opacity: 1; transform: scale(1); }
+}
+@media (prefers-reduced-motion: reduce), (prefers-reduced-data: reduce) {
+  .mobile-alpine-scene img { animation: none; }
+  .mobile-reveal { transition: none; }
+  .mobile-reveal-pending { opacity: 1; transform: none; }
+}
+
+.mobile-static-motion .mobile-alpine-scene img { animation: none; }

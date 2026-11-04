@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Button from "@/components/Button";
+import { paisagens } from "@/data/paisagens";
+import MobileAlpineScene from "@/components/world/MobileAlpineScene";
 import HeroStage from "@/components/world/HeroStage";
 import { generalMessage, hero, whatsappLink } from "@/lib/site";
 
 export default function Hero() {
   return (
-    <HeroStage>
+    <HeroStage mobileScene={<MobileAlpineScene landscape={paisagens[0]} />}>
       <div className="hero-editorial">
         <div className="hero-act hero-opening" data-stage-opening>
           <p className="eyebrow hero-eyebrow">{hero.eyebrow}</p>
