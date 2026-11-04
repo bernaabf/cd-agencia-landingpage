@@ -17,6 +17,46 @@ export default function HeroStage({ children }: { children: ReactNode }) {
     if (!stage) return;
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
+    // GSAP reverts scroll triggers at breakpoints. Keep the reading section in place.
+    let anchor: { element: HTMLElement; top: number } | undefined;
+    let restoreFrame = 0;
+    const rememberPosition = () => {
+      anchor = undefined;
+      const sections = document.querySelectorAll<HTMLElement>("main > section[id]");
+      for (const element of sections) {
+        const rect = element.getBoundingClientRect();
+        if (element !== stage && rect.top <= innerHeight / 2 && rect.bottom > innerHeight / 2) {
+          anchor = { element, top: rect.top };
+          break;
+        }
+      }
+      // CSS may already have lengthened the hero before matchMediaInit fires.
+      // Header's observer still identifies the section being read in the old layout.
+      if (!anchor) {
+        const link = document.querySelector<HTMLAnchorElement>('header a[aria-current="location"]');
+        const element = link?.hash && document.getElementById(link.hash.slice(1));
+        if (element && element !== stage) anchor = { element, top: 88 };
+      }
+    };
+    const restorePosition = () => {
+      if (!anchor) return;
+      const saved = anchor;
+      cancelAnimationFrame(restoreFrame);
+      restoreFrame = requestAnimationFrame(() => {
+        const top = scrollY + saved.element.getBoundingClientRect().top - saved.top;
+        const lenis = getLenis();
+        if (lenis) lenis.scrollTo(top, { immediate: true });
+        else window.scrollTo({ top, behavior: "instant" });
+        ScrollTrigger.update();
+      });
+    };
+    // GSAP 3.15 exposes these lifecycle events; its bundled declarations omit them.
+    const mediaEvents = gsap as typeof gsap & {
+      addEventListener: (event: "matchMediaInit" | "matchMedia", listener: () => void) => void;
+      removeEventListener: (event: "matchMediaInit" | "matchMedia", listener: () => void) => void;
+    };
+    mediaEvents.addEventListener("matchMediaInit", rememberPosition);
+    mediaEvents.addEventListener("matchMedia", restorePosition);
     mm.add({ motion: motion.motionQuery, mobile: "(max-width: 767px)" }, (context) => {
       if (!context.conditions?.motion) return;
       const mobile = context.conditions.mobile;
@@ -79,7 +119,12 @@ export default function HeroStage({ children }: { children: ReactNode }) {
         setJourneyProgress(0);
       };
     });
-    return () => mm.revert();
+    return () => {
+      mediaEvents.removeEventListener("matchMediaInit", rememberPosition);
+      mediaEvents.removeEventListener("matchMedia", restorePosition);
+      cancelAnimationFrame(restoreFrame);
+      mm.revert();
+    };
   }, []);
 
   return (

@@ -481,7 +481,6 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
     bottom: max(1rem, env(safe-area-inset-bottom, 0px));
   }
   #contato { padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px)); }
-  .js .hero-stage[data-immersive] { height: 480vh; height: 480svh; min-height: 480vh; min-height: 480svh; }
   .js .hero-stage[data-immersive] .hero-stage-controls { bottom: 5rem; }
   .hero-glass { -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
 }
@@ -491,3 +490,8 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
 
 .alpine-poster { position: absolute; inset: 0; pointer-events: none; opacity: .35; }
 .alpine-poster img { object-fit: cover; }
+
+@media (max-width: 767px) and (prefers-reduced-motion: no-preference) {
+  /* Match the first paint to hydration so direct section links keep their target. */
+  .js .hero-stage { height: 480vh; height: 480svh; min-height: 480vh; min-height: 480svh; }
+}

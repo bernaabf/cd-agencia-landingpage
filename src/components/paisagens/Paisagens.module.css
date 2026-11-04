@@ -58,3 +58,4 @@
 .contactFallback { display: inline-flex; align-items: center; min-height: 48px; padding: .75rem 1.5rem; border-radius: 100px; background: var(--color-cream-100); color: var(--color-brown-900); font-size: .75rem; font-weight: 600; }
 
 .dialogPanel { padding-top: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-top, 0px)); padding-bottom: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-bottom, 0px)); padding-left: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-left, 0px)); padding-right: max(clamp(.75rem, 2vw, 1.5rem), env(safe-area-inset-right, 0px)); }
+.container { padding-left: max(clamp(1.25rem, 3vw, 2.5rem), env(safe-area-inset-left, 0px)); padding-right: max(clamp(1.25rem, 3vw, 2.5rem), env(safe-area-inset-right, 0px)); }
