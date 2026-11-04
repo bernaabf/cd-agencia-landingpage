@@ -1,0 +1,118 @@
+{
+  "routes": {
+    "/": {
+      "initial": [
+        "1g28e174r-lid.js",
+        "216iyidhmrh3u.js",
+        "turbopack-2c3mg3r-05n1w.js",
+        "0umf92h1sb77c.js",
+        "3cf7zqbi1ar8w.js",
+        "2ghuyzzi0br3l.js",
+        "3uz4mffm8c_fo.js",
+        "0cz1d0mv5g_q7.js",
+        "01ce6pg25fldo.js"
+      ],
+      "bytes": 748560,
+      "gzip": 241619
+    },
+    "/_not-found": {
+      "initial": [
+        "1g28e174r-lid.js",
+        "216iyidhmrh3u.js",
+        "turbopack-2c3mg3r-05n1w.js",
+        "0umf92h1sb77c.js",
+        "0cz1d0mv5g_q7.js",
+        "01ce6pg25fldo.js"
+      ],
+      "bytes": 569809,
+      "gzip": 175276
+    }
+  },
+  "chunks": [
+    {
+      "name": "115ztmrhgjsjt.js",
+      "bytes": 908940,
+      "gzip": 243531
+    },
+    {
+      "name": "216iyidhmrh3u.js",
+      "bytes": 229597,
+      "gzip": 71899
+    },
+    {
+      "name": "1g28e174r-lid.js",
+      "bytes": 179944,
+      "gzip": 48295
+    },
+    {
+      "name": "0cz1d0mv5g_q7.js",
+      "bytes": 112594,
+      "gzip": 39627
+    },
+    {
+      "name": "3uz4mffm8c_fo.js",
+      "bytes": 83891,
+      "gzip": 29627
+    },
+    {
+      "name": "2ghuyzzi0br3l.js",
+      "bytes": 70866,
+      "gzip": 27462
+    },
+    {
+      "name": "3cf7zqbi1ar8w.js",
+      "bytes": 23994,
+      "gzip": 9254
+    },
+    {
+      "name": "01ce6pg25fldo.js",
+      "bytes": 22597,
+      "gzip": 7551
+    },
+    {
+      "name": "2j9yyl5qtr4km.js",
+      "bytes": 18689,
+      "gzip": 5452
+    },
+    {
+      "name": "0umf92h1sb77c.js",
+      "bytes": 13822,
+      "gzip": 3514
+    },
+    {
+      "name": "turbopack-2c3mg3r-05n1w.js",
+      "bytes": 11255,
+      "gzip": 4390
+    },
+    {
+      "name": "2a35zy57qpgo1.js",
+      "bytes": 7183,
+      "gzip": 3320
+    },
+    {
+      "name": "16r69yn39nb00.js",
+      "bytes": 4263,
+      "gzip": 1898
+    },
+    {
+      "name": "0vwo4ing6idj3.js",
+      "bytes": 3968,
+      "gzip": 2038
+    },
+    {
+      "name": "2x7j-dmy5h2b8.js",
+      "bytes": 3342,
+      "gzip": 1728
+    },
+    {
+      "name": "turbopack-worker-1hrsqshz0gfey.js",
+      "bytes": 927,
+      "gzip": 597
+    },
+    {
+      "name": "turbopack-3-qrkekup-0so.js",
+      "bytes": 188,
+      "gzip": 174
+    }
+  ]
+}

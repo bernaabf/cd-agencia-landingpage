@@ -1,0 +1,74 @@
+{
+  "before": {
+    "performance": 91,
+    "accessibility": 100,
+    "lcpMs": 1085.8445,
+    "cls": 0.02499460840881173,
+    "tbtMs": 352.5,
+    "inpMs": null,
+    "imageTransferBytes": 11728,
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "warnings": []
+  },
+  "after": {
+    "performance": 96,
+    "accessibility": 100,
+    "lcpMs": 1067.9404,
+    "cls": 0.04364107362938178,
+    "tbtMs": 207.49999999999955,
+    "inpMs": null,
+    "imageTransferBytes": 11724,
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "warnings": []
+  },
+  "desktop-before": {
+    "performance": 100,
+    "accessibility": 100,
+    "lcpMs": 308.687,
+    "cls": 0,
+    "tbtMs": 3,
+    "inpMs": null,
+    "imageTransferBytes": 11046,
+    "throttling": {
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "requestLatencyMs": 0,
+      "downloadThroughputKbps": 0,
+      "uploadThroughputKbps": 0,
+      "cpuSlowdownMultiplier": 1
+    },
+    "warnings": []
+  },
+  "desktop-after": {
+    "performance": 100,
+    "accessibility": 100,
+    "lcpMs": 290.1321,
+    "cls": 0,
+    "tbtMs": 0,
+    "inpMs": null,
+    "imageTransferBytes": 9908,
+    "throttling": {
+      "rttMs": 40,
+      "throughputKbps": 10240,
+      "requestLatencyMs": 0,
+      "downloadThroughputKbps": 0,
+      "uploadThroughputKbps": 0,
+      "cpuSlowdownMultiplier": 1
+    },
+    "warnings": []
+  }
+}
