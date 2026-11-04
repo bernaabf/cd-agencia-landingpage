@@ -502,7 +502,10 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
     overflow: clip;
   }
   .mobile-alpine-scene picture { display: block; }
-  .hero-stage .hero-stage-scrim { height: var(--mobile-photo-height); bottom: auto; }
+  .hero-stage .hero-stage-scrim {
+    height: var(--mobile-photo-height); bottom: auto;
+    background: linear-gradient(180deg, #2a181580, #2a1815b3 60%, #2a1815);
+  }
   .js .hero-stage, .js .hero-stage[data-immersive] { height: auto; min-height: 0; }
   .hero-stage .hero-stage-viewport, .js .hero-stage .hero-stage-viewport {
     position: relative; height: auto; min-height: 0;
@@ -515,6 +518,7 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
     position: relative; inset: auto; width: auto; max-width: 100%; margin: 0;
     opacity: 1; transform: none; pointer-events: auto;
   }
+  .js .hero-stage .hero-act:not(.hero-opening) { opacity: 1; }
   .hero-stage .hero-opening, .js .hero-stage .hero-opening {
     grid-row: 1; min-height: max(12rem, calc(var(--mobile-photo-height) - var(--mobile-hero-top) - 5rem));
     display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left;

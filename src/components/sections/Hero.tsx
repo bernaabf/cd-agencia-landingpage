@@ -5,9 +5,11 @@ import MobileAlpineScene from "@/components/world/MobileAlpineScene";
 import HeroStage from "@/components/world/HeroStage";
 import { generalMessage, hero, whatsappLink } from "@/lib/site";
 
+const mobileLandscape = paisagens.find(landscape => landscape.id === "matterhorn-zermatt-valais") ?? paisagens[0];
+
 export default function Hero() {
   return (
-    <HeroStage mobileScene={<MobileAlpineScene landscape={paisagens[0]} />}>
+    <HeroStage mobileScene={<MobileAlpineScene landscape={mobileLandscape} />}>
       <div className="hero-editorial">
         <div className="hero-act hero-opening" data-stage-opening>
           <p className="eyebrow hero-eyebrow">{hero.eyebrow}</p>
