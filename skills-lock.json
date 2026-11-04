@@ -13,6 +13,12 @@
       "skillPath": "skills/application-security-testing/SKILL.md",
       "computedHash": "5963d33bb6f5cfb0ce2657daa20090c922f68c309aa5906b9c80d1761fb33e05"
     },
+    "architecture-designer": {
+      "source": "Jeffallan/claude-skills",
+      "sourceType": "github",
+      "skillPath": "skills/architecture-designer/SKILL.md",
+      "computedHash": "823a70de029953659315b8ab2033e59983a8b49915e9054fec3b75fc5848306b"
+    },
     "ci-security-scanning-with-strix": {
       "source": "usestrix/strix",
       "sourceType": "github",
