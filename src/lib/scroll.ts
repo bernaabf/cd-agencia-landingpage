@@ -10,8 +10,6 @@ export function getLenis() {
   return instance;
 }
 
-const NAV_OFFSET = 88;
-
 /** Rola até uma seção usando Lenis quando ativo e o scroll nativo caso contrário. */
 export function scrollToSection(id: string) {
   const target = document.getElementById(id);
@@ -21,7 +19,8 @@ export function scrollToSection(id: string) {
     // O scroll-margin-top das seções (globals.css) já compensa a navbar.
     instance.scrollTo(target, { duration: 1.4 });
   } else {
-    const top = id === "inicio" ? 0 : target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
+    const offset = parseFloat(getComputedStyle(target).scrollMarginTop) || 88;
+    const top = id === "inicio" ? 0 : target.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: "auto" });
   }
 

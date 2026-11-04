@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "@/lib/motion";
+import { mobilePresentationQuery } from "@/lib/presentation";
+import { revealOnMobile } from "@/lib/mobile-reveals";
 import { registerLenis } from "@/lib/scroll";
 
 /** Desktop keeps the authored masks; touch uses native scroll and lighter reveals. */
@@ -18,14 +20,22 @@ export default function MotionRoot() {
       cancelAnimationFrame(refreshFrame);
       refreshFrame = requestAnimationFrame(() => { if (!disposed) ScrollTrigger.refresh(); });
     };
-    void document.fonts.ready.then(refresh);
-    // Capture load because image events do not bubble. Batch completions in one frame.
-    document.addEventListener("load", refresh, true);
 
-    mm.add({ motion: motion.motionQuery, desktop: motion.desktopQuery,
+    mm.add({ motion: motion.motionQuery, desktop: motion.desktopQuery, mobile: mobilePresentationQuery,
       smooth: "(min-width: 768px) and (hover: hover) and (pointer: fine)" }, context => {
-      const { motion: allowed, desktop, smooth } = context.conditions!;
+      const { motion: allowed, desktop, smooth, mobile } = context.conditions!;
+      if (mobile) {
+        const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
+        root.classList.toggle("mobile-static-motion", !allowed || Boolean(connection?.saveData));
+        const cleanup = allowed ? revealOnMobile(gsap.utils.toArray<HTMLElement>("[data-split], [data-mask], [data-reveal]")) : () => {};
+        root.classList.add("motion-ready");
+        return () => { cleanup(); root.classList.remove("motion-ready", "mobile-static-motion"); };
+      }
       if (!allowed) return;
+      let resourcesActive = true;
+      const imageLoaded = (event: Event) => { if (event.target instanceof HTMLImageElement) refresh(); };
+      document.addEventListener("load", imageLoaded, true);
+      void document.fonts.ready.then(() => { if (resourcesActive) refresh(); });
       let cancelled = false;
       let stopSmooth: (() => void) | undefined;
       let revertSplits: (() => void) | undefined;
@@ -101,6 +111,8 @@ export default function MotionRoot() {
       root.classList.add("motion-ready");
       return () => {
         cancelled = true;
+        resourcesActive = false;
+        document.removeEventListener("load", imageLoaded, true);
         stopSmooth?.();
         revertSplits?.();
         root.classList.remove("motion-ready");
@@ -108,7 +120,6 @@ export default function MotionRoot() {
     });
     return () => {
       disposed = true;
-      document.removeEventListener("load", refresh, true);
       cancelAnimationFrame(refreshFrame);
       mm.revert();
     };

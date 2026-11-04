@@ -3,6 +3,8 @@ import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { mobilePresentationQuery } from "@/lib/presentation";
+import { revealOnMobile } from "@/lib/mobile-reveals";
 import { paisagens, type Categoria } from "@/data/paisagens";
 import { generalMessage, site, whatsappLink } from "@/lib/site";
 import Button from "@/components/Button";
@@ -20,9 +22,10 @@ export default function GaleriaPaisagens() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
-    mm.add({ motion: "(prefers-reduced-motion: no-preference)", mobile: "(max-width: 767px)" }, (context) => {
+    mm.add({ motion: "(prefers-reduced-motion: no-preference)", mobile: mobilePresentationQuery }, (context) => {
       if (!context.conditions?.motion) return;
       const mobile = context.conditions.mobile;
+      if (mobile) return revealOnMobile(Array.from(grid.current?.querySelectorAll<HTMLElement>("[data-landscape-card]") ?? []));
       const ctx = gsap.context(() => {
         gsap.utils.toArray<HTMLElement>("[data-landscape-card]", grid.current).forEach((card, index) => {
           gsap.fromTo(card, { opacity: 0, y: mobile ? 12 : 24, scale: mobile ? 1 : 0.985 }, {
@@ -31,11 +34,11 @@ export default function GaleriaPaisagens() {
           });
         });
       }, grid);
-      return () => ctx.revert();
+      // Only desktop owns scroll measurements; mobile image ratios reserve layout.
+      const frame = requestAnimationFrame(() => ScrollTrigger.refresh());
+      return () => { cancelAnimationFrame(frame); ctx.revert(); };
     });
-    // Fixed image ratios reserve layout; filters change section height intentionally.
-    const frame = requestAnimationFrame(() => ScrollTrigger.refresh());
-    return () => { cancelAnimationFrame(frame); mm.revert(); };
+    return () => mm.revert();
   }, [category]);
 
   return <section className={styles.section} id="paisagens" aria-labelledby="paisagens-title">
