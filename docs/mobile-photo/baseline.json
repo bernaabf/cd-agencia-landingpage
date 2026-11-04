@@ -1,0 +1,16 @@
+{
+  "commit": "50c2babd5ae104315f78ddbd0f46dd4c4c5e0274",
+  "threeChunk": [
+    "115ztmrhgjsjt.js"
+  ],
+  "routes": {
+    "/_global-error/page": "/_global-error",
+    "/_not-found/page": "/_not-found",
+    "/apple-icon.png/route": "/apple-icon.png",
+    "/icon.png/route": "/icon.png",
+    "/opengraph-image/route": "/opengraph-image",
+    "/page": "/",
+    "/robots.txt/route": "/robots.txt",
+    "/sitemap.xml/route": "/sitemap.xml"
+  }
+}

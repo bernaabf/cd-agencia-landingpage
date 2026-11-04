@@ -1,0 +1,107 @@
+{
+  "mobile-before": {
+    "performance": 94,
+    "accessibility": 100,
+    "lcpMs": 1058,
+    "cls": 0.04364107362938178,
+    "tbtMs": 265,
+    "inpMs": null,
+    "jsTransferBytes": 453090,
+    "webglRequests": 1,
+    "workerRequests": 1,
+    "heroPhoto": [],
+    "viewport": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    }
+  },
+  "mobile-after": {
+    "performance": 96,
+    "accessibility": 100,
+    "lcpMs": 2786,
+    "cls": 0,
+    "tbtMs": 17,
+    "inpMs": null,
+    "jsTransferBytes": 206558,
+    "webglRequests": 0,
+    "workerRequests": 0,
+    "heroPhoto": [
+      {
+        "url": "http://127.0.0.1:3204/images/paisagens/matterhorn-zermatt-valais-768.avif",
+        "bytes": 38303
+      }
+    ],
+    "viewport": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    }
+  },
+  "mobile-landscape": {
+    "performance": 100,
+    "accessibility": 100,
+    "lcpMs": 1058,
+    "cls": 0,
+    "tbtMs": 12,
+    "inpMs": null,
+    "jsTransferBytes": 206558,
+    "webglRequests": 0,
+    "workerRequests": 0,
+    "heroPhoto": [
+      {
+        "url": "http://127.0.0.1:3204/images/paisagens/matterhorn-zermatt-valais-1080.avif",
+        "bytes": 73797
+      }
+    ],
+    "viewport": {
+      "mobile": true,
+      "width": 852,
+      "height": 393,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    }
+  },
+  "desktop-before": {
+    "performance": 100,
+    "accessibility": 100,
+    "lcpMs": 291,
+    "cls": 0,
+    "tbtMs": 1,
+    "inpMs": null,
+    "jsTransferBytes": 462879,
+    "webglRequests": 1,
+    "workerRequests": 1,
+    "heroPhoto": [],
+    "viewport": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    }
+  },
+  "desktop-after": {
+    "performance": 100,
+    "accessibility": 100,
+    "lcpMs": 291,
+    "cls": 0,
+    "tbtMs": 0,
+    "inpMs": null,
+    "jsTransferBytes": 463269,
+    "webglRequests": 1,
+    "workerRequests": 1,
+    "heroPhoto": [],
+    "viewport": {
+      "mobile": false,
+      "width": 1350,
+      "height": 940,
+      "deviceScaleFactor": 1,
+      "disabled": false
+    }
+  }
+}
