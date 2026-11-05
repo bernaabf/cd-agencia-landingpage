@@ -538,8 +538,32 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
   .hero-stage .hero-stage-shade, .hero-stage .alpine-world { display: none; }
   .js [data-nav] { opacity: 1; transform: none; }
   .mobile-reveal { transition: opacity .4s var(--ease-premium), transform .4s var(--ease-premium); }
+  /* Static masks crop moving words; extra ink space protects serif accents. */
+  .mobile-lettering-mask { display: inline-block; clip-path: inset(-.16em -.08em -.14em -.08em); }
   .mobile-lettering-word { display: inline-block; }
   .mobile-reveal-pending { opacity: 0; transform: translateY(12px); }
+
+  /* Short touch acknowledgments; the CTA never waits for an entrance. */
+  a.group { transition-duration: 140ms; }
+  a.group:active { transform: scale(.975); }
+  a.group:active > svg { transform: translate(.1rem, -.1rem); }
+  #paisagens button[aria-pressed] { transition: background-color 180ms, color 180ms, border-color 180ms, transform 120ms var(--ease-premium); }
+  #paisagens button[aria-pressed]:active { transform: scale(.96); }
+  #paisagens dialog[open] { animation: mobile-dialog-arrival 240ms var(--ease-premium) both; }
+}
+@keyframes mobile-dialog-arrival {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  @media (max-width: 767px), (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+    a.group:active, a.group:active > svg, #paisagens button[aria-pressed]:active { transform: none; }
+    #paisagens button[aria-pressed] {
+      transition: background-color 120ms, color 120ms, border-color 120ms;
+      transition-duration: 120ms !important;
+    }
+    #paisagens dialog[open] { animation: none; }
+  }
 }
 @media (prefers-reduced-motion: no-preference) {
   .mobile-alpine-scene img { animation: mobile-alpine-arrival .65s var(--ease-premium) both; }
