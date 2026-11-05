@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="hero-act hero-opening" data-stage-opening>
           <p className="eyebrow hero-eyebrow">{hero.eyebrow}</p>
           <div className="hero-title-mask">
-            <h1 id="hero-title" className="display hero-title" data-stage-title>{hero.title}</h1>
+            <h1 id="hero-title" className="display hero-title" data-stage-title data-mobile-lettering="hero">{hero.title}</h1>
           </div>
         </div>
         <div className="hero-act hero-story" data-stage-story>

@@ -24,6 +24,7 @@ export default function Contact() {
           <h2
             id="contato-title"
             data-split
+            data-mobile-lettering="section"
             className={`display ${styles.heading} ${styles.closingTitle}`}
           >
             {closing.title}

@@ -20,6 +20,7 @@ export default function About() {
             <h2
               id="sobre-title"
               data-split
+              data-mobile-lettering="section"
               className={`display text-brown-900 ${styles.heading}`}
             >
               {about.title}

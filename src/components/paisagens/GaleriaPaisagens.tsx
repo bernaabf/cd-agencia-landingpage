@@ -44,7 +44,7 @@ export default function GaleriaPaisagens() {
   return <section className={styles.section} id="paisagens" aria-labelledby="paisagens-title">
     <div className={styles.container}>
       <div className={styles.heading}>
-        <h2 className="display" id="paisagens-title">A Suíça além do roteiro.</h2>
+        <h2 className="display" id="paisagens-title" data-mobile-lettering="section">A Suíça além do roteiro.</h2>
         <p>Montanhas, lagos e caminhos da Suíça.</p>
       </div>
       <div className={styles.toolbar}>

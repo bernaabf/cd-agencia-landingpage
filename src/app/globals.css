@@ -538,6 +538,7 @@ a, button { touch-action: manipulation; -webkit-tap-highlight-color: #c8b4a033; 
   .hero-stage .hero-stage-shade, .hero-stage .alpine-world { display: none; }
   .js [data-nav] { opacity: 1; transform: none; }
   .mobile-reveal { transition: opacity .4s var(--ease-premium), transform .4s var(--ease-premium); }
+  .mobile-lettering-word { display: inline-block; }
   .mobile-reveal-pending { opacity: 0; transform: translateY(12px); }
 }
 @media (prefers-reduced-motion: no-preference) {

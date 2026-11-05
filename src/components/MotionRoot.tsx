@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "@/lib/motion";
 import { mobilePresentationQuery } from "@/lib/presentation";
 import { revealOnMobile } from "@/lib/mobile-reveals";
+import { animateMobileLettering } from "@/lib/mobile-lettering";
 import { registerLenis } from "@/lib/scroll";
 
 /** Desktop keeps the authored masks; touch uses native scroll and lighter reveals. */
@@ -27,9 +28,14 @@ export default function MotionRoot() {
       if (mobile) {
         const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
         root.classList.toggle("mobile-static-motion", !allowed || Boolean(connection?.saveData));
-        const cleanup = allowed ? revealOnMobile(gsap.utils.toArray<HTMLElement>("[data-split], [data-mask], [data-reveal]")) : () => {};
+        // A title owns its entrance; do not also animate its surrounding row.
+        const revealTargets = gsap.utils.toArray<HTMLElement>("[data-split], [data-mask], [data-reveal]")
+          .filter(el => !el.matches("[data-mobile-lettering]") && !el.querySelector("[data-mobile-lettering]"));
+        const cleanup = allowed ? revealOnMobile(revealTargets) : () => {};
+        const cleanupLettering = allowed
+          ? animateMobileLettering(gsap.utils.toArray<HTMLElement>("[data-mobile-lettering]")) : () => {};
         root.classList.add("motion-ready");
-        return () => { cleanup(); root.classList.remove("motion-ready", "mobile-static-motion"); };
+        return () => { cleanup(); cleanupLettering(); root.classList.remove("motion-ready", "mobile-static-motion"); };
       }
       if (!allowed) return;
       let resourcesActive = true;

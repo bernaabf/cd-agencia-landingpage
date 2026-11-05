@@ -14,6 +14,7 @@ export default function Services() {
         <h2
           id="servicos-title"
           data-split
+          data-mobile-lettering="section"
           className={`display ${styles.heading} ${styles.serviceHeading}`}
         >
           {services.title}
@@ -28,7 +29,7 @@ export default function Services() {
               className={styles.serviceRow}
             >
               <div>
-                <h3 className={`display ${styles.itemTitle}`}>{item.title}</h3>
+                <h3 data-mobile-lettering="detail" className={`display ${styles.itemTitle}`}>{item.title}</h3>
                 {item.clarification && (
                   <p className="mt-3 text-sm text-sand-400">{item.clarification}</p>
                 )}
